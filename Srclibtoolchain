@@ -1,0 +1,25 @@
+{
+  "Tools": [
+    {
+      "Subcmd": "scan",
+      "Op": "scan",
+      "SourceUnitTypes": [
+        "CSSFile"
+      ]
+    },
+    {
+      "Subcmd": "graph",
+      "Op": "graph",
+      "SourceUnitTypes": [
+        "CSSFile"
+      ]
+    }
+  ],
+  "Bundle": {
+    "Paths": [
+		"Srclibtoolchain",
+		".bin",
+		".bin/srclib-css"
+	]
+  }
+}
