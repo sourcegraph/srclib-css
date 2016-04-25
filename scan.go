@@ -4,6 +4,7 @@ import (
 	"encoding/json"
 	"log"
 	"os"
+	"path/filepath"
 
 	"sourcegraph.com/sourcegraph/srclib/unit"
 
@@ -11,7 +12,9 @@ import (
 )
 
 var (
-	parser = flags.NewNamedParser("srclib-css", flags.Default)
+	config  *srcfileConfig = &srcfileConfig{}
+	parser                 = flags.NewNamedParser("srclib-css", flags.Default)
+	scanCmd ScanCmd        = ScanCmd{}
 )
 
 func init() {
@@ -25,19 +28,51 @@ func init() {
 	}
 }
 
+func main() {
+	if _, err := parser.Parse(); err != nil {
+		os.Exit(1)
+	}
+}
+
+type srcfileConfig struct {
+}
+
 type ScanCmd struct{}
 
-var scanCmd ScanCmd
-
 func (c *ScanCmd) Execute(args []string) error {
-	// TODO: handle the Stadin: JSON object representation of repository config (typically {}).
+	if err := json.NewDecoder(os.Stdin).Decode(&config); err != nil {
+		return err
+	}
+	if err := os.Stdin.Close(); err != nil {
+		return err
+	}
 
-	// TODO: Actually scan all the CSS files units present on the current directory?.
+	CWD, err := os.Getwd()
+	if err != nil {
+		return err
+	}
+
+	// ScanCmd writes to Stdout only a single unit which represents all CSS files found on CWD.
 	u := unit.SourceUnit{
-		Name: "testdata/main.css",
-		Type: "CSSFile",
+		Name: CWD,
+		Type: "Dir",
 	}
 	units := []*unit.SourceUnit{&u}
+
+	// Walks walks the file tree rooted at CWD, for each file found: checks if it's file extension
+	// is one of the following: "CSS", then adds it's file path to the unit's files.
+	if err := filepath.Walk(CWD, func(path string, f os.FileInfo, err error) error {
+		if err != nil {
+			return err
+		}
+		if filepath.Ext(path) == ".css" {
+			u.Files = append(u.Files, path)
+		}
+		return nil
+	}); err != nil {
+		return err
+	}
+
 	b, err := json.MarshalIndent(units, "", "  ")
 	if err != nil {
 		return err
@@ -46,10 +81,4 @@ func (c *ScanCmd) Execute(args []string) error {
 		return err
 	}
 	return nil
-}
-
-func main() {
-	if _, err := parser.Parse(); err != nil {
-		os.Exit(1)
-	}
 }
