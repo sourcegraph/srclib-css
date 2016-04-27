@@ -8,7 +8,7 @@ import (
 	"log"
 	"os"
 
-	cssParser "github.com/aymerick/douceur/parser"
+	cssParser "github.com/chris-ramon/douceur/parser"
 	"sourcegraph.com/sourcegraph/srclib/graph"
 	"sourcegraph.com/sourcegraph/srclib/unit"
 )
