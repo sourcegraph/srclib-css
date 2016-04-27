@@ -78,7 +78,8 @@ func Graph(units unit.SourceUnits) (*graph.Output, error) {
 	for _, currentFile := range u.Files {
 		f, err := ioutil.ReadFile(currentFile)
 		if err != nil {
-			return nil, err
+			log.Printf("failed to read a source unit file: %s", err)
+			continue
 		}
 		file := string(f)
 		stylesheet, err := cssParser.Parse(file)
