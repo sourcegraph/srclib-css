@@ -65,6 +65,9 @@ func (c *ScanCmd) Execute(args []string) error {
 		if err != nil {
 			return err
 		}
+		if f.IsDir() {
+			return nil
+		}
 		if filepath.Ext(path) == ".css" {
 			rp, err := filepath.Rel(CWD, path)
 			if err != nil {
