@@ -7,6 +7,7 @@ import (
 	"io/ioutil"
 	"log"
 	"os"
+	"path/filepath"
 
 	cssParser "github.com/chris-ramon/douceur/parser"
 	"sourcegraph.com/sourcegraph/srclib/graph"
@@ -95,7 +96,7 @@ func Graph(units unit.SourceUnits) (*graph.Output, error) {
 					DefUnit:     "MDN",
 					DefPath:     mdnDefPath(d.Property),
 					Unit:        u.Name,
-					File:        currentFile,
+					File:        filepath.ToSlash(currentFile),
 					Start:       uint32(s),
 					End:         uint32(e),
 				})
