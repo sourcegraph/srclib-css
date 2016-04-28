@@ -54,19 +54,23 @@ func (c *ScanCmd) Execute(args []string) error {
 
 	// ScanCmd writes to Stdout only a single unit which represents all CSS files found on CWD.
 	u := unit.SourceUnit{
-		Name: CWD,
+		Name: filepath.Base(CWD),
 		Type: "Dir",
 	}
 	units := []*unit.SourceUnit{&u}
 
-	// Walks walks the file tree rooted at CWD, for each file found: checks if it's file extension
+	// Walks the file tree rooted at CWD, for each file found: checks if it's file extension
 	// is one of the following: "CSS", then adds it's file path to the unit's files.
 	if err := filepath.Walk(CWD, func(path string, f os.FileInfo, err error) error {
 		if err != nil {
 			return err
 		}
 		if filepath.Ext(path) == ".css" {
-			u.Files = append(u.Files, path)
+			rp, err := filepath.Rel(CWD, path)
+			if err != nil {
+				return err
+			}
+			u.Files = append(u.Files, filepath.ToSlash(rp))
 		}
 		return nil
 	}); err != nil {
