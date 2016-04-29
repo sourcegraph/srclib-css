@@ -4,14 +4,14 @@
       "Subcmd": "scan",
       "Op": "scan",
       "SourceUnitTypes": [
-        "CSSFile"
+        "Dir"
       ]
     },
     {
       "Subcmd": "graph",
       "Op": "graph",
       "SourceUnitTypes": [
-        "CSSFile"
+        "Dir"
       ]
     }
   ],

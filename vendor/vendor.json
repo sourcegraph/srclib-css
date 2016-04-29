@@ -1,0 +1,109 @@
+{
+	"comment": "",
+	"ignore": "test",
+	"package": [
+		{
+			"checksumSHA1": "/Fu2sJOqd0Y1c7kwNXRhb/tHz50=",
+			"path": "github.com/aymerick/douceur/css",
+			"revision": "7176f146738114e7386d4f915a0bbf55945e22c9",
+			"revisionTime": "2015-08-27T15:13:52Z"
+		},
+		{
+			"checksumSHA1": "YBIhIYD7JrYgMunvL9uqwNLGRHA=",
+			"path": "github.com/chris-ramon/douceur/parser",
+			"revision": "a230c4e3847a62c6ab97d752918fe6c8f57b9595",
+			"revisionTime": "2016-04-27T15:14:54Z"
+		},
+		{
+			"checksumSHA1": "N3LXf9Vm2RM0AE3DjhCmpiyK4Bc=",
+			"path": "github.com/gogo/protobuf/proto",
+			"revision": "4f262e4b0f3a6cea646e15798109335551e21756",
+			"revisionTime": "2016-04-13T13:07:56Z"
+		},
+		{
+			"checksumSHA1": "UNlILKZlAiLwYYwj70y+Q8n13D0=",
+			"path": "github.com/gorilla/css/scanner",
+			"revision": "a80e24ada2699166544311f07c26ef37eaf64012",
+			"revisionTime": "2015-03-17T22:22:38Z"
+		},
+		{
+			"checksumSHA1": "Fsff4Yngdyqbq9ulSyTT4LGrxck=",
+			"path": "github.com/jessevdk/go-flags",
+			"revision": "6b9493b3cb60367edd942144879646604089e3f7",
+			"revisionTime": "2016-02-27T09:34:14Z"
+		},
+		{
+			"checksumSHA1": "KQhA4EQp4Ldwj9nJZnEURlE6aQw=",
+			"path": "github.com/kr/fs",
+			"revision": "2788f0dbd16903de03cb8186e5c7d97b69ad387b",
+			"revisionTime": "2013-11-06T22:25:44Z"
+		},
+		{
+			"checksumSHA1": "xfOefPDYot5K2I+0XdV4UnNQ/lM=",
+			"path": "github.com/rogpeppe/rog-go/parallel",
+			"revision": "f57ad5e24ab7813942c045f86eda1066eb969e98",
+			"revisionTime": "2015-01-10T16:24:53Z"
+		},
+		{
+			"checksumSHA1": "2bj5Jq3+RmE2blLnFUfkASYGTlg=",
+			"path": "golang.org/x/tools/godoc/vfs",
+			"revision": "5e468032ea9e193c60de97cfcd040ffa7a9b774e",
+			"revisionTime": "2016-04-17T16:37:22Z"
+		},
+		{
+			"checksumSHA1": "Qwc7VecyIh84Ol8n9J9DUwZQtII=",
+			"path": "golang.org/x/tools/godoc/vfs/mapfs",
+			"revision": "5e468032ea9e193c60de97cfcd040ffa7a9b774e",
+			"revisionTime": "2016-04-17T16:37:22Z"
+		},
+		{
+			"checksumSHA1": "thalOxMGUln4he8/AKgUOVgEgmg=",
+			"path": "sourcegraph.com/sourcegraph/rwvfs",
+			"revision": "d433415e8d1212f40c9a508851f08ba91e5996da",
+			"revisionTime": "2016-03-24T14:23:09Z"
+		},
+		{
+			"checksumSHA1": "seWWPqWX4VyY7hsix0woW6OYLAY=",
+			"path": "sourcegraph.com/sourcegraph/srclib",
+			"revision": "23661cf6d279b9e47357744249e5a5cee04326d6",
+			"revisionTime": "2016-04-15T21:44:09Z"
+		},
+		{
+			"checksumSHA1": "50qafmhTyHoz2X+UbQeqJKcELjw=",
+			"path": "sourcegraph.com/sourcegraph/srclib/ann",
+			"revision": "23661cf6d279b9e47357744249e5a5cee04326d6",
+			"revisionTime": "2016-04-15T21:44:09Z"
+		},
+		{
+			"checksumSHA1": "6Gr29dGzABWc6eUncFUs7LMVDVY=",
+			"path": "sourcegraph.com/sourcegraph/srclib/buildstore",
+			"revision": "23661cf6d279b9e47357744249e5a5cee04326d6",
+			"revisionTime": "2016-04-15T21:44:09Z"
+		},
+		{
+			"checksumSHA1": "hYUGZVDD9sRAxEGqEvfeQUpzK6o=",
+			"path": "sourcegraph.com/sourcegraph/srclib/graph",
+			"revision": "23661cf6d279b9e47357744249e5a5cee04326d6",
+			"revisionTime": "2016-04-15T21:44:09Z"
+		},
+		{
+			"checksumSHA1": "DO2ClRpKhE9dkk3dJ2L0tdkDnRc=",
+			"path": "sourcegraph.com/sourcegraph/srclib/unit",
+			"revision": "23661cf6d279b9e47357744249e5a5cee04326d6",
+			"revisionTime": "2016-04-15T21:44:09Z"
+		},
+		{
+			"checksumSHA1": "GZZtDCxhiXpKrgrO7nif2eStNIQ=",
+			"path": "sourcegraph.com/sourcegraph/srclib/util",
+			"revision": "23661cf6d279b9e47357744249e5a5cee04326d6",
+			"revisionTime": "2016-04-15T21:44:09Z"
+		},
+		{
+			"checksumSHA1": "GRBoSaxkWfXT9BIP2M87IePcEn8=",
+			"path": "sourcegraph.com/sqs/pbtypes",
+			"revision": "4d1b9dc7ffc3f7b555de9b02055fa616f0ebcd18",
+			"revisionTime": "2016-01-07T09:09:29Z"
+		}
+	],
+	"rootPath": "sourcegraph.com/sourcegraph/srclib-css"
+}
