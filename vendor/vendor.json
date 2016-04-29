@@ -3,10 +3,10 @@
 	"ignore": "test",
 	"package": [
 		{
-			"checksumSHA1": "/Fu2sJOqd0Y1c7kwNXRhb/tHz50=",
-			"path": "github.com/aymerick/douceur/css",
-			"revision": "7176f146738114e7386d4f915a0bbf55945e22c9",
-			"revisionTime": "2015-08-27T15:13:52Z"
+			"checksumSHA1": "UpgvFTq5cLoEhiE8ifLcgSHnX4k=",
+			"path": "github.com/chris-ramon/douceur/css",
+			"revision": "9598891decbee665d727cefc8542f64367e49b8e",
+			"revisionTime": "2016-04-29T17:44:48Z"
 		},
 		{
 			"checksumSHA1": "YBIhIYD7JrYgMunvL9uqwNLGRHA=",
