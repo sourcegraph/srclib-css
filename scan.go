@@ -5,6 +5,7 @@ import (
 	"log"
 	"os"
 	"path/filepath"
+	"strings"
 
 	"sourcegraph.com/sourcegraph/srclib/unit"
 
@@ -68,7 +69,7 @@ func (c *ScanCmd) Execute(args []string) error {
 		if f.IsDir() {
 			return nil
 		}
-		if filepath.Ext(path) == ".css" {
+		if isCSSFile(path) {
 			rp, err := filepath.Rel(CWD, path)
 			if err != nil {
 				return err
@@ -88,4 +89,8 @@ func (c *ScanCmd) Execute(args []string) error {
 		return err
 	}
 	return nil
+}
+
+func isCSSFile(filename string) bool {
+	return filepath.Ext(filename) == ".css" && !strings.HasSuffix(filename, ".min.css")
 }
