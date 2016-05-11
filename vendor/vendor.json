@@ -3,16 +3,16 @@
 	"ignore": "test",
 	"package": [
 		{
-			"checksumSHA1": "UpgvFTq5cLoEhiE8ifLcgSHnX4k=",
+			"checksumSHA1": "9AX1Qo5TlMveGCqhyBTla7zN5z0=",
 			"path": "github.com/chris-ramon/douceur/css",
-			"revision": "9598891decbee665d727cefc8542f64367e49b8e",
-			"revisionTime": "2016-04-29T12:44:48-05:00"
+			"revision": "c0a5b8aea4ffb106eb8992cbab4d4bb1bad3467c",
+			"revisionTime": "2016-05-11T08:54:35Z"
 		},
 		{
-			"checksumSHA1": "4UVPezmltWDD2LZWDFEibGpCJws=",
+			"checksumSHA1": "aSaQE7tdF2u4gYwuDY1XHMSDTQc=",
 			"path": "github.com/chris-ramon/douceur/parser",
-			"revision": "9598891decbee665d727cefc8542f64367e49b8e",
-			"revisionTime": "2016-04-29T12:44:48-05:00"
+			"revision": "c0a5b8aea4ffb106eb8992cbab4d4bb1bad3467c",
+			"revisionTime": "2016-05-11T08:54:35Z"
 		},
 		{
 			"checksumSHA1": "N3LXf9Vm2RM0AE3DjhCmpiyK4Bc=",
