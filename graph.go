@@ -71,6 +71,11 @@ func Graph(units unit.SourceUnits) (*graph.Output, error) {
 	}
 	u := units[0]
 
+	CWD, err := os.Getwd()
+	if err != nil {
+		return nil, err
+	}
+
 	out := graph.Output{Refs: []*graph.Ref{}}
 
 	// Iterate over u.Files, for each file the process performed can be described as follow:
@@ -82,25 +87,46 @@ func Graph(units unit.SourceUnits) (*graph.Output, error) {
 			log.Printf("failed to read a source unit file: %s", err)
 			continue
 		}
-		file := string(f)
-		stylesheet, err := cssParser.Parse(file)
-		if err != nil {
-			return nil, err
-		}
-		for _, r := range stylesheet.Rules {
-			declarations := r.Declarations
-			for _, d := range declarations {
-				s, e := findOffsets(file, d.Line, d.Column, d.Property)
-				out.Refs = append(out.Refs, &graph.Ref{
-					DefUnitType: "URL",
-					DefUnit:     "MDN",
-					DefPath:     mdnDefPath(d.Property),
-					Unit:        u.Name,
-					File:        filepath.ToSlash(currentFile),
-					Start:       uint32(s),
-					End:         uint32(e),
-				})
+		if isCSSFile(currentFile) {
+			file := string(f)
+			stylesheet, err := cssParser.Parse(file)
+			if err != nil {
+				return nil, err
 			}
+			for _, r := range stylesheet.Rules {
+				for _, s := range r.Selectors {
+					defStart, defEnd := findOffsets(file, s.Line, s.Column, s.Value)
+					if defStart == 0 { // UI line highlighting doesn't work for graph.Def.DefStart = 0, remove this after fix the UI or other workaround.
+						defStart = 1
+					}
+					out.Defs = append(out.Defs, &graph.Def{
+						DefKey: graph.DefKey{
+							UnitType: "Dir",
+							Unit:     filepath.Base(CWD),
+							Path:     s.Value,
+						},
+						Name:     s.Value,
+						File:     filepath.ToSlash(currentFile),
+						DefStart: uint32(defStart),
+						DefEnd:   uint32(defEnd),
+					})
+				}
+				declarations := r.Declarations
+				for _, d := range declarations {
+					s, e := findOffsets(file, d.Line, d.Column, d.Property)
+					out.Refs = append(out.Refs, &graph.Ref{
+						DefUnitType: "URL",
+						DefUnit:     "MDN",
+						DefPath:     mdnDefPath(d.Property),
+						Unit:        u.Name,
+						File:        filepath.ToSlash(currentFile),
+						Start:       uint32(s),
+						End:         uint32(e),
+					})
+				}
+			}
+		} else if isHTMLFile(currentFile) {
+			// TODO(chris) create a ref for each id or class found on each HTML tag of currentFile.
 		}
 	}
 	return &out, nil
