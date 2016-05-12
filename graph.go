@@ -4,10 +4,14 @@ import (
 	"bytes"
 	"encoding/json"
 	"errors"
+	"io"
 	"io/ioutil"
 	"log"
 	"os"
 	"path/filepath"
+	"strings"
+
+	"golang.org/x/net/html"
 
 	cssParser "github.com/chris-ramon/douceur/parser"
 	"sourcegraph.com/sourcegraph/srclib/graph"
@@ -71,11 +75,6 @@ func Graph(units unit.SourceUnits) (*graph.Output, error) {
 	}
 	u := units[0]
 
-	CWD, err := os.Getwd()
-	if err != nil {
-		return nil, err
-	}
-
 	out := graph.Output{Refs: []*graph.Ref{}}
 
 	// Iterate over u.Files, for each file the process performed can be described as follow:
@@ -87,8 +86,8 @@ func Graph(units unit.SourceUnits) (*graph.Output, error) {
 			log.Printf("failed to read a source unit file: %s", err)
 			continue
 		}
+		file := string(f)
 		if isCSSFile(currentFile) {
-			file := string(f)
 			stylesheet, err := cssParser.Parse(file)
 			if err != nil {
 				return nil, err
@@ -102,7 +101,7 @@ func Graph(units unit.SourceUnits) (*graph.Output, error) {
 					out.Defs = append(out.Defs, &graph.Def{
 						DefKey: graph.DefKey{
 							UnitType: "Dir",
-							Unit:     filepath.Base(CWD),
+							Unit:     u.Name,
 							Path:     s.Value,
 						},
 						Name:     s.Value,
@@ -126,7 +125,41 @@ func Graph(units unit.SourceUnits) (*graph.Output, error) {
 				}
 			}
 		} else if isHTMLFile(currentFile) {
-			// TODO(chris) create a ref for each id or class found on each HTML tag of currentFile.
+			z := html.NewTokenizer(strings.NewReader(file))
+		L:
+			for {
+				tt := z.Next()
+				switch tt {
+				case html.ErrorToken:
+					if z.Err() != io.EOF {
+						return nil, z.Err()
+					}
+					break L
+				case html.StartTagToken:
+					t := z.Token()
+					for _, attr := range t.Attr {
+						prefix := ""
+						if attr.Key == "id" {
+							prefix = "#"
+						} else if attr.Key == "class" {
+							prefix = "."
+						} else {
+							continue
+						}
+						out.Refs = append(out.Refs, &graph.Ref{
+							DefUnitType: "Dir",
+							DefUnit:     u.Name,
+							DefPath:     prefix + attr.Val,
+							Unit:        u.Name,
+							File:        filepath.ToSlash(currentFile),
+							// TODO(chris): Add the following start/end offset's.
+							// `golang.org/x/net/html` does not expose line/column or offsets for the given token.
+							//Start:       uint32(z.Data.Start),
+							//End:         uint32(z.Data.End),
+						})
+					}
+				}
+			}
 		}
 	}
 	return &out, nil
