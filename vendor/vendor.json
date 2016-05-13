@@ -45,6 +45,12 @@
 			"revisionTime": "2015-01-10T16:24:53Z"
 		},
 		{
+			"checksumSHA1": "00eQaGynDYrv3tL+C7l9xH0IDZg=",
+			"path": "golang.org/x/net/html/atom",
+			"revision": "96dbb961a39ddccf16860cdd355bfa639c497f23",
+			"revisionTime": "2016-05-10T16:41:55Z"
+		},
+		{
 			"checksumSHA1": "2bj5Jq3+RmE2blLnFUfkASYGTlg=",
 			"path": "golang.org/x/tools/godoc/vfs",
 			"revision": "5e468032ea9e193c60de97cfcd040ffa7a9b774e",
@@ -105,5 +111,5 @@
 			"revisionTime": "2016-01-07T09:09:29Z"
 		}
 	],
-	"rootPath": "sourcegraph.com/sourcegraph/srclib-css"
+	"rootPath": "github.com/sourcegraph/srclib-css"
 }
