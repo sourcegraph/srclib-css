@@ -15,10 +15,22 @@
 			"revisionTime": "2016-05-11T08:54:35Z"
 		},
 		{
-			"checksumSHA1": "N3LXf9Vm2RM0AE3DjhCmpiyK4Bc=",
+			"checksumSHA1": "2XlHDO4qUqbFiztJ0SfDdrUThTQ=",
+			"path": "github.com/chris-ramon/net/html",
+			"revision": "039f40b58670d886ddc81ee909d04cf755831e95",
+			"revisionTime": "2016-05-14T20:56:01Z"
+		},
+		{
+			"checksumSHA1": "sXkXtKcAWhM7jcbQSW9PcxH0hDg=",
+			"path": "github.com/chris-ramon/net/html/atom",
+			"revision": "039f40b58670d886ddc81ee909d04cf755831e95",
+			"revisionTime": "2016-05-14T20:56:01Z"
+		},
+		{
+			"checksumSHA1": "iZVulPMFFGC70xeLZJafiKzTn18=",
 			"path": "github.com/gogo/protobuf/proto",
-			"revision": "4f262e4b0f3a6cea646e15798109335551e21756",
-			"revisionTime": "2016-04-13T13:07:56Z"
+			"revision": "c18eea6ad611eecf94a9ba38471f59706199409e",
+			"revisionTime": "2016-05-11T09:34:45Z"
 		},
 		{
 			"checksumSHA1": "UNlILKZlAiLwYYwj70y+Q8n13D0=",
@@ -45,28 +57,16 @@
 			"revisionTime": "2015-01-10T16:24:53Z"
 		},
 		{
-			"checksumSHA1": "vqc3a+oTUGX8PmD0TS+qQ7gmN8I=",
-			"path": "golang.org/x/net/html",
-			"revision": "96dbb961a39ddccf16860cdd355bfa639c497f23",
-			"revisionTime": "2016-05-10T16:41:55Z"
-		},
-		{
-			"checksumSHA1": "00eQaGynDYrv3tL+C7l9xH0IDZg=",
-			"path": "golang.org/x/net/html/atom",
-			"revision": "96dbb961a39ddccf16860cdd355bfa639c497f23",
-			"revisionTime": "2016-05-10T16:41:55Z"
-		},
-		{
 			"checksumSHA1": "2bj5Jq3+RmE2blLnFUfkASYGTlg=",
 			"path": "golang.org/x/tools/godoc/vfs",
-			"revision": "5e468032ea9e193c60de97cfcd040ffa7a9b774e",
-			"revisionTime": "2016-04-17T16:37:22Z"
+			"revision": "c86fe5956d4575f29850535871a97abbd403a145",
+			"revisionTime": "2016-04-13T21:57:13Z"
 		},
 		{
 			"checksumSHA1": "Qwc7VecyIh84Ol8n9J9DUwZQtII=",
 			"path": "golang.org/x/tools/godoc/vfs/mapfs",
-			"revision": "5e468032ea9e193c60de97cfcd040ffa7a9b774e",
-			"revisionTime": "2016-04-17T16:37:22Z"
+			"revision": "c86fe5956d4575f29850535871a97abbd403a145",
+			"revisionTime": "2016-04-13T21:57:13Z"
 		},
 		{
 			"checksumSHA1": "thalOxMGUln4he8/AKgUOVgEgmg=",
@@ -75,40 +75,40 @@
 			"revisionTime": "2016-03-24T14:23:09Z"
 		},
 		{
-			"checksumSHA1": "seWWPqWX4VyY7hsix0woW6OYLAY=",
+			"checksumSHA1": "wMibXd2FzCwmV4WMCwh0D7bzxjE=",
 			"path": "sourcegraph.com/sourcegraph/srclib",
-			"revision": "23661cf6d279b9e47357744249e5a5cee04326d6",
-			"revisionTime": "2016-04-15T21:44:09Z"
+			"revision": "3d98aa2c585ca3a13dd4ce2fb825711e00afbfdd",
+			"revisionTime": "2016-05-12T20:13:36Z"
 		},
 		{
 			"checksumSHA1": "50qafmhTyHoz2X+UbQeqJKcELjw=",
 			"path": "sourcegraph.com/sourcegraph/srclib/ann",
-			"revision": "23661cf6d279b9e47357744249e5a5cee04326d6",
-			"revisionTime": "2016-04-15T21:44:09Z"
+			"revision": "3d98aa2c585ca3a13dd4ce2fb825711e00afbfdd",
+			"revisionTime": "2016-05-12T20:13:36Z"
 		},
 		{
 			"checksumSHA1": "6Gr29dGzABWc6eUncFUs7LMVDVY=",
 			"path": "sourcegraph.com/sourcegraph/srclib/buildstore",
-			"revision": "23661cf6d279b9e47357744249e5a5cee04326d6",
-			"revisionTime": "2016-04-15T21:44:09Z"
+			"revision": "3d98aa2c585ca3a13dd4ce2fb825711e00afbfdd",
+			"revisionTime": "2016-05-12T20:13:36Z"
 		},
 		{
-			"checksumSHA1": "hYUGZVDD9sRAxEGqEvfeQUpzK6o=",
+			"checksumSHA1": "IlhJpzgSvjk9dQXGcZARbjn3D/I=",
 			"path": "sourcegraph.com/sourcegraph/srclib/graph",
-			"revision": "23661cf6d279b9e47357744249e5a5cee04326d6",
-			"revisionTime": "2016-04-15T21:44:09Z"
+			"revision": "3d98aa2c585ca3a13dd4ce2fb825711e00afbfdd",
+			"revisionTime": "2016-05-12T20:13:36Z"
 		},
 		{
 			"checksumSHA1": "DO2ClRpKhE9dkk3dJ2L0tdkDnRc=",
 			"path": "sourcegraph.com/sourcegraph/srclib/unit",
-			"revision": "23661cf6d279b9e47357744249e5a5cee04326d6",
-			"revisionTime": "2016-04-15T21:44:09Z"
+			"revision": "3d98aa2c585ca3a13dd4ce2fb825711e00afbfdd",
+			"revisionTime": "2016-05-12T20:13:36Z"
 		},
 		{
-			"checksumSHA1": "GZZtDCxhiXpKrgrO7nif2eStNIQ=",
+			"checksumSHA1": "sX55Z0+7/lbGcM2XgxpFylHQCIc=",
 			"path": "sourcegraph.com/sourcegraph/srclib/util",
-			"revision": "23661cf6d279b9e47357744249e5a5cee04326d6",
-			"revisionTime": "2016-04-15T21:44:09Z"
+			"revision": "3d98aa2c585ca3a13dd4ce2fb825711e00afbfdd",
+			"revisionTime": "2016-05-12T20:13:36Z"
 		},
 		{
 			"checksumSHA1": "GRBoSaxkWfXT9BIP2M87IePcEn8=",
