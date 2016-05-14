@@ -11,7 +11,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"golang.org/x/net/html"
+	"github.com/chris-ramon/net/html"
 
 	cssParser "github.com/chris-ramon/douceur/parser"
 	"sourcegraph.com/sourcegraph/srclib/graph"
@@ -152,10 +152,8 @@ func Graph(units unit.SourceUnits) (*graph.Output, error) {
 							DefPath:     prefix + attr.Val,
 							Unit:        u.Name,
 							File:        filepath.ToSlash(currentFile),
-							// TODO(chris): Add the following start/end offset's.
-							// `golang.org/x/net/html` does not expose line/column or offsets for the given token.
-							//Start:       uint32(z.Data.Start),
-							//End:         uint32(z.Data.End),
+							Start:       uint32(attr.ValStart),
+							End:         uint32(attr.ValEnd),
 						})
 					}
 				}
