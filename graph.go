@@ -137,6 +137,7 @@ func Graph(units unit.SourceUnits) (*graph.Output, error) {
 					break L
 				case html.StartTagToken:
 					t := z.Token()
+					attrValSep := " "
 					for _, attr := range t.Attr {
 						prefix := ""
 						if attr.Key == "id" {
@@ -146,15 +147,28 @@ func Graph(units unit.SourceUnits) (*graph.Output, error) {
 						} else {
 							continue
 						}
-						out.Refs = append(out.Refs, &graph.Ref{
-							DefUnitType: "Dir",
-							DefUnit:     u.Name,
-							DefPath:     prefix + attr.Val,
-							Unit:        u.Name,
-							File:        filepath.ToSlash(currentFile),
-							Start:       uint32(attr.ValStart),
-							End:         uint32(attr.ValEnd),
-						})
+						attrValues := strings.Split(attr.Val, attrValSep)
+
+						var (
+							// start and end are the byte offsets of one attribute value.
+							// Which are re-calculated on each iteration of the next loop.
+							start = uint32(attr.ValStart)
+							end   uint32
+						)
+						for _, val := range attrValues {
+							l := len([]byte(val))
+							end = uint32(start + uint32(l))
+							out.Refs = append(out.Refs, &graph.Ref{
+								DefUnitType: "Dir",
+								DefUnit:     u.Name,
+								DefPath:     prefix + val,
+								Unit:        u.Name,
+								File:        filepath.ToSlash(currentFile),
+								Start:       start,
+								End:         end,
+							})
+							start = end + uint32(len(attrValSep))
+						}
 					}
 				}
 			}
