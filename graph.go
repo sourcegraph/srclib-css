@@ -9,8 +9,10 @@ import (
 	"log"
 	"os"
 	"path/filepath"
+	"regexp"
 	"strings"
 
+	"github.com/chris-ramon/douceur/css"
 	"github.com/chris-ramon/net/html"
 
 	cssParser "github.com/chris-ramon/douceur/parser"
@@ -75,106 +77,207 @@ func Graph(units unit.SourceUnits) (*graph.Output, error) {
 	}
 	u := units[0]
 
-	out := graph.Output{Refs: []*graph.Ref{}}
+	o, err := doGraph(u)
+	if err != nil {
+		return nil, err
+	}
+
+	return o, nil
+}
+
+// selector represents either a single selector or a chain of selectors.
+type selector string
+
+// selectors represents a group of selectors used to keep track uniqueness.
+type selectors map[selector]selector
+
+// addSelector & selectorExists represents functions that perform actions on `selectors` type.
+type addSelector func(s selector)
+type selectorExists func(s selector) bool
+
+var lastSelectorRegexp = regexp.MustCompile(".*([\\.\\#].+)")
+
+func selSplitFn(r rune) bool {
+	return r == '>' || r == '+' || r == '~'
+}
+
+// lastSelector returns the last selector from given selector chain.
+func lastSelector(s string) *selector {
+	// Splits `s` into a slice of selectors. It might be a single selector or a chain of selectors(Eg. ".panel > .panel-body + .table").
+	selectors := strings.FieldsFunc(s, selSplitFn)
+
+	// sel is the single or last selector from selectors chain.
+	sel := strings.TrimSpace(selectors[len(selectors)-1])
+
+	// sel might still be a chain of selectors(Eg. "h1.title")
+	// `lastSelectorRegexp` is used to obtain the last selector which starts either with "." or "#".
+	m := lastSelectorRegexp.FindStringSubmatch(sel)
+	if len(m) != 2 {
+		return nil
+	}
+	var l selector
+	l = selector(m[1])
+	return &l
+}
+
+func doGraph(u *unit.SourceUnit) (*graph.Output, error) {
+	out := graph.Output{}
+
+	// At the moment we support a unique selector per `out`.
+	var (
+		// sels are used to keep track which selectors exists for `out`.
+		sels selectors = make(selectors, 0)
+
+		// selExists is used to check if a given selector exits in `sels`.
+		selExists selectorExists
+
+		// addSel is used to add a given selector to `sels`.
+		addSel addSelector
+	)
+	selExists = func(s selector) bool {
+		if _, found := sels[s]; found {
+			return true
+		}
+		return false
+	}
+	addSel = func(s selector) {
+		sels[s] = s
+	}
 
 	// Iterate over u.Files, for each file the process performed can be described as follow:
-	// 1. The file is CSS parsed.
-	// 2. For each CSS property found on the parsed file a graph.Ref is created & appended to out.Refs.
-	for _, currentFile := range u.Files {
-		f, err := ioutil.ReadFile(currentFile)
+	// 1. Read the file and parse its data.
+	// 2. For CSS files: for each selector found a graph.Def is created and for each property of that selector a graph.Ref is created.
+	// 3. For HTML files: for each tag attribute(id and class) a graph.Ref is created.
+	for _, f := range u.Files {
+		fileBytes, err := ioutil.ReadFile(f)
 		if err != nil {
 			log.Printf("failed to read a source unit file: %s", err)
 			continue
 		}
-		file := string(f)
-		if isCSSFile(currentFile) {
-			stylesheet, err := cssParser.Parse(file)
+		data := string(fileBytes)
+		if isCSSFile(f) {
+			stylesheet, err := cssParser.Parse(data)
 			if err != nil {
 				return nil, err
 			}
 			for _, r := range stylesheet.Rules {
-				for _, s := range r.Selectors {
-					defStart, defEnd := findOffsets(file, s.Line, s.Column, s.Value)
-					if defStart == 0 { // UI line highlighting doesn't work for graph.Def.DefStart = 0, remove this after fix the UI or other workaround.
-						defStart = 1
-					}
-					out.Defs = append(out.Defs, &graph.Def{
-						DefKey: graph.DefKey{
-							UnitType: "Dir",
-							Unit:     u.Name,
-							Path:     s.Value,
-						},
-						Name:     s.Value,
-						File:     filepath.ToSlash(currentFile),
-						DefStart: uint32(defStart),
-						DefEnd:   uint32(defEnd),
-					})
-				}
-				declarations := r.Declarations
-				for _, d := range declarations {
-					s, e := findOffsets(file, d.Line, d.Column, d.Property)
-					out.Refs = append(out.Refs, &graph.Ref{
-						DefUnitType: "URL",
-						DefUnit:     "MDN",
-						DefPath:     mdnDefPath(d.Property),
-						Unit:        u.Name,
-						File:        filepath.ToSlash(currentFile),
-						Start:       uint32(s),
-						End:         uint32(e),
-					})
-				}
+				out.Defs = append(out.Defs, getCSSDefs(u, data, f, r, selExists, addSel)...)
+				out.Refs = append(out.Refs, getCSSRefs(u, data, f, r)...)
 			}
-		} else if isHTMLFile(currentFile) {
-			z := html.NewTokenizer(strings.NewReader(file))
-		L:
-			for {
-				tt := z.Next()
-				switch tt {
-				case html.ErrorToken:
-					if z.Err() != io.EOF {
-						return nil, z.Err()
-					}
-					break L
-				case html.StartTagToken:
-					t := z.Token()
-					attrValSep := " "
-					for _, attr := range t.Attr {
-						prefix := ""
-						if attr.Key == "id" {
-							prefix = "#"
-						} else if attr.Key == "class" {
-							prefix = "."
-						} else {
-							continue
-						}
-						attrValues := strings.Split(attr.Val, attrValSep)
+		} else if isHTMLFile(f) {
+			refs, err := getHTMLRefs(u, data, f)
+			if err != nil {
+				return nil, err
+			}
+			out.Refs = append(out.Refs, refs...)
+		}
+	}
+	return &out, nil
+}
 
-						var (
-							// start and end are the byte offsets of one attribute value.
-							// Which are re-calculated on each iteration of the next loop.
-							start = uint32(attr.ValStart)
-							end   uint32
-						)
-						for _, val := range attrValues {
-							l := len([]byte(val))
-							end = uint32(start + uint32(l))
-							out.Refs = append(out.Refs, &graph.Ref{
-								DefUnitType: "Dir",
-								DefUnit:     u.Name,
-								DefPath:     prefix + val,
-								Unit:        u.Name,
-								File:        filepath.ToSlash(currentFile),
-								Start:       start,
-								End:         end,
-							})
-							start = end + uint32(len(attrValSep))
-						}
-					}
+func getCSSDefs(u *unit.SourceUnit, data string, filePath string, r *css.Rule, selExists selectorExists, addSel addSelector) []*graph.Def {
+	defs := []*graph.Def{}
+	for _, s := range r.Selectors {
+		defStart, defEnd := findOffsets(data, s.Line, s.Column, s.Value)
+		if defStart == 0 { // UI line highlighting doesn't work for graph.Def.DefStart = 0, remove this after fix the UI or other workaround.
+			defStart = 1
+		}
+
+		// Obtains last selector from the selectors chain `s.Value`.
+		sel := lastSelector(s.Value)
+		if sel == nil {
+			continue
+		}
+
+		// Current implementation supports a unique selector per graph.Output.
+		if selExists(*sel) {
+			continue
+		}
+		addSel(*sel)
+
+		selStr := string(*sel)
+		defs = append(defs, &graph.Def{
+			DefKey: graph.DefKey{
+				UnitType: "Dir",
+				Unit:     u.Name,
+				Path:     selStr,
+			},
+			Name:     selStr,
+			File:     filepath.ToSlash(filePath),
+			DefStart: uint32(defStart),
+			DefEnd:   uint32(defEnd),
+		})
+	}
+	return defs
+}
+
+func getCSSRefs(u *unit.SourceUnit, data string, filePath string, r *css.Rule) []*graph.Ref {
+	refs := []*graph.Ref{}
+	for _, d := range r.Declarations {
+		s, e := findOffsets(data, d.Line, d.Column, d.Property)
+		refs = append(refs, &graph.Ref{
+			DefUnitType: "URL",
+			DefUnit:     "MDN",
+			DefPath:     mdnDefPath(d.Property),
+			Unit:        u.Name,
+			File:        filepath.ToSlash(filePath),
+			Start:       uint32(s),
+			End:         uint32(e),
+		})
+	}
+	return refs
+}
+
+func getHTMLRefs(u *unit.SourceUnit, data string, filePath string) ([]*graph.Ref, error) {
+	refs := []*graph.Ref{}
+	z := html.NewTokenizer(strings.NewReader(data))
+L:
+	for {
+		tt := z.Next()
+		switch tt {
+		case html.ErrorToken:
+			if z.Err() != io.EOF {
+				return nil, z.Err()
+			}
+			break L
+		case html.StartTagToken:
+			t := z.Token()
+			attrValSep := " "
+			for _, attr := range t.Attr {
+				prefix := ""
+				if attr.Key == "id" {
+					prefix = "#"
+				} else if attr.Key == "class" {
+					prefix = "."
+				} else {
+					continue
+				}
+				attrValues := strings.Split(attr.Val, attrValSep)
+
+				var (
+					// start and end are the byte offsets of one attribute value.
+					// Which are re-calculated on each iteration of the next loop.
+					start = uint32(attr.ValStart)
+					end   uint32
+				)
+				for _, val := range attrValues {
+					l := len([]byte(val))
+					end = uint32(start + uint32(l))
+					refs = append(refs, &graph.Ref{
+						DefUnitType: "Dir",
+						DefUnit:     u.Name,
+						DefPath:     prefix + val,
+						Unit:        u.Name,
+						File:        filepath.ToSlash(filePath),
+						Start:       start,
+						End:         end,
+					})
+					start = end + uint32(len(attrValSep))
 				}
 			}
 		}
 	}
-	return &out, nil
+	return refs, nil
 }
 
 // findOffsets discovers the start & end offset of given token on fileText, uses the given line & column as input
