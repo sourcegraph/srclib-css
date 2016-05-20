@@ -308,7 +308,12 @@ func findOffsets(fileText string, line, column int, token string) (start, end in
 	return -1, -1 // not found.
 }
 
+var vendorPrefixRegExp = regexp.MustCompile("^-webkit-|^-moz-|^-ms-|^-o-")
+
 // mdnDefPath returns the mozilla developer network CSS reference URL for the given css property.
 func mdnDefPath(cssProperty string) string {
+	if strings.HasPrefix(cssProperty, "-webkit-") || strings.HasPrefix(cssProperty, "-moz-") || strings.HasPrefix(cssProperty, "-ms-") || strings.HasPrefix(cssProperty, "-o-") {
+		return mdnCSSReferenceURL + vendorPrefixRegExp.ReplaceAllString(cssProperty, "")
+	}
 	return mdnCSSReferenceURL + cssProperty
 }
