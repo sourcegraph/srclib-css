@@ -14,6 +14,7 @@ import (
 
 	"github.com/chris-ramon/douceur/css"
 	"github.com/chris-ramon/net/html"
+	"github.com/sourcegraph/srclib-css/css_def"
 
 	cssParser "github.com/chris-ramon/douceur/parser"
 	"sourcegraph.com/sourcegraph/srclib/graph"
@@ -161,7 +162,11 @@ func doGraph(u *unit.SourceUnit) (*graph.Output, error) {
 				return nil, err
 			}
 			for _, r := range stylesheet.Rules {
-				out.Defs = append(out.Defs, getCSSDefs(u, data, f, r, selExists, addSel)...)
+				defs, err := getCSSDefs(u, data, f, r, selExists, addSel)
+				if err != nil {
+					return nil, err
+				}
+				out.Defs = append(out.Defs, defs...)
 				out.Refs = append(out.Refs, getCSSRefs(u, data, f, r)...)
 			}
 		} else if isHTMLFile(f) {
@@ -175,7 +180,7 @@ func doGraph(u *unit.SourceUnit) (*graph.Output, error) {
 	return &out, nil
 }
 
-func getCSSDefs(u *unit.SourceUnit, data string, filePath string, r *css.Rule, selExists selectorExists, addSel addSelector) []*graph.Def {
+func getCSSDefs(u *unit.SourceUnit, data string, filePath string, r *css.Rule, selExists selectorExists, addSel addSelector) ([]*graph.Def, error) {
 	defs := []*graph.Def{}
 	for _, s := range r.Selectors {
 		defStart, defEnd := findOffsets(data, s.Line, s.Column, s.Value)
@@ -196,6 +201,13 @@ func getCSSDefs(u *unit.SourceUnit, data string, filePath string, r *css.Rule, s
 		addSel(*sel)
 
 		selStr := string(*sel)
+		d, err := json.Marshal(css_def.DefData{
+			Keyword: "selector",
+			Kind:    selectorKind(selStr),
+		})
+		if err != nil {
+			return defs, err
+		}
 		defs = append(defs, &graph.Def{
 			DefKey: graph.DefKey{
 				UnitType: "Dir",
@@ -206,9 +218,10 @@ func getCSSDefs(u *unit.SourceUnit, data string, filePath string, r *css.Rule, s
 			File:     filepath.ToSlash(filePath),
 			DefStart: uint32(defStart),
 			DefEnd:   uint32(defEnd),
+			Data:     d,
 		})
 	}
-	return defs
+	return defs, nil
 }
 
 func getCSSRefs(u *unit.SourceUnit, data string, filePath string, r *css.Rule) []*graph.Ref {
@@ -316,4 +329,13 @@ func mdnDefPath(cssProperty string) string {
 		return mdnCSSReferenceURL + vendorPrefixRegExp.ReplaceAllString(cssProperty, "")
 	}
 	return mdnCSSReferenceURL + cssProperty
+}
+
+func selectorKind(selectorStr string) string {
+	if strings.HasPrefix(selectorStr, "#") {
+		return "id"
+	} else if strings.HasPrefix(selectorStr, ".") {
+		return "class"
+	}
+	return ""
 }
