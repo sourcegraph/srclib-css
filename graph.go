@@ -210,7 +210,7 @@ func getCSSDefs(u *unit.SourceUnit, data string, filePath string, r *css.Rule, s
 		}
 		defs = append(defs, &graph.Def{
 			DefKey: graph.DefKey{
-				UnitType: "Dir",
+				UnitType: "basic-css",
 				Unit:     u.Name,
 				Path:     selStr,
 			},
@@ -277,7 +277,7 @@ L:
 					l := len([]byte(val))
 					end = uint32(start + uint32(l))
 					refs = append(refs, &graph.Ref{
-						DefUnitType: "Dir",
+						DefUnitType: "basic-css",
 						DefUnit:     u.Name,
 						DefPath:     prefix + val,
 						Unit:        u.Name,

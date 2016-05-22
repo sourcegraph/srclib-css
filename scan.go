@@ -56,7 +56,7 @@ func (c *ScanCmd) Execute(args []string) error {
 	// ScanCmd writes to Stdout only a single unit which represents all CSS files found on CWD.
 	u := unit.SourceUnit{
 		Name: filepath.Base(CWD),
-		Type: "Dir",
+		Type: "basic-css",
 		Dir:  ".",
 	}
 	units := []*unit.SourceUnit{&u}
