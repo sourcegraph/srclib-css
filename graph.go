@@ -159,7 +159,8 @@ func doGraph(u *unit.SourceUnit) (*graph.Output, error) {
 		if isCSSFile(f) {
 			stylesheet, err := cssParser.Parse(data)
 			if err != nil {
-				return nil, err
+				log.Printf("failed to parse a source unit file: %s", err)
+				continue
 			}
 			for _, r := range stylesheet.Rules {
 				defs, err := getCSSDefs(u, data, f, r, selExists, addSel)
