@@ -97,5 +97,12 @@ func isCSSFile(filename string) bool {
 }
 
 func isHTMLFile(filename string) bool {
-	return filepath.Ext(filename) == ".html" && !strings.HasSuffix(filename, ".min.html")
+	f := strings.ToLower(filename)
+	if filepath.Ext(f) == ".htm" && !strings.HasSuffix(f, ".min.htm") {
+		return true
+	}
+	if filepath.Ext(f) == ".html" && !strings.HasSuffix(f, ".min.html") {
+		return true
+	}
+	return false
 }
