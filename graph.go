@@ -185,6 +185,8 @@ func getCSSDefs(u *unit.SourceUnit, data string, filePath string, r *css.Rule, s
 	defs := []*graph.Def{}
 	for _, s := range r.Selectors {
 		defStart, defEnd := findOffsets(data, s.Line, s.Column, s.Value)
+
+		// TODO (chris): remove this when frontend is improved to handle this case.
 		if defStart == 0 { // UI line highlighting doesn't work for graph.Def.DefStart = 0, remove this after fix the UI or other workaround.
 			defStart = 1
 		}
