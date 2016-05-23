@@ -90,7 +90,7 @@ func Graph(units unit.SourceUnits) (*graph.Output, error) {
 type selector string
 
 // selectors represents a group of selectors used to keep track uniqueness.
-type selectors map[selector]selector
+type selectors map[selector]bool
 
 // addSelector & selectorExists represents functions that perform actions on `selectors` type.
 type addSelector func(s selector)
@@ -142,7 +142,7 @@ func doGraph(u *unit.SourceUnit) (*graph.Output, error) {
 		return false
 	}
 	addSel = func(s selector) {
-		sels[s] = s
+		sels[s] = true
 	}
 
 	// Iterate over u.Files, for each file the process performed can be described as follow:
