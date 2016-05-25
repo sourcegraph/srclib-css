@@ -4,6 +4,7 @@ import (
 	"bytes"
 	"encoding/json"
 	"errors"
+	"fmt"
 	"io"
 	"io/ioutil"
 	"log"
@@ -90,11 +91,11 @@ func Graph(units unit.SourceUnits) (*graph.Output, error) {
 type selector string
 
 // selectors represents a group of selectors used to keep track uniqueness.
-type selectors map[selector]bool
+type selectors map[string]bool
 
 // addSelector & selectorExists represents functions that perform actions on `selectors` type.
-type addSelector func(s selector)
-type selectorExists func(s selector) bool
+type addSelector func(s selector, filePath string)
+type selectorExists func(s selector, filePath string) bool
 
 var lastSelectorRegexp = regexp.MustCompile(".*([\\.\\#].+)")
 
@@ -121,6 +122,10 @@ func lastSelector(s string) *selector {
 	return &l
 }
 
+func selectorKey(filePath string, s selector) string {
+	return fmt.Sprintf("%s:%s", filePath, string(s))
+}
+
 func doGraph(u *unit.SourceUnit) (*graph.Output, error) {
 	out := graph.Output{}
 
@@ -135,14 +140,14 @@ func doGraph(u *unit.SourceUnit) (*graph.Output, error) {
 		// addSel is used to add a given selector to `sels`.
 		addSel addSelector
 	)
-	selExists = func(s selector) bool {
-		if _, found := sels[s]; found {
+	selExists = func(s selector, filePath string) bool {
+		if _, found := sels[selectorKey(filePath, s)]; found {
 			return true
 		}
 		return false
 	}
-	addSel = func(s selector) {
-		sels[s] = true
+	addSel = func(s selector, filePath string) {
+		sels[selectorKey(filePath, s)] = true
 	}
 
 	// Iterate over u.Files, for each file the process performed can be described as follow:
@@ -197,11 +202,11 @@ func getCSSDefs(u *unit.SourceUnit, data string, filePath string, r *css.Rule, s
 			continue
 		}
 
-		// Current implementation supports a unique selector per graph.Output.
-		if selExists(*sel) {
+		// Current implementation supports a unique selector per CSS file and per graph.Output.
+		if selExists(*sel, filePath) {
 			continue
 		}
-		addSel(*sel)
+		addSel(*sel, filePath)
 
 		selStr := string(*sel)
 		d, err := json.Marshal(css_def.DefData{
@@ -215,7 +220,7 @@ func getCSSDefs(u *unit.SourceUnit, data string, filePath string, r *css.Rule, s
 			DefKey: graph.DefKey{
 				UnitType: "basic-css",
 				Unit:     u.Name,
-				Path:     selStr,
+				Path:     selectorDefPath(filePath, *sel),
 			},
 			Name:     selStr,
 			File:     filepath.ToSlash(filePath),
@@ -246,6 +251,7 @@ func getCSSRefs(u *unit.SourceUnit, data string, filePath string, r *css.Rule) [
 
 func getHTMLRefs(u *unit.SourceUnit, data string, filePath string) ([]*graph.Ref, error) {
 	refs := []*graph.Ref{}
+	cssFilePath := ""
 	z := html.NewTokenizer(strings.NewReader(data))
 L:
 	for {
@@ -258,6 +264,21 @@ L:
 			break L
 		case html.StartTagToken:
 			t := z.Token()
+			if t.Data == "link" {
+				isStylesheetLink := false
+				href := ""
+				for _, attr := range t.Attr {
+					if attr.Key == "href" {
+						href = attr.Val
+					}
+					if attr.Key == "rel" && attr.Val == "stylesheet" {
+						isStylesheetLink = true
+					}
+				}
+				if isStylesheetLink {
+					cssFilePath = href
+				}
+			}
 			attrValSep := " "
 			for _, attr := range t.Attr {
 				prefix := ""
@@ -282,7 +303,7 @@ L:
 					refs = append(refs, &graph.Ref{
 						DefUnitType: "basic-css",
 						DefUnit:     u.Name,
-						DefPath:     prefix + val,
+						DefPath:     selectorDefPath(cssFilePath, selector(prefix+val)),
 						Unit:        u.Name,
 						File:        filepath.ToSlash(filePath),
 						Start:       start,
@@ -341,4 +362,9 @@ func selectorKind(selectorStr string) string {
 		return "class"
 	}
 	return ""
+}
+
+// selectorDefPath returns the def path of the given selector.
+func selectorDefPath(filePath string, s selector) string {
+	return fmt.Sprintf("%s%s", filepath.ToSlash(filePath), string(s))
 }

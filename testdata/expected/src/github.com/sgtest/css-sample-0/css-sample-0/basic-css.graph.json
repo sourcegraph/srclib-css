@@ -3,7 +3,7 @@
     {
       "UnitType": "basic-css",
       "Unit": "css-sample-0",
-      "Path": "#container",
+      "Path": "main.css#container",
       "Name": "#container",
       "File": "main.css",
       "DefStart": 89,
@@ -19,7 +19,7 @@
     {
       "UnitType": "basic-css",
       "Unit": "css-sample-0",
-      "Path": ".active:focus",
+      "Path": "main.css.active:focus",
       "Name": ".active:focus",
       "File": "main.css",
       "DefStart": 773,
@@ -35,7 +35,7 @@
     {
       "UnitType": "basic-css",
       "Unit": "css-sample-0",
-      "Path": ".alert-info",
+      "Path": "main.css.alert-info",
       "Name": ".alert-info",
       "File": "main.css",
       "DefStart": 1,
@@ -51,7 +51,7 @@
     {
       "UnitType": "basic-css",
       "Unit": "css-sample-0",
-      "Path": ".btn",
+      "Path": "main.css.btn",
       "Name": ".btn",
       "File": "main.css",
       "DefStart": 269,
@@ -67,7 +67,7 @@
     {
       "UnitType": "basic-css",
       "Unit": "css-sample-0",
-      "Path": ".btn-default",
+      "Path": "main.css.btn-default",
       "Name": ".btn-default",
       "File": "main.css",
       "DefStart": 967,
@@ -83,7 +83,7 @@
     {
       "UnitType": "basic-css",
       "Unit": "css-sample-0",
-      "Path": ".btn-sm",
+      "Path": "main.css.btn-sm",
       "Name": ".btn-sm",
       "File": "main.css",
       "DefStart": 1048,
@@ -99,7 +99,7 @@
     {
       "UnitType": "basic-css",
       "Unit": "css-sample-0",
-      "Path": ".btn:active:focus",
+      "Path": "main.css.btn:active:focus",
       "Name": ".btn:active:focus",
       "File": "main.css",
       "DefStart": 770,
@@ -115,7 +115,7 @@
     {
       "UnitType": "basic-css",
       "Unit": "css-sample-0",
-      "Path": ".btn:focus",
+      "Path": "main.css.btn:focus",
       "Name": ".btn:focus",
       "File": "main.css",
       "DefStart": 769,
@@ -131,7 +131,7 @@
     {
       "UnitType": "basic-css",
       "Unit": "css-sample-0",
-      "Path": ".container-inner",
+      "Path": "main.css.container-inner",
       "Name": ".container-inner",
       "File": "main.css",
       "DefStart": 172,
@@ -147,7 +147,7 @@
     {
       "UnitType": "basic-css",
       "Unit": "css-sample-0",
-      "Path": ".focus",
+      "Path": "main.css.focus",
       "Name": ".focus",
       "File": "main.css",
       "DefStart": 774,
@@ -163,7 +163,7 @@
     {
       "UnitType": "basic-css",
       "Unit": "css-sample-0",
-      "Path": ".paragraph",
+      "Path": "main.css.paragraph",
       "Name": ".paragraph",
       "File": "main.css",
       "DefStart": 230,
