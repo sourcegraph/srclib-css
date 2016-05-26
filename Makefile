@@ -1,15 +1,21 @@
+ifeq (${OS},Windows_NT)
+	EXE := .bin/srclib-css.exe
+else
+	EXE := .bin/srclib-css
+endif
+
 .PHONY: install clean
 
 default: govendor install
 
-install: .bin/srclib-css
+install: ${EXE}
 
 clean:
-	rm .bin/srclib-css
+	rm ${EXE}
 
 govendor:
 	go get github.com/kardianos/govendor
 	govendor sync
 
-.bin/srclib-css:
-	go build -o .bin/srclib-css
+${EXE}:
+	go build -o ${EXE}
