@@ -57,12 +57,6 @@
 			"revisionTime": "2015-01-10T16:24:53Z"
 		},
 		{
-			"checksumSHA1": "00eQaGynDYrv3tL+C7l9xH0IDZg=",
-			"path": "golang.org/x/net/html/atom",
-			"revision": "96dbb961a39ddccf16860cdd355bfa639c497f23",
-			"revisionTime": "2016-05-10T16:41:55Z"
-		},
-		{
 			"checksumSHA1": "2bj5Jq3+RmE2blLnFUfkASYGTlg=",
 			"path": "golang.org/x/tools/godoc/vfs",
 			"revision": "c86fe5956d4575f29850535871a97abbd403a145",
