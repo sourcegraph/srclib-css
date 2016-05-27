@@ -56,7 +56,8 @@ func (c *ScanCmd) Execute(args []string) error {
 	// ScanCmd writes to Stdout only a single unit which represents all CSS files found on CWD.
 	u := unit.SourceUnit{
 		Name: filepath.Base(CWD),
-		Type: "Dir",
+		Type: "basic-css",
+		Dir:  ".",
 	}
 	units := []*unit.SourceUnit{&u}
 
@@ -69,7 +70,7 @@ func (c *ScanCmd) Execute(args []string) error {
 		if f.IsDir() {
 			return nil
 		}
-		if isCSSFile(path) {
+		if isCSSFile(path) || isHTMLFile(path) {
 			rp, err := filepath.Rel(CWD, path)
 			if err != nil {
 				return err
@@ -93,4 +94,15 @@ func (c *ScanCmd) Execute(args []string) error {
 
 func isCSSFile(filename string) bool {
 	return filepath.Ext(filename) == ".css" && !strings.HasSuffix(filename, ".min.css")
+}
+
+func isHTMLFile(filename string) bool {
+	f := strings.ToLower(filename)
+	if filepath.Ext(f) == ".htm" && !strings.HasSuffix(f, ".min.htm") {
+		return true
+	}
+	if filepath.Ext(f) == ".html" && !strings.HasSuffix(f, ".min.html") {
+		return true
+	}
+	return false
 }

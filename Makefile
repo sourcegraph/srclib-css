@@ -11,7 +11,7 @@ default: govendor install
 install: ${EXE}
 
 clean:
-	rm ${EXE}
+	rm -f ${EXE}
 
 govendor:
 	go get github.com/kardianos/govendor
