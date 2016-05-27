@@ -1,0 +1,22 @@
+language: go
+
+go: 1.6.2
+
+sudo: false
+
+before_install:
+  - mkdir -p $HOME/gopath/src/sourcegraph.com/sourcegraph $HOME/testgopath
+  - mv $TRAVIS_BUILD_DIR $HOME/gopath/src/sourcegraph.com/sourcegraph/srclib-css
+  - export TRAVIS_BUILD_DIR=$HOME/gopath/src/sourcegraph.com/sourcegraph/srclib-css
+  - cd $TRAVIS_BUILD_DIR
+  - export PATH=$PATH:$HOME/gopath/bin
+  - export GOBIN=$HOME/gopath/bin
+
+install:
+  - go get sourcegraph.com/sourcegraph/srclib/cmd/srclib
+  - mkdir -p $HOME/.srclib/sourcegraph.com/sourcegraph
+  - ln -s $HOME/gopath/src/sourcegraph.com/sourcegraph/srclib-css $HOME/.srclib/sourcegraph.com/sourcegraph/srclib-css
+  - make
+
+script:
+  - srclib test
