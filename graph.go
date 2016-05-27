@@ -15,7 +15,7 @@ import (
 
 	"github.com/chris-ramon/douceur/css"
 	"github.com/chris-ramon/net/html"
-	"github.com/sourcegraph/srclib-css/css_def"
+	"sourcegraph.com/sourcegraph/srclib-css/css_def"
 
 	cssParser "github.com/chris-ramon/douceur/parser"
 	"sourcegraph.com/sourcegraph/srclib/graph"
