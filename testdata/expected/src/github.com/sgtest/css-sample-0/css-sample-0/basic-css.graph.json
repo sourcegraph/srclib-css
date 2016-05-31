@@ -22,8 +22,8 @@
       "Path": "main.css.active:focus",
       "Name": ".active:focus",
       "File": "main.css",
-      "DefStart": 773,
-      "DefEnd": 790,
+      "DefStart": 800,
+      "DefEnd": 817,
       "Data": {
         "Name": "",
         "Keyword": "selector",
@@ -102,8 +102,8 @@
       "Path": "main.css.btn:active:focus",
       "Name": ".btn:active:focus",
       "File": "main.css",
-      "DefStart": 770,
-      "DefEnd": 787,
+      "DefStart": 781,
+      "DefEnd": 798,
       "Data": {
         "Name": "",
         "Keyword": "selector",
@@ -150,8 +150,8 @@
       "Path": "main.css.focus",
       "Name": ".focus",
       "File": "main.css",
-      "DefStart": 774,
-      "DefEnd": 784,
+      "DefStart": 819,
+      "DefEnd": 829,
       "Data": {
         "Name": "",
         "Keyword": "selector",
