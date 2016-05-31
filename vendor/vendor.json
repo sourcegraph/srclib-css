@@ -3,28 +3,28 @@
 	"ignore": "test",
 	"package": [
 		{
-			"checksumSHA1": "Y8WX4DKxIdeJxlKArZakv0U5zJA=",
+			"checksumSHA1": "ulHAt7P7SYMC2g3ThlXNzVN9Z/k=",
 			"path": "github.com/chris-ramon/douceur/css",
-			"revision": "a06d6fa55aeaaef29a6b2e23a39cb94f9b1137ae",
-			"revisionTime": "2016-05-30T23:57:50Z"
+			"revision": "8fb95984c34738e277513d254dfa4e6bfc39f29a",
+			"revisionTime": "2016-05-31T16:43:54Z"
 		},
 		{
-			"checksumSHA1": "mNsaDulQ2gOLcoWPDU26whlL/tk=",
+			"checksumSHA1": "RbWaDh535llZY3nt+Rl6LI8WOis=",
 			"path": "github.com/chris-ramon/douceur/parser",
-			"revision": "a06d6fa55aeaaef29a6b2e23a39cb94f9b1137ae",
-			"revisionTime": "2016-05-30T23:57:50Z"
+			"revision": "8fb95984c34738e277513d254dfa4e6bfc39f29a",
+			"revisionTime": "2016-05-31T16:43:54Z"
 		},
 		{
-			"checksumSHA1": "2XlHDO4qUqbFiztJ0SfDdrUThTQ=",
+			"checksumSHA1": "lxT9A/L1DNHXpPDsEUsS3R6JS34=",
 			"path": "github.com/chris-ramon/net/html",
-			"revision": "039f40b58670d886ddc81ee909d04cf755831e95",
-			"revisionTime": "2016-05-14T20:56:01Z"
+			"revision": "1d954f8c8d6f3ab8d3c15468ec78c9d151bd7406",
+			"revisionTime": "2016-05-31T16:22:15Z"
 		},
 		{
 			"checksumSHA1": "sXkXtKcAWhM7jcbQSW9PcxH0hDg=",
 			"path": "github.com/chris-ramon/net/html/atom",
-			"revision": "039f40b58670d886ddc81ee909d04cf755831e95",
-			"revisionTime": "2016-05-14T20:56:01Z"
+			"revision": "1d954f8c8d6f3ab8d3c15468ec78c9d151bd7406",
+			"revisionTime": "2016-05-31T16:22:15Z"
 		},
 		{
 			"checksumSHA1": "iZVulPMFFGC70xeLZJafiKzTn18=",
