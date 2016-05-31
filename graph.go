@@ -108,6 +108,11 @@ func lastSelector(s string) *selector {
 	// Splits `s` into a slice of selectors. It might be a single selector or a chain of selectors(Eg. ".panel > .panel-body + .table").
 	selectors := strings.FieldsFunc(s, selSplitFn)
 
+	// there may be no selectors
+	if len(selectors) == 0 {
+		return nil
+	}
+
 	// sel is the single or last selector from selectors chain.
 	sel := strings.TrimSpace(selectors[len(selectors)-1])
 
@@ -262,7 +267,7 @@ L:
 				return nil, z.Err()
 			}
 			break L
-		case html.StartTagToken:
+		case html.StartTagToken, html.SelfClosingTagToken:
 			t := z.Token()
 			if t.Data == "link" {
 				isStylesheetLink := false
