@@ -17,5 +17,5 @@ govendor:
 	go get github.com/kardianos/govendor
 	govendor sync
 
-${EXE}:
+${EXE}: $(shell /usr/bin/find . -type f -and -name '*.go' -not -path './vendor/*')
 	go build -o ${EXE}
