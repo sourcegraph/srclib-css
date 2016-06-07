@@ -162,13 +162,14 @@ func doGraph(u *unit.SourceUnit) (*graph.Output, error) {
 						log.Printf("unexpected empty selector, rules: %+v", stylesheet.Rules)
 						continue
 					}
-					defs, err := cssDefs(*s, u, data, f, r, defExist)
+					defs, refs, err := cssDefsAndRefs(*s, u, data, f, r, defExist)
 					if err != nil {
 						return nil, err
 					}
 					out.Defs = append(out.Defs, defs...)
+					out.Refs = append(out.Refs, refs...)
 				}
-				out.Refs = append(out.Refs, cssRefs(u, data, f, r)...)
+				out.Refs = append(out.Refs, mdnCSSRefs(u, data, f, r)...)
 			}
 		}
 	}
@@ -194,8 +195,11 @@ func doGraph(u *unit.SourceUnit) (*graph.Output, error) {
 	return &out, nil
 }
 
-func cssDefs(s css.Selector, u *unit.SourceUnit, data string, filePath string, r *css.Rule, defExist selectorDefExist) ([]*graph.Def, error) {
+// selectorDefsAndRefs returns defs and refs for CSS selectors present on given CSS rule.
+func cssDefsAndRefs(s css.Selector, u *unit.SourceUnit, data string, filePath string, r *css.Rule, defExist selectorDefExist) ([]*graph.Def, []*graph.Ref, error) {
 	defs := []*graph.Def{}
+	refs := []*graph.Ref{}
+
 	defStart, defEnd := findOffsets(data, s.Line, s.Column, s.Value)
 
 	// TODO (chris): remove this when frontend is improved to handle this case.
@@ -206,7 +210,7 @@ func cssDefs(s css.Selector, u *unit.SourceUnit, data string, filePath string, r
 	// Obtain last selector from a selectors chain.
 	sel := lastSelector(s.Value)
 	if sel == nil {
-		return nil, nil
+		return nil, nil, nil
 	}
 
 	selStr := string(*sel)
@@ -215,7 +219,7 @@ func cssDefs(s css.Selector, u *unit.SourceUnit, data string, filePath string, r
 		Kind:    selectorKind(selStr),
 	})
 	if err != nil {
-		return nil, err
+		return nil, nil, err
 	}
 	def := &graph.Def{
 		DefKey: graph.DefKey{
@@ -233,13 +237,26 @@ func cssDefs(s css.Selector, u *unit.SourceUnit, data string, filePath string, r
 	// Checks if a CSS selectors definition already exists; if so, it should not be added.
 	// Currenttly `srclib-css` emits only one `graph.Def` per CSS selector.
 	if defExist(def) {
-		return nil, nil
+		return nil, nil, nil
 	}
 	defs = append(defs, def)
-	return defs, nil
+
+	refs = append(refs, &graph.Ref{
+		DefUnitType: def.DefKey.UnitType,
+		DefUnit:     def.DefKey.Unit,
+		DefPath:     def.DefKey.Path,
+		Unit:        def.DefKey.Unit,
+		File:        def.File,
+		Def:         true,
+		Start:       def.DefStart,
+		End:         def.DefEnd,
+	})
+
+	return defs, refs, nil
 }
 
-func cssRefs(u *unit.SourceUnit, data string, filePath string, r *css.Rule) []*graph.Ref {
+// mdnCSSRefs returns refs to MDN(Mozilla Developer Network) for CSS properties present on given CSS rule.
+func mdnCSSRefs(u *unit.SourceUnit, data string, filePath string, r *css.Rule) []*graph.Ref {
 	refs := []*graph.Ref{}
 	for _, d := range r.Declarations {
 		s, e := findOffsets(data, d.Line, d.Column, d.Property)
@@ -256,6 +273,7 @@ func cssRefs(u *unit.SourceUnit, data string, filePath string, r *css.Rule) []*g
 	return refs
 }
 
+// htmlRefs returns refs for CSS selectors present on given HTML data.
 func htmlRefs(u *unit.SourceUnit, data string, filePath string, selectorDefs []*graph.Def) ([]*graph.Ref, error) {
 	refs := []*graph.Ref{}
 
