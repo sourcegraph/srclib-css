@@ -821,6 +821,76 @@
     {
       "DefUnitType": "basic-css",
       "DefUnit": "css-sample-0",
+      "DefPath": "alerts.css.alert h4",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "alerts.css",
+      "Start": 106,
+      "End": 115
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "alerts.css.alert-danger hr",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "alerts.css",
+      "Start": 1131,
+      "End": 1147
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "alerts.css.alert-danger",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "alerts.css",
+      "Start": 1041,
+      "End": 1054
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "alerts.css.alert-dismissable",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "alerts.css",
+      "Start": 285,
+      "End": 303
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "alerts.css.alert-dismissible",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "alerts.css",
+      "Start": 305,
+      "End": 323
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "alerts.css.alert-info hr",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "alerts.css",
+      "Start": 756,
+      "End": 770
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "alerts.css.alert-info",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "alerts.css",
+      "Start": 668,
+      "End": 679
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
       "DefPath": "alerts.css.alert-info",
       "Unit": "css-sample-0",
       "File": "main.html",
@@ -835,6 +905,146 @@
       "File": "main.html",
       "Start": 902,
       "End": 912
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "alerts.css.alert-link",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "alerts.css",
+      "Start": 155,
+      "End": 173
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "alerts.css.alert-success hr",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "alerts.css",
+      "Start": 568,
+      "End": 585
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "alerts.css.alert-success",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "alerts.css",
+      "Start": 477,
+      "End": 491
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "alerts.css.alert-warning hr",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "alerts.css",
+      "Start": 941,
+      "End": 958
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "alerts.css.alert-warning",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "alerts.css",
+      "Start": 850,
+      "End": 864
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "alerts.css.alert",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "alerts.css",
+      "Start": 1,
+      "End": 6
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "alerts.css.close",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "alerts.css",
+      "Start": 351,
+      "End": 376
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.badge",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 10294,
+      "End": 10332
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.dropdown-toggle",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 396,
+      "End": 439
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.list-group-item:first-child",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 1085,
+      "End": 1146
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.list-group-item:last-child",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 1312,
+      "End": 1371
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.list-group-item",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 943,
+      "End": 980
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.list-group",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 858,
+      "End": 878
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel-body",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 219,
+      "End": 230
     },
     {
       "DefUnitType": "basic-css",
@@ -857,6 +1067,26 @@
     {
       "DefUnitType": "basic-css",
       "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel-danger",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 12208,
+      "End": 12221
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel-default",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 10057,
+      "End": 10071
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
       "DefPath": "assets/panels.css.panel-default",
       "Unit": "css-sample-0",
       "File": "main.html",
@@ -875,6 +1105,96 @@
     {
       "DefUnitType": "basic-css",
       "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel-footer",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 690,
+      "End": 703
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel-group",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 9550,
+      "End": 9562
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel-heading",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 252,
+      "End": 266
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel-info",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 11347,
+      "End": 11358
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel-primary",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 10477,
+      "End": 10491
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel-success",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 10909,
+      "End": 10923
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel-title",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 462,
+      "End": 474
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel-warning",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 11770,
+      "End": 11784
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 1,
+      "End": 6
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
       "DefPath": "assets/panels.css.panel",
       "Unit": "css-sample-0",
       "File": "main.html",
@@ -889,6 +1209,76 @@
       "File": "subdir/assets/main.html",
       "Start": 508,
       "End": 513
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.small",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 593,
+      "End": 614
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.table caption",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 1944,
+      "End": 1967
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.table-bordered",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 6689,
+      "End": 6713
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.table-responsive",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 6407,
+      "End": 6447
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.table:first-child",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 2105,
+      "End": 2132
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.table:last-child",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 4268,
+      "End": 4294
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.table",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 1832,
+      "End": 1847
     },
     {
       "DefUnitType": "URL",
@@ -2569,9 +2959,39 @@
       "DefUnit": "css-sample-0",
       "DefPath": "main.css#container",
       "Unit": "css-sample-0",
+      "Def": true,
+      "File": "main.css",
+      "Start": 1,
+      "End": 10
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "main.css#container",
+      "Unit": "css-sample-0",
       "File": "main.html",
       "Start": 818,
       "End": 827
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "main.css.active:focus",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "main.css",
+      "Start": 672,
+      "End": 689
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "main.css.btn-default",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "main.css",
+      "Start": 839,
+      "End": 851
     },
     {
       "DefUnitType": "basic-css",
@@ -2596,9 +3016,49 @@
       "DefUnit": "css-sample-0",
       "DefPath": "main.css.btn-sm",
       "Unit": "css-sample-0",
+      "Def": true,
+      "File": "main.css",
+      "Start": 920,
+      "End": 927
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "main.css.btn-sm",
+      "Unit": "css-sample-0",
       "File": "main.html",
       "Start": 1251,
       "End": 1257
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "main.css.btn:active:focus",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "main.css",
+      "Start": 653,
+      "End": 670
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "main.css.btn:focus",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "main.css",
+      "Start": 641,
+      "End": 651
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "main.css.btn",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "main.css",
+      "Start": 141,
+      "End": 145
     },
     {
       "DefUnitType": "basic-css",
@@ -2623,6 +3083,16 @@
       "DefUnit": "css-sample-0",
       "DefPath": "main.css.container-inner",
       "Unit": "css-sample-0",
+      "Def": true,
+      "File": "main.css",
+      "Start": 83,
+      "End": 112
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "main.css.container-inner",
+      "Unit": "css-sample-0",
       "File": "main.html",
       "Start": 1587,
       "End": 1602
@@ -2635,6 +3105,46 @@
       "File": "main.html",
       "Start": 854,
       "End": 869
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "main.css.focus",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "main.css",
+      "Start": 691,
+      "End": 701
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "not-used.css.not-used",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "not-used.css",
+      "Start": 1,
+      "End": 9
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "querystringed.css.paragraph",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "querystringed.css",
+      "Start": 1,
+      "End": 11
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "subdir/assets/main.css#container",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "subdir/assets/main.css",
+      "Start": 1,
+      "End": 10
     },
     {
       "DefUnitType": "basic-css",
