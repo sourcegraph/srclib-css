@@ -102,7 +102,7 @@ func newSelector(sel string) *selector {
 	return &s
 }
 
-// descSelectorRegexp is a regexp pattern that matches individual selectors from a descendant selector, Eg. "h1.title".
+// descSelectorRegexp is a regexp pattern that matches individual selectors from a descendant selector, Eg. "h1.title" matches "h1" and "title".
 var descSelectorRegexp = regexp.MustCompile(".*([\\.\\#].+)")
 
 // selSplitFn returns true if given CSS combinator is valid.
@@ -230,8 +230,8 @@ func cssDefs(s css.Selector, u *unit.SourceUnit, data string, filePath string, r
 		Data:     d,
 	}
 
-	// Checks if `def.Name`(CSS selector) already exists; if so, it should not be added, current implementation supports
-	// one `graph.Def` per one selector.
+	// Checks if a CSS selectors definition already exists; if so, it should not be added.
+	// Currenttly `srclib-css` emits only one `graph.Def` per CSS selector.
 	if defExist(def) {
 		return nil, nil
 	}
@@ -262,13 +262,12 @@ func htmlRefs(u *unit.SourceUnit, data string, filePath string, selectorDefs []*
 	// linkTagsZ is a HTML tokenizer used to search for `<link rel="stylesheet" ...>` tags.
 	linkTagsZ := html.NewTokenizer(strings.NewReader(data))
 
-	// stylesheetHREFs is a slice which contains all the stylesheet HREFs found defined on HTML file `z`.
+	// stylesheetHREFs is a slice which contains all the stylesheet HREFs found defined on HTML `data`.
 	var stylesheetHREFs = []string{}
 
-	// Search for all the style tags defined on `data` to extract its HREFs to be later use, when resolving
-	// the definition path of CSS selector found on HTML tags id/class attributes.
-	// Not looking for style tags inside `LtagsZ`: To make sure all stylesheet HREFs are found first:
-	// `<link ...>` tags might be placed in different locations in the HTML document.
+	// Search for all stylesheet tags defined on `data`, then save its HREFs on `stylesheetHREFs` for later usage.
+	// This step is not realized on `LtagsZ`s loop because link tags might be defined outside head tag, therefore
+	// we cannot rely on assuming all link tags are read before regular HTML tags.
 LlinkTags:
 	for {
 		tt := linkTagsZ.Next()
@@ -404,7 +403,7 @@ func selectorDefPath(filePath string, s selector) string {
 	return fmt.Sprintf("%s%s", filepath.ToSlash(filePath), string(s))
 }
 
-// resolveSelectorDefPath returns the definition path of given selector(`s`).
+// resolveSelectorDefPath returns the definition path of given selector.
 func resolveSelectorDefPath(selectorsDef []*graph.Def, s selector, stylesheetPaths []string) *string {
 	for _, def := range selectorsDef {
 		if def.Name == s.String() && stylesheetPathExists(stylesheetPaths, def.File) {
@@ -424,7 +423,7 @@ func normalizeStylesheetHREFs(stylesheetHREFs []string, root string) []string {
 	return normalized
 }
 
-// stylesheetPathExists returns true if given filepath(`fp`) exists on `stylesheetPaths`.
+// stylesheetPathExists returns true if given filepath exists on `stylesheetPaths`.
 func stylesheetPathExists(stylesheetsPath []string, fp string) bool {
 	for _, s := range stylesheetsPath {
 		if s == fp {
