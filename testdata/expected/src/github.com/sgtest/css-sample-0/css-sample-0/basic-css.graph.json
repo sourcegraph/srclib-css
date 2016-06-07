@@ -3,11 +3,635 @@
     {
       "UnitType": "basic-css",
       "Unit": "css-sample-0",
+      "Path": "alerts.css.alert h4",
+      "Name": ".alert h4",
+      "File": "alerts.css",
+      "DefStart": 106,
+      "DefEnd": 115,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "alerts.css.alert",
+      "Name": ".alert",
+      "File": "alerts.css",
+      "DefStart": 1,
+      "DefEnd": 6,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "alerts.css.alert-danger hr",
+      "Name": ".alert-danger hr",
+      "File": "alerts.css",
+      "DefStart": 1131,
+      "DefEnd": 1147,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "alerts.css.alert-danger",
+      "Name": ".alert-danger",
+      "File": "alerts.css",
+      "DefStart": 1041,
+      "DefEnd": 1054,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "alerts.css.alert-dismissable",
+      "Name": ".alert-dismissable",
+      "File": "alerts.css",
+      "DefStart": 285,
+      "DefEnd": 303,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "alerts.css.alert-dismissible",
+      "Name": ".alert-dismissible",
+      "File": "alerts.css",
+      "DefStart": 305,
+      "DefEnd": 323,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "alerts.css.alert-info hr",
+      "Name": ".alert-info hr",
+      "File": "alerts.css",
+      "DefStart": 756,
+      "DefEnd": 770,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "alerts.css.alert-info",
+      "Name": ".alert-info",
+      "File": "alerts.css",
+      "DefStart": 668,
+      "DefEnd": 679,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "alerts.css.alert-link",
+      "Name": ".alert-link",
+      "File": "alerts.css",
+      "DefStart": 155,
+      "DefEnd": 173,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "alerts.css.alert-success hr",
+      "Name": ".alert-success hr",
+      "File": "alerts.css",
+      "DefStart": 568,
+      "DefEnd": 585,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "alerts.css.alert-success",
+      "Name": ".alert-success",
+      "File": "alerts.css",
+      "DefStart": 477,
+      "DefEnd": 491,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "alerts.css.alert-warning hr",
+      "Name": ".alert-warning hr",
+      "File": "alerts.css",
+      "DefStart": 941,
+      "DefEnd": 958,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "alerts.css.alert-warning",
+      "Name": ".alert-warning",
+      "File": "alerts.css",
+      "DefStart": 850,
+      "DefEnd": 864,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "alerts.css.close",
+      "Name": ".close",
+      "File": "alerts.css",
+      "DefStart": 351,
+      "DefEnd": 376,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.badge",
+      "Name": ".badge",
+      "File": "assets/panels.css",
+      "DefStart": 10294,
+      "DefEnd": 10332,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.dropdown-toggle",
+      "Name": ".dropdown-toggle",
+      "File": "assets/panels.css",
+      "DefStart": 396,
+      "DefEnd": 439,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.list-group",
+      "Name": ".list-group",
+      "File": "assets/panels.css",
+      "DefStart": 858,
+      "DefEnd": 878,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.list-group-item",
+      "Name": ".list-group-item",
+      "File": "assets/panels.css",
+      "DefStart": 943,
+      "DefEnd": 980,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.list-group-item:first-child",
+      "Name": ".list-group-item:first-child",
+      "File": "assets/panels.css",
+      "DefStart": 1085,
+      "DefEnd": 1146,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.list-group-item:last-child",
+      "Name": ".list-group-item:last-child",
+      "File": "assets/panels.css",
+      "DefStart": 1312,
+      "DefEnd": 1371,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel",
+      "Name": ".panel",
+      "File": "assets/panels.css",
+      "DefStart": 1,
+      "DefEnd": 6,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel-body",
+      "Name": ".panel-body",
+      "File": "assets/panels.css",
+      "DefStart": 219,
+      "DefEnd": 230,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel-danger",
+      "Name": ".panel-danger",
+      "File": "assets/panels.css",
+      "DefStart": 12208,
+      "DefEnd": 12221,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel-default",
+      "Name": ".panel-default",
+      "File": "assets/panels.css",
+      "DefStart": 10057,
+      "DefEnd": 10071,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel-footer",
+      "Name": ".panel-footer",
+      "File": "assets/panels.css",
+      "DefStart": 690,
+      "DefEnd": 703,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel-group",
+      "Name": ".panel-group",
+      "File": "assets/panels.css",
+      "DefStart": 9550,
+      "DefEnd": 9562,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel-heading",
+      "Name": ".panel-heading",
+      "File": "assets/panels.css",
+      "DefStart": 252,
+      "DefEnd": 266,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel-info",
+      "Name": ".panel-info",
+      "File": "assets/panels.css",
+      "DefStart": 11347,
+      "DefEnd": 11358,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel-primary",
+      "Name": ".panel-primary",
+      "File": "assets/panels.css",
+      "DefStart": 10477,
+      "DefEnd": 10491,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel-success",
+      "Name": ".panel-success",
+      "File": "assets/panels.css",
+      "DefStart": 10909,
+      "DefEnd": 10923,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel-title",
+      "Name": ".panel-title",
+      "File": "assets/panels.css",
+      "DefStart": 462,
+      "DefEnd": 474,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel-warning",
+      "Name": ".panel-warning",
+      "File": "assets/panels.css",
+      "DefStart": 11770,
+      "DefEnd": 11784,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.small",
+      "Name": ".small",
+      "File": "assets/panels.css",
+      "DefStart": 593,
+      "DefEnd": 614,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.table caption",
+      "Name": ".table caption",
+      "File": "assets/panels.css",
+      "DefStart": 1944,
+      "DefEnd": 1967,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.table",
+      "Name": ".table",
+      "File": "assets/panels.css",
+      "DefStart": 1832,
+      "DefEnd": 1847,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.table-bordered",
+      "Name": ".table-bordered",
+      "File": "assets/panels.css",
+      "DefStart": 6689,
+      "DefEnd": 6713,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.table-responsive",
+      "Name": ".table-responsive",
+      "File": "assets/panels.css",
+      "DefStart": 6407,
+      "DefEnd": 6447,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.table:first-child",
+      "Name": ".table:first-child",
+      "File": "assets/panels.css",
+      "DefStart": 2105,
+      "DefEnd": 2132,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.table:last-child",
+      "Name": ".table:last-child",
+      "File": "assets/panels.css",
+      "DefStart": 4268,
+      "DefEnd": 4294,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
       "Path": "main.css#container",
       "Name": "#container",
       "File": "main.css",
-      "DefStart": 89,
-      "DefEnd": 99,
+      "DefStart": 1,
+      "DefEnd": 10,
       "Data": {
         "Name": "",
         "Keyword": "selector",
@@ -22,24 +646,8 @@
       "Path": "main.css.active:focus",
       "Name": ".active:focus",
       "File": "main.css",
-      "DefStart": 800,
-      "DefEnd": 817,
-      "Data": {
-        "Name": "",
-        "Keyword": "selector",
-        "Type": "",
-        "Kind": "class",
-        "Separator": ""
-      }
-    },
-    {
-      "UnitType": "basic-css",
-      "Unit": "css-sample-0",
-      "Path": "main.css.alert-info",
-      "Name": ".alert-info",
-      "File": "main.css",
-      "DefStart": 1,
-      "DefEnd": 11,
+      "DefStart": 672,
+      "DefEnd": 689,
       "Data": {
         "Name": "",
         "Keyword": "selector",
@@ -54,8 +662,8 @@
       "Path": "main.css.btn",
       "Name": ".btn",
       "File": "main.css",
-      "DefStart": 269,
-      "DefEnd": 273,
+      "DefStart": 141,
+      "DefEnd": 145,
       "Data": {
         "Name": "",
         "Keyword": "selector",
@@ -70,8 +678,8 @@
       "Path": "main.css.btn-default",
       "Name": ".btn-default",
       "File": "main.css",
-      "DefStart": 967,
-      "DefEnd": 979,
+      "DefStart": 839,
+      "DefEnd": 851,
       "Data": {
         "Name": "",
         "Keyword": "selector",
@@ -86,8 +694,8 @@
       "Path": "main.css.btn-sm",
       "Name": ".btn-sm",
       "File": "main.css",
-      "DefStart": 1048,
-      "DefEnd": 1055,
+      "DefStart": 920,
+      "DefEnd": 927,
       "Data": {
         "Name": "",
         "Keyword": "selector",
@@ -102,8 +710,8 @@
       "Path": "main.css.btn:active:focus",
       "Name": ".btn:active:focus",
       "File": "main.css",
-      "DefStart": 781,
-      "DefEnd": 798,
+      "DefStart": 653,
+      "DefEnd": 670,
       "Data": {
         "Name": "",
         "Keyword": "selector",
@@ -118,8 +726,8 @@
       "Path": "main.css.btn:focus",
       "Name": ".btn:focus",
       "File": "main.css",
-      "DefStart": 769,
-      "DefEnd": 779,
+      "DefStart": 641,
+      "DefEnd": 651,
       "Data": {
         "Name": "",
         "Keyword": "selector",
@@ -134,8 +742,8 @@
       "Path": "main.css.container-inner",
       "Name": ".container-inner",
       "File": "main.css",
-      "DefStart": 172,
-      "DefEnd": 201,
+      "DefStart": 83,
+      "DefEnd": 112,
       "Data": {
         "Name": "",
         "Keyword": "selector",
@@ -150,8 +758,8 @@
       "Path": "main.css.focus",
       "Name": ".focus",
       "File": "main.css",
-      "DefStart": 819,
-      "DefEnd": 829,
+      "DefStart": 691,
+      "DefEnd": 701,
       "Data": {
         "Name": "",
         "Keyword": "selector",
@@ -163,16 +771,48 @@
     {
       "UnitType": "basic-css",
       "Unit": "css-sample-0",
-      "Path": "main.css.paragraph",
-      "Name": ".paragraph",
-      "File": "main.css",
-      "DefStart": 230,
-      "DefEnd": 241,
+      "Path": "not-used.css.not-used",
+      "Name": ".not-used",
+      "File": "not-used.css",
+      "DefStart": 1,
+      "DefEnd": 9,
       "Data": {
         "Name": "",
         "Keyword": "selector",
         "Type": "",
         "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "querystringed.css.paragraph",
+      "Name": ".paragraph",
+      "File": "querystringed.css",
+      "DefStart": 1,
+      "DefEnd": 11,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "subdir/assets/main.css#container",
+      "Name": "#container",
+      "File": "subdir/assets/main.css",
+      "DefStart": 1,
+      "DefEnd": 10,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "id",
         "Separator": ""
       }
     }
@@ -181,108 +821,225 @@
     {
       "DefUnitType": "basic-css",
       "DefUnit": "css-sample-0",
-      "DefPath": "#container",
+      "DefPath": "alerts.css.alert-info",
       "Unit": "css-sample-0",
       "File": "main.html",
-      "Start": 174,
-      "End": 183
+      "Start": 1099,
+      "End": 1109
     },
     {
       "DefUnitType": "basic-css",
       "DefUnit": "css-sample-0",
-      "DefPath": ".alert-info",
+      "DefPath": "alerts.css.alert-info",
       "Unit": "css-sample-0",
       "File": "main.html",
-      "Start": 271,
-      "End": 281
+      "Start": 902,
+      "End": 912
     },
     {
       "DefUnitType": "basic-css",
       "DefUnit": "css-sample-0",
-      "DefPath": ".alert-info",
+      "DefPath": "assets/panels.css.panel-body",
       "Unit": "css-sample-0",
       "File": "main.html",
-      "Start": 413,
-      "End": 423
+      "Start": 1463,
+      "End": 1473
     },
     {
       "DefUnitType": "basic-css",
       "DefUnit": "css-sample-0",
-      "DefPath": ".btn-default",
+      "DefPath": "assets/panels.css.panel-body",
       "Unit": "css-sample-0",
-      "File": "main.html",
-      "Start": 461,
-      "End": 472
+      "File": "subdir/assets/main.html",
+      "Start": 552,
+      "End": 562
     },
     {
       "DefUnitType": "basic-css",
       "DefUnit": "css-sample-0",
-      "DefPath": ".btn-default",
+      "DefPath": "assets/panels.css.panel-default",
       "Unit": "css-sample-0",
       "File": "main.html",
-      "Start": 553,
-      "End": 564
+      "Start": 1421,
+      "End": 1434
     },
     {
       "DefUnitType": "basic-css",
       "DefUnit": "css-sample-0",
-      "DefPath": ".btn-sm",
+      "DefPath": "assets/panels.css.panel-default",
       "Unit": "css-sample-0",
-      "File": "main.html",
-      "Start": 565,
-      "End": 571
+      "File": "subdir/assets/main.html",
+      "Start": 514,
+      "End": 527
     },
     {
       "DefUnitType": "basic-css",
       "DefUnit": "css-sample-0",
-      "DefPath": ".btn",
+      "DefPath": "assets/panels.css.panel",
       "Unit": "css-sample-0",
       "File": "main.html",
-      "Start": 457,
-      "End": 460
+      "Start": 1415,
+      "End": 1420
     },
     {
       "DefUnitType": "basic-css",
       "DefUnit": "css-sample-0",
-      "DefPath": ".btn",
+      "DefPath": "assets/panels.css.panel",
       "Unit": "css-sample-0",
-      "File": "main.html",
-      "Start": 549,
-      "End": 552
-    },
-    {
-      "DefUnitType": "basic-css",
-      "DefUnit": "css-sample-0",
-      "DefPath": ".container-inner",
-      "Unit": "css-sample-0",
-      "File": "main.html",
-      "Start": 210,
-      "End": 225
-    },
-    {
-      "DefUnitType": "basic-css",
-      "DefUnit": "css-sample-0",
-      "DefPath": ".paragraph",
-      "Unit": "css-sample-0",
-      "File": "main.html",
-      "Start": 325,
-      "End": 334
-    },
-    {
-      "DefUnitType": "basic-css",
-      "DefUnit": "css-sample-0",
-      "DefPath": ".paragraph",
-      "Unit": "css-sample-0",
-      "File": "main.html",
-      "Start": 376,
-      "End": 385
+      "File": "subdir/assets/main.html",
+      "Start": 508,
+      "End": 513
     },
     {
       "DefUnitType": "URL",
       "DefUnit": "MDN",
       "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/background-color",
       "Unit": "css-sample-0",
-      "File": "main.css",
+      "File": "alerts.css",
+      "Start": 1077,
+      "End": 1093
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/background-color",
+      "Unit": "css-sample-0",
+      "File": "alerts.css",
+      "Start": 514,
+      "End": 530
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/background-color",
+      "Unit": "css-sample-0",
+      "File": "alerts.css",
+      "Start": 702,
+      "End": 718
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/background-color",
+      "Unit": "css-sample-0",
+      "File": "alerts.css",
+      "Start": 887,
+      "End": 903
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/background-color",
+      "Unit": "css-sample-0",
+      "File": "assets/panels.css",
+      "Start": 10149,
+      "End": 10165
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/background-color",
+      "Unit": "css-sample-0",
+      "File": "assets/panels.css",
+      "Start": 10355,
+      "End": 10371
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/background-color",
+      "Unit": "css-sample-0",
+      "File": "assets/panels.css",
+      "Start": 10572,
+      "End": 10588
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/background-color",
+      "Unit": "css-sample-0",
+      "File": "assets/panels.css",
+      "Start": 10784,
+      "End": 10800
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/background-color",
+      "Unit": "css-sample-0",
+      "File": "assets/panels.css",
+      "Start": 11007,
+      "End": 11023
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/background-color",
+      "Unit": "css-sample-0",
+      "File": "assets/panels.css",
+      "Start": 11219,
+      "End": 11235
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/background-color",
+      "Unit": "css-sample-0",
+      "File": "assets/panels.css",
+      "Start": 11439,
+      "End": 11455
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/background-color",
+      "Unit": "css-sample-0",
+      "File": "assets/panels.css",
+      "Start": 11645,
+      "End": 11661
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/background-color",
+      "Unit": "css-sample-0",
+      "File": "assets/panels.css",
+      "Start": 11868,
+      "End": 11884
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/background-color",
+      "Unit": "css-sample-0",
+      "File": "assets/panels.css",
+      "Start": 12080,
+      "End": 12096
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/background-color",
+      "Unit": "css-sample-0",
+      "File": "assets/panels.css",
+      "Start": 12304,
+      "End": 12320
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/background-color",
+      "Unit": "css-sample-0",
+      "File": "assets/panels.css",
+      "Start": 12514,
+      "End": 12530
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/background-color",
+      "Unit": "css-sample-0",
+      "File": "assets/panels.css",
       "Start": 34,
       "End": 50
     },
@@ -291,9 +1048,18 @@
       "DefUnit": "MDN",
       "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/background-color",
       "Unit": "css-sample-0",
+      "File": "assets/panels.css",
+      "Start": 730,
+      "End": 746
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/background-color",
+      "Unit": "css-sample-0",
       "File": "main.css",
-      "Start": 999,
-      "End": 1015
+      "Start": 871,
+      "End": 887
     },
     {
       "DefUnitType": "URL",
@@ -301,8 +1067,350 @@
       "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/background-image",
       "Unit": "css-sample-0",
       "File": "main.css",
-      "Start": 687,
-      "End": 703
+      "Start": 559,
+      "End": 575
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-bottom-color",
+      "Unit": "css-sample-0",
+      "File": "assets/panels.css",
+      "Start": 10448,
+      "End": 10467
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-bottom-color",
+      "Unit": "css-sample-0",
+      "File": "assets/panels.css",
+      "Start": 10877,
+      "End": 10896
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-bottom-color",
+      "Unit": "css-sample-0",
+      "File": "assets/panels.css",
+      "Start": 11315,
+      "End": 11334
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-bottom-color",
+      "Unit": "css-sample-0",
+      "File": "assets/panels.css",
+      "Start": 11738,
+      "End": 11757
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-bottom-color",
+      "Unit": "css-sample-0",
+      "File": "assets/panels.css",
+      "Start": 12176,
+      "End": 12195
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-bottom-color",
+      "Unit": "css-sample-0",
+      "File": "assets/panels.css",
+      "Start": 12609,
+      "End": 12628
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-bottom-left-radius",
+      "Unit": "css-sample-0",
+      "File": "assets/panels.css",
+      "Start": 1510,
+      "End": 1535
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-bottom-left-radius",
+      "Unit": "css-sample-0",
+      "File": "assets/panels.css",
+      "Start": 4393,
+      "End": 4418
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-bottom-left-radius",
+      "Unit": "css-sample-0",
+      "File": "assets/panels.css",
+      "Start": 4779,
+      "End": 4804
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-bottom-left-radius",
+      "Unit": "css-sample-0",
+      "File": "assets/panels.css",
+      "Start": 5564,
+      "End": 5589
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-bottom-left-radius",
+      "Unit": "css-sample-0",
+      "File": "assets/panels.css",
+      "Start": 824,
+      "End": 849
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-bottom-right-radius",
+      "Unit": "css-sample-0",
+      "File": "assets/panels.css",
+      "Start": 1475,
+      "End": 1501
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-bottom-right-radius",
+      "Unit": "css-sample-0",
+      "File": "assets/panels.css",
+      "Start": 4358,
+      "End": 4384
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-bottom-right-radius",
+      "Unit": "css-sample-0",
+      "File": "assets/panels.css",
+      "Start": 4744,
+      "End": 4770
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-bottom-right-radius",
+      "Unit": "css-sample-0",
+      "File": "assets/panels.css",
+      "Start": 6341,
+      "End": 6367
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-bottom-right-radius",
+      "Unit": "css-sample-0",
+      "File": "assets/panels.css",
+      "Start": 789,
+      "End": 815
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-bottom",
+      "Unit": "css-sample-0",
+      "File": "assets/panels.css",
+      "Start": 10024,
+      "End": 10037
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-bottom",
+      "Unit": "css-sample-0",
+      "File": "assets/panels.css",
+      "Start": 1455,
+      "End": 1468
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-bottom",
+      "Unit": "css-sample-0",
+      "File": "assets/panels.css",
+      "Start": 293,
+      "End": 306
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-bottom",
+      "Unit": "css-sample-0",
+      "File": "assets/panels.css",
+      "Start": 8923,
+      "End": 8936
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-bottom",
+      "Unit": "css-sample-0",
+      "File": "assets/panels.css",
+      "Start": 9466,
+      "End": 9479
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-bottom",
+      "Unit": "css-sample-0",
+      "File": "assets/panels.css",
+      "Start": 9740,
+      "End": 9753
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-color",
+      "Unit": "css-sample-0",
+      "File": "alerts.css",
+      "Start": 1106,
+      "End": 1118
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-color",
+      "Unit": "css-sample-0",
+      "File": "alerts.css",
+      "Start": 543,
+      "End": 555
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-color",
+      "Unit": "css-sample-0",
+      "File": "alerts.css",
+      "Start": 731,
+      "End": 743
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-color",
+      "Unit": "css-sample-0",
+      "File": "alerts.css",
+      "Start": 916,
+      "End": 928
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-color",
+      "Unit": "css-sample-0",
+      "File": "assets/panels.css",
+      "Start": 10076,
+      "End": 10088
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-color",
+      "Unit": "css-sample-0",
+      "File": "assets/panels.css",
+      "Start": 10178,
+      "End": 10190
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-color",
+      "Unit": "css-sample-0",
+      "File": "assets/panels.css",
+      "Start": 10496,
+      "End": 10508
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-color",
+      "Unit": "css-sample-0",
+      "File": "assets/panels.css",
+      "Start": 10601,
+      "End": 10613
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-color",
+      "Unit": "css-sample-0",
+      "File": "assets/panels.css",
+      "Start": 10928,
+      "End": 10940
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-color",
+      "Unit": "css-sample-0",
+      "File": "assets/panels.css",
+      "Start": 11036,
+      "End": 11048
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-color",
+      "Unit": "css-sample-0",
+      "File": "assets/panels.css",
+      "Start": 11363,
+      "End": 11375
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-color",
+      "Unit": "css-sample-0",
+      "File": "assets/panels.css",
+      "Start": 11468,
+      "End": 11480
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-color",
+      "Unit": "css-sample-0",
+      "File": "assets/panels.css",
+      "Start": 11789,
+      "End": 11801
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-color",
+      "Unit": "css-sample-0",
+      "File": "assets/panels.css",
+      "Start": 11897,
+      "End": 11909
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-color",
+      "Unit": "css-sample-0",
+      "File": "assets/panels.css",
+      "Start": 12226,
+      "End": 12238
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-color",
+      "Unit": "css-sample-0",
+      "File": "assets/panels.css",
+      "Start": 12333,
+      "End": 12345
     },
     {
       "DefUnitType": "URL",
@@ -310,17 +1418,53 @@
       "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-color",
       "Unit": "css-sample-0",
       "File": "main.css",
-      "Start": 1025,
-      "End": 1037
+      "Start": 897,
+      "End": 909
     },
     {
       "DefUnitType": "URL",
       "DefUnit": "MDN",
-      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-color",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-left",
       "Unit": "css-sample-0",
-      "File": "main.css",
-      "Start": 63,
-      "End": 75
+      "File": "assets/panels.css",
+      "Start": 7572,
+      "End": 7583
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius",
+      "Unit": "css-sample-0",
+      "File": "alerts.css",
+      "Start": 84,
+      "End": 97
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius",
+      "Unit": "css-sample-0",
+      "File": "assets/panels.css",
+      "Start": 1065,
+      "End": 1078
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius",
+      "Unit": "css-sample-0",
+      "File": "assets/panels.css",
+      "Start": 93,
+      "End": 106
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius",
+      "Unit": "css-sample-0",
+      "File": "assets/panels.css",
+      "Start": 9634,
+      "End": 9647
     },
     {
       "DefUnitType": "URL",
@@ -328,8 +1472,8 @@
       "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius",
       "Unit": "css-sample-0",
       "File": "main.css",
-      "Start": 1142,
-      "End": 1155
+      "Start": 1014,
+      "End": 1027
     },
     {
       "DefUnitType": "URL",
@@ -337,8 +1481,332 @@
       "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius",
       "Unit": "css-sample-0",
       "File": "main.css",
-      "Start": 746,
-      "End": 759
+      "Start": 618,
+      "End": 631
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-right",
+      "Unit": "css-sample-0",
+      "File": "assets/panels.css",
+      "Start": 8373,
+      "End": 8385
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-top-color",
+      "Unit": "css-sample-0",
+      "File": "alerts.css",
+      "Start": 1152,
+      "End": 1168
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-top-color",
+      "Unit": "css-sample-0",
+      "File": "alerts.css",
+      "Start": 590,
+      "End": 606
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-top-color",
+      "Unit": "css-sample-0",
+      "File": "alerts.css",
+      "Start": 775,
+      "End": 791
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-top-color",
+      "Unit": "css-sample-0",
+      "File": "alerts.css",
+      "Start": 963,
+      "End": 979
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-top-color",
+      "Unit": "css-sample-0",
+      "File": "assets/panels.css",
+      "Start": 10268,
+      "End": 10284
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-top-color",
+      "Unit": "css-sample-0",
+      "File": "assets/panels.css",
+      "Start": 10694,
+      "End": 10710
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-top-color",
+      "Unit": "css-sample-0",
+      "File": "assets/panels.css",
+      "Start": 11129,
+      "End": 11145
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-top-color",
+      "Unit": "css-sample-0",
+      "File": "assets/panels.css",
+      "Start": 11558,
+      "End": 11574
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-top-color",
+      "Unit": "css-sample-0",
+      "File": "assets/panels.css",
+      "Start": 11990,
+      "End": 12006
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-top-color",
+      "Unit": "css-sample-0",
+      "File": "assets/panels.css",
+      "Start": 12425,
+      "End": 12441
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-top-left-radius",
+      "Unit": "css-sample-0",
+      "File": "assets/panels.css",
+      "Start": 1249,
+      "End": 1271
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-top-left-radius",
+      "Unit": "css-sample-0",
+      "File": "assets/panels.css",
+      "Start": 1633,
+      "End": 1655
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-top-left-radius",
+      "Unit": "css-sample-0",
+      "File": "assets/panels.css",
+      "Start": 2198,
+      "End": 2220
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-top-left-radius",
+      "Unit": "css-sample-0",
+      "File": "assets/panels.css",
+      "Start": 2592,
+      "End": 2614
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-top-left-radius",
+      "Unit": "css-sample-0",
+      "File": "assets/panels.css",
+      "Start": 333,
+      "End": 355
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-top-left-radius",
+      "Unit": "css-sample-0",
+      "File": "assets/panels.css",
+      "Start": 3434,
+      "End": 3456
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-top-right-radius",
+      "Unit": "css-sample-0",
+      "File": "assets/panels.css",
+      "Start": 1280,
+      "End": 1303
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-top-right-radius",
+      "Unit": "css-sample-0",
+      "File": "assets/panels.css",
+      "Start": 1662,
+      "End": 1685
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-top-right-radius",
+      "Unit": "css-sample-0",
+      "File": "assets/panels.css",
+      "Start": 2229,
+      "End": 2252
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-top-right-radius",
+      "Unit": "css-sample-0",
+      "File": "assets/panels.css",
+      "Start": 2623,
+      "End": 2646
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-top-right-radius",
+      "Unit": "css-sample-0",
+      "File": "assets/panels.css",
+      "Start": 364,
+      "End": 387
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-top-right-radius",
+      "Unit": "css-sample-0",
+      "File": "assets/panels.css",
+      "Start": 4236,
+      "End": 4259
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-top-width",
+      "Unit": "css-sample-0",
+      "File": "assets/panels.css",
+      "Start": 1754,
+      "End": 1770
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-top-width",
+      "Unit": "css-sample-0",
+      "File": "assets/panels.css",
+      "Start": 1809,
+      "End": 1825
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-top",
+      "Unit": "css-sample-0",
+      "File": "assets/panels.css",
+      "Start": 1232,
+      "End": 1242
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-top",
+      "Unit": "css-sample-0",
+      "File": "assets/panels.css",
+      "Start": 6525,
+      "End": 6535
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-top",
+      "Unit": "css-sample-0",
+      "File": "assets/panels.css",
+      "Start": 6672,
+      "End": 6682
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-top",
+      "Unit": "css-sample-0",
+      "File": "assets/panels.css",
+      "Start": 759,
+      "End": 769
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-top",
+      "Unit": "css-sample-0",
+      "File": "assets/panels.css",
+      "Start": 9885,
+      "End": 9895
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-top",
+      "Unit": "css-sample-0",
+      "File": "assets/panels.css",
+      "Start": 9946,
+      "End": 9956
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-width",
+      "Unit": "css-sample-0",
+      "File": "assets/panels.css",
+      "Start": 1042,
+      "End": 1054
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/border",
+      "Unit": "css-sample-0",
+      "File": "alerts.css",
+      "Start": 51,
+      "End": 57
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/border",
+      "Unit": "css-sample-0",
+      "File": "assets/panels.css",
+      "Start": 60,
+      "End": 66
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/border",
+      "Unit": "css-sample-0",
+      "File": "assets/panels.css",
+      "Start": 6764,
+      "End": 6770
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/border",
+      "Unit": "css-sample-0",
+      "File": "assets/panels.css",
+      "Start": 9537,
+      "End": 9543
     },
     {
       "DefUnitType": "URL",
@@ -346,8 +1814,251 @@
       "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/border",
       "Unit": "css-sample-0",
       "File": "main.css",
-      "Start": 713,
-      "End": 719
+      "Start": 585,
+      "End": 591
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow",
+      "Unit": "css-sample-0",
+      "File": "assets/panels.css",
+      "Start": 115,
+      "End": 133
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow",
+      "Unit": "css-sample-0",
+      "File": "assets/panels.css",
+      "Start": 175,
+      "End": 185
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/color",
+      "Unit": "css-sample-0",
+      "File": "alerts.css",
+      "Start": 1023,
+      "End": 1028
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/color",
+      "Unit": "css-sample-0",
+      "File": "alerts.css",
+      "Start": 1059,
+      "End": 1064
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/color",
+      "Unit": "css-sample-0",
+      "File": "alerts.css",
+      "Start": 1211,
+      "End": 1216
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/color",
+      "Unit": "css-sample-0",
+      "File": "alerts.css",
+      "Start": 137,
+      "End": 142
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/color",
+      "Unit": "css-sample-0",
+      "File": "alerts.css",
+      "Start": 459,
+      "End": 464
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/color",
+      "Unit": "css-sample-0",
+      "File": "alerts.css",
+      "Start": 496,
+      "End": 501
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/color",
+      "Unit": "css-sample-0",
+      "File": "alerts.css",
+      "Start": 650,
+      "End": 655
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/color",
+      "Unit": "css-sample-0",
+      "File": "alerts.css",
+      "Start": 684,
+      "End": 689
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/color",
+      "Unit": "css-sample-0",
+      "File": "alerts.css",
+      "Start": 832,
+      "End": 837
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/color",
+      "Unit": "css-sample-0",
+      "File": "alerts.css",
+      "Start": 869,
+      "End": 874
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/color",
+      "Unit": "css-sample-0",
+      "File": "assets/panels.css",
+      "Start": 10134,
+      "End": 10139
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/color",
+      "Unit": "css-sample-0",
+      "File": "assets/panels.css",
+      "Start": 10337,
+      "End": 10342
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/color",
+      "Unit": "css-sample-0",
+      "File": "assets/panels.css",
+      "Start": 10557,
+      "End": 10562
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/color",
+      "Unit": "css-sample-0",
+      "File": "assets/panels.css",
+      "Start": 10766,
+      "End": 10771
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/color",
+      "Unit": "css-sample-0",
+      "File": "assets/panels.css",
+      "Start": 10989,
+      "End": 10994
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/color",
+      "Unit": "css-sample-0",
+      "File": "assets/panels.css",
+      "Start": 11201,
+      "End": 11206
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/color",
+      "Unit": "css-sample-0",
+      "File": "assets/panels.css",
+      "Start": 11421,
+      "End": 11426
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/color",
+      "Unit": "css-sample-0",
+      "File": "assets/panels.css",
+      "Start": 11627,
+      "End": 11632
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/color",
+      "Unit": "css-sample-0",
+      "File": "assets/panels.css",
+      "Start": 11850,
+      "End": 11855
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/color",
+      "Unit": "css-sample-0",
+      "File": "assets/panels.css",
+      "Start": 12062,
+      "End": 12067
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/color",
+      "Unit": "css-sample-0",
+      "File": "assets/panels.css",
+      "Start": 12286,
+      "End": 12291
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/color",
+      "Unit": "css-sample-0",
+      "File": "assets/panels.css",
+      "Start": 12496,
+      "End": 12501
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/color",
+      "Unit": "css-sample-0",
+      "File": "assets/panels.css",
+      "Start": 444,
+      "End": 449
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/color",
+      "Unit": "css-sample-0",
+      "File": "assets/panels.css",
+      "Start": 535,
+      "End": 540
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/color",
+      "Unit": "css-sample-0",
+      "File": "assets/panels.css",
+      "Start": 672,
+      "End": 677
     },
     {
       "DefUnitType": "URL",
@@ -355,17 +2066,8 @@
       "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/color",
       "Unit": "css-sample-0",
       "File": "main.css",
-      "Start": 16,
-      "End": 21
-    },
-    {
-      "DefUnitType": "URL",
-      "DefUnit": "MDN",
-      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/color",
-      "Unit": "css-sample-0",
-      "File": "main.css",
-      "Start": 984,
-      "End": 989
+      "Start": 856,
+      "End": 861
     },
     {
       "DefUnitType": "URL",
@@ -373,8 +2075,8 @@
       "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/cursor",
       "Unit": "css-sample-0",
       "File": "main.css",
-      "Start": 552,
-      "End": 558
+      "Start": 424,
+      "End": 430
     },
     {
       "DefUnitType": "URL",
@@ -382,8 +2084,17 @@
       "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/display",
       "Unit": "css-sample-0",
       "File": "main.css",
-      "Start": 278,
-      "End": 285
+      "Start": 150,
+      "End": 157
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/font-size",
+      "Unit": "css-sample-0",
+      "File": "assets/panels.css",
+      "Start": 516,
+      "End": 525
     },
     {
       "DefUnitType": "URL",
@@ -391,8 +2102,8 @@
       "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/font-size",
       "Unit": "css-sample-0",
       "File": "main.css",
-      "Start": 1103,
-      "End": 1112
+      "Start": 216,
+      "End": 225
     },
     {
       "DefUnitType": "URL",
@@ -400,8 +2111,17 @@
       "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/font-size",
       "Unit": "css-sample-0",
       "File": "main.css",
-      "Start": 344,
-      "End": 353
+      "Start": 975,
+      "End": 984
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight",
+      "Unit": "css-sample-0",
+      "File": "alerts.css",
+      "Start": 178,
+      "End": 189
     },
     {
       "DefUnitType": "URL",
@@ -409,8 +2129,8 @@
       "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight",
       "Unit": "css-sample-0",
       "File": "main.css",
-      "Start": 363,
-      "End": 374
+      "Start": 235,
+      "End": 246
     },
     {
       "DefUnitType": "URL",
@@ -418,8 +2138,8 @@
       "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/line-height",
       "Unit": "css-sample-0",
       "File": "main.css",
-      "Start": 1122,
-      "End": 1133
+      "Start": 258,
+      "End": 269
     },
     {
       "DefUnitType": "URL",
@@ -427,8 +2147,89 @@
       "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/line-height",
       "Unit": "css-sample-0",
       "File": "main.css",
-      "Start": 386,
-      "End": 397
+      "Start": 994,
+      "End": 1005
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/margin-bottom",
+      "Unit": "css-sample-0",
+      "File": "alerts.css",
+      "Start": 227,
+      "End": 240
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/margin-bottom",
+      "Unit": "css-sample-0",
+      "File": "alerts.css",
+      "Start": 28,
+      "End": 41
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/margin-bottom",
+      "Unit": "css-sample-0",
+      "File": "assets/panels.css",
+      "Start": 11,
+      "End": 24
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/margin-bottom",
+      "Unit": "css-sample-0",
+      "File": "assets/panels.css",
+      "Start": 1924,
+      "End": 1937
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/margin-bottom",
+      "Unit": "css-sample-0",
+      "File": "assets/panels.css",
+      "Start": 496,
+      "End": 509
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/margin-bottom",
+      "Unit": "css-sample-0",
+      "File": "assets/panels.css",
+      "Start": 923,
+      "End": 936
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/margin-bottom",
+      "Unit": "css-sample-0",
+      "File": "assets/panels.css",
+      "Start": 9517,
+      "End": 9530
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/margin-bottom",
+      "Unit": "css-sample-0",
+      "File": "assets/panels.css",
+      "Start": 9567,
+      "End": 9580
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/margin-bottom",
+      "Unit": "css-sample-0",
+      "File": "assets/panels.css",
+      "Start": 9614,
+      "End": 9627
     },
     {
       "DefUnitType": "URL",
@@ -436,8 +2237,8 @@
       "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/margin-bottom",
       "Unit": "css-sample-0",
       "File": "main.css",
-      "Start": 324,
-      "End": 337
+      "Start": 196,
+      "End": 209
     },
     {
       "DefUnitType": "URL",
@@ -445,8 +2246,53 @@
       "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/margin-right",
       "Unit": "css-sample-0",
       "File": "main.css",
-      "Start": 149,
-      "End": 161
+      "Start": 60,
+      "End": 72
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/margin-top",
+      "Unit": "css-sample-0",
+      "File": "alerts.css",
+      "Start": 120,
+      "End": 130
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/margin-top",
+      "Unit": "css-sample-0",
+      "File": "alerts.css",
+      "Start": 266,
+      "End": 276
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/margin-top",
+      "Unit": "css-sample-0",
+      "File": "assets/panels.css",
+      "Start": 479,
+      "End": 489
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/margin-top",
+      "Unit": "css-sample-0",
+      "File": "assets/panels.css",
+      "Start": 9689,
+      "End": 9699
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/margin",
+      "Unit": "css-sample-0",
+      "File": "not-used.css",
+      "Start": 16,
+      "End": 22
     },
     {
       "DefUnitType": "URL",
@@ -454,8 +2300,8 @@
       "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/outline-offset",
       "Unit": "css-sample-0",
       "File": "main.css",
-      "Start": 942,
-      "End": 956
+      "Start": 814,
+      "End": 828
     },
     {
       "DefUnitType": "URL",
@@ -463,8 +2309,8 @@
       "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/outline",
       "Unit": "css-sample-0",
       "File": "main.css",
-      "Start": 872,
-      "End": 879
+      "Start": 744,
+      "End": 751
     },
     {
       "DefUnitType": "URL",
@@ -472,8 +2318,17 @@
       "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/outline",
       "Unit": "css-sample-0",
       "File": "main.css",
-      "Start": 896,
-      "End": 903
+      "Start": 768,
+      "End": 775
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/padding-left",
+      "Unit": "css-sample-0",
+      "File": "assets/panels.css",
+      "Start": 2083,
+      "End": 2095
     },
     {
       "DefUnitType": "URL",
@@ -481,17 +2336,44 @@
       "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/padding-left",
       "Unit": "css-sample-0",
       "File": "main.css",
-      "Start": 127,
-      "End": 139
+      "Start": 38,
+      "End": 50
     },
     {
       "DefUnitType": "URL",
       "DefUnit": "MDN",
       "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/padding-left",
       "Unit": "css-sample-0",
-      "File": "main.css",
-      "Start": 246,
-      "End": 258
+      "File": "querystringed.css",
+      "Start": 16,
+      "End": 28
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/padding-left",
+      "Unit": "css-sample-0",
+      "File": "subdir/assets/main.css",
+      "Start": 38,
+      "End": 50
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/padding-right",
+      "Unit": "css-sample-0",
+      "File": "alerts.css",
+      "Start": 328,
+      "End": 341
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/padding-right",
+      "Unit": "css-sample-0",
+      "File": "assets/panels.css",
+      "Start": 2060,
+      "End": 2073
     },
     {
       "DefUnitType": "URL",
@@ -499,8 +2381,8 @@
       "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/padding-right",
       "Unit": "css-sample-0",
       "File": "main.css",
-      "Start": 104,
-      "End": 117
+      "Start": 117,
+      "End": 130
     },
     {
       "DefUnitType": "URL",
@@ -508,8 +2390,53 @@
       "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/padding-right",
       "Unit": "css-sample-0",
       "File": "main.css",
-      "Start": 206,
-      "End": 219
+      "Start": 15,
+      "End": 28
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/padding-right",
+      "Unit": "css-sample-0",
+      "File": "subdir/assets/main.css",
+      "Start": 15,
+      "End": 28
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/padding",
+      "Unit": "css-sample-0",
+      "File": "alerts.css",
+      "Start": 11,
+      "End": 18
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/padding",
+      "Unit": "css-sample-0",
+      "File": "assets/panels.css",
+      "Start": 235,
+      "End": 242
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/padding",
+      "Unit": "css-sample-0",
+      "File": "assets/panels.css",
+      "Start": 271,
+      "End": 278
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/padding",
+      "Unit": "css-sample-0",
+      "File": "assets/panels.css",
+      "Start": 708,
+      "End": 715
     },
     {
       "DefUnitType": "URL",
@@ -517,8 +2444,8 @@
       "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/padding",
       "Unit": "css-sample-0",
       "File": "main.css",
-      "Start": 1082,
-      "End": 1089
+      "Start": 175,
+      "End": 182
     },
     {
       "DefUnitType": "URL",
@@ -526,8 +2453,26 @@
       "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/padding",
       "Unit": "css-sample-0",
       "File": "main.css",
-      "Start": 303,
-      "End": 310
+      "Start": 954,
+      "End": 961
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/position",
+      "Unit": "css-sample-0",
+      "File": "alerts.css",
+      "Start": 408,
+      "End": 416
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/right",
+      "Unit": "css-sample-0",
+      "File": "alerts.css",
+      "Start": 443,
+      "End": 448
     },
     {
       "DefUnitType": "URL",
@@ -535,8 +2480,17 @@
       "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/text-align",
       "Unit": "css-sample-0",
       "File": "main.css",
-      "Start": 413,
-      "End": 423
+      "Start": 285,
+      "End": 295
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/top",
+      "Unit": "css-sample-0",
+      "File": "alerts.css",
+      "Start": 430,
+      "End": 433
     },
     {
       "DefUnitType": "URL",
@@ -544,8 +2498,8 @@
       "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/touch-action",
       "Unit": "css-sample-0",
       "File": "main.css",
-      "Start": 484,
-      "End": 500
+      "Start": 356,
+      "End": 372
     },
     {
       "DefUnitType": "URL",
@@ -553,8 +2507,8 @@
       "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/touch-action",
       "Unit": "css-sample-0",
       "File": "main.css",
-      "Start": 522,
-      "End": 534
+      "Start": 394,
+      "End": 406
     },
     {
       "DefUnitType": "URL",
@@ -562,8 +2516,8 @@
       "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/user-select",
       "Unit": "css-sample-0",
       "File": "main.css",
-      "Start": 571,
-      "End": 590
+      "Start": 443,
+      "End": 462
     },
     {
       "DefUnitType": "URL",
@@ -571,8 +2525,8 @@
       "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/user-select",
       "Unit": "css-sample-0",
       "File": "main.css",
-      "Start": 603,
-      "End": 619
+      "Start": 475,
+      "End": 491
     },
     {
       "DefUnitType": "URL",
@@ -580,8 +2534,8 @@
       "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/user-select",
       "Unit": "css-sample-0",
       "File": "main.css",
-      "Start": 633,
-      "End": 648
+      "Start": 505,
+      "End": 520
     },
     {
       "DefUnitType": "URL",
@@ -589,8 +2543,8 @@
       "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/user-select",
       "Unit": "css-sample-0",
       "File": "main.css",
-      "Start": 666,
-      "End": 677
+      "Start": 538,
+      "End": 549
     },
     {
       "DefUnitType": "URL",
@@ -598,8 +2552,8 @@
       "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/vertical-align",
       "Unit": "css-sample-0",
       "File": "main.css",
-      "Start": 458,
-      "End": 472
+      "Start": 330,
+      "End": 344
     },
     {
       "DefUnitType": "URL",
@@ -607,8 +2561,89 @@
       "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/white-space",
       "Unit": "css-sample-0",
       "File": "main.css",
-      "Start": 435,
-      "End": 446
+      "Start": 307,
+      "End": 318
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "main.css#container",
+      "Unit": "css-sample-0",
+      "File": "main.html",
+      "Start": 818,
+      "End": 827
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "main.css.btn-default",
+      "Unit": "css-sample-0",
+      "File": "main.html",
+      "Start": 1147,
+      "End": 1158
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "main.css.btn-default",
+      "Unit": "css-sample-0",
+      "File": "main.html",
+      "Start": 1239,
+      "End": 1250
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "main.css.btn-sm",
+      "Unit": "css-sample-0",
+      "File": "main.html",
+      "Start": 1251,
+      "End": 1257
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "main.css.btn",
+      "Unit": "css-sample-0",
+      "File": "main.html",
+      "Start": 1143,
+      "End": 1146
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "main.css.btn",
+      "Unit": "css-sample-0",
+      "File": "main.html",
+      "Start": 1235,
+      "End": 1238
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "main.css.container-inner",
+      "Unit": "css-sample-0",
+      "File": "main.html",
+      "Start": 1587,
+      "End": 1602
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "main.css.container-inner",
+      "Unit": "css-sample-0",
+      "File": "main.html",
+      "Start": 854,
+      "End": 869
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "subdir/assets/main.css#container",
+      "Unit": "css-sample-0",
+      "File": "subdir/assets/main.html",
+      "Start": 431,
+      "End": 440
     }
   ]
 }
