@@ -315,28 +315,22 @@ LlinkTags:
 		}
 	}
 
-	tagsZ := html.NewTokenizer(strings.NewReader(data))
-LtagsZ:
-	for {
-		tt := tagsZ.Next()
-		switch tt {
-		case html.ErrorToken:
-			if tagsZ.Err() != io.EOF {
-				return nil, tagsZ.Err()
-			}
-			break LtagsZ
-		case html.StartTagToken, html.SelfClosingTagToken:
-			t := tagsZ.Token()
-			attrValSep := " "
-			for _, attr := range t.Attr {
-				prefix := ""
-				if attr.Key == "id" {
-					prefix = "#"
-				} else if attr.Key == "class" {
-					prefix = "."
-				} else {
+	doc, err := html.Parse(strings.NewReader(data))
+	if err != nil {
+		return nil, err
+	}
+
+	var (
+		walk       func(*html.Node)
+		attrValSep string = " "
+	)
+	walk = func(n *html.Node) {
+		if n.Type == html.ElementNode {
+			for _, attr := range n.Attr {
+				if attr.Key != "id" && attr.Key != "class" {
 					continue
 				}
+				// `attr.Val` might contain multiple CSS selectors. Eg. `class="btn btn-sm"`
 				attrValues := strings.Split(attr.Val, attrValSep)
 				var (
 					// start and end are the byte offsets of one attribute value.
@@ -348,7 +342,7 @@ LtagsZ:
 					l := len([]byte(val))
 					end = uint32(start + uint32(l))
 					hrefs := normalizeStylesheetHREFs(stylesheetHREFs, filepath.Dir(filePath))
-					defPath := resolveSelectorDefPath(selectorDefs, selector(prefix+val), hrefs)
+					defPath := resolveSelectorDefPath(selectorDefs, *newSelector(selPrefix(attr.Key) + val), hrefs)
 					if defPath == nil { // selector definition not found.
 						continue
 					}
@@ -365,7 +359,11 @@ LtagsZ:
 				}
 			}
 		}
+		for c := n.FirstChild; c != nil; c = c.NextSibling {
+			walk(c)
+		}
 	}
+	walk(doc)
 	return refs, nil
 }
 
@@ -449,4 +447,15 @@ func stylesheetPathExists(stylesheetsPath []string, fp string) bool {
 		}
 	}
 	return false
+}
+
+// selPrefix checks given HTML attribute and returns either `#` or `.`.
+func selPrefix(attr string) string {
+	switch attr {
+	case "id":
+		return "#"
+	case "class":
+		return "."
+	}
+	return ""
 }
