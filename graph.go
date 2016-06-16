@@ -315,7 +315,7 @@ LlinkTags:
 		}
 	}
 
-	filteredDefs := filterDefs(selectorDefs, func(def *graph.Def) bool {
+	defs := filterDefs(selectorDefs, func(def *graph.Def) bool {
 		for _, f := range stylesheetHREFs {
 			if def.File == f {
 				return true
@@ -325,7 +325,7 @@ LlinkTags:
 	})
 
 	// Not defs were found for given HTML file `filePath`.
-	if len(filteredDefs) == 0 {
+	if len(defs) == 0 {
 		return nil, nil
 	}
 
@@ -355,14 +355,14 @@ LlinkTags:
 				for _, val := range attrValues {
 					l := len([]byte(val))
 					end = uint32(start + uint32(l))
-					defPath := resolveSelectorDefPath(selectorDefs, *newSelector(selPrefix(attr.Key) + val), stylesheetHREFs)
-					if defPath == nil { // selector definition not found.
+					def := selectorDef(defs, *newSelector(selPrefix(attr.Key) + val))
+					if def == nil { // selector definition not found.
 						continue
 					}
 					refs = append(refs, &graph.Ref{
 						DefUnitType: "basic-css",
 						DefUnit:     u.Name,
-						DefPath:     *defPath,
+						DefPath:     def.DefKey.Path,
 						Unit:        u.Name,
 						File:        filepath.ToSlash(filePath),
 						Start:       start,
@@ -432,11 +432,11 @@ func selectorDefPath(filePath string, s selector) string {
 	return fmt.Sprintf("%s%s", filepath.ToSlash(filePath), string(s))
 }
 
-// resolveSelectorDefPath returns the definition path of given selector.
-func resolveSelectorDefPath(selectorsDef []*graph.Def, s selector, stylesheetPaths []string) *string {
-	for _, def := range selectorsDef {
-		if def.Name == s.String() && stylesheetPathExists(stylesheetPaths, def.File) {
-			return &def.DefKey.Path
+// selectorDef searches for a definition which represents the given selector.
+func selectorDef(defs []*graph.Def, s selector) *graph.Def {
+	for _, def := range defs {
+		if def.Name == s.String() {
+			return def
 		}
 	}
 	return nil
@@ -445,16 +445,6 @@ func resolveSelectorDefPath(selectorsDef []*graph.Def, s selector, stylesheetPat
 // normalizeStylesheetHREF normalizes given `stylesheetHREFs` to be relative path of given `root`.
 func normalizeStylesheetHREF(stylesheetHREF string, root string) string {
 	return filepath.ToSlash(filepath.Join(root, stylesheetHREF))
-}
-
-// stylesheetPathExists returns true if given filepath exists on `stylesheetPaths`.
-func stylesheetPathExists(stylesheetsPath []string, fp string) bool {
-	for _, s := range stylesheetsPath {
-		if s == fp {
-			return true
-		}
-	}
-	return false
 }
 
 // selPrefix checks given HTML attribute and returns either `#` or `.`.
