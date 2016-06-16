@@ -309,10 +309,24 @@ LlinkTags:
 					}
 				}
 				if isStylesheetLink {
-					stylesheetHREFs = append(stylesheetHREFs, href)
+					stylesheetHREFs = append(stylesheetHREFs, normalizeStylesheetHREF(href, filepath.Dir(filePath)))
 				}
 			}
 		}
+	}
+
+	filteredDefs := filterDefs(selectorDefs, func(def *graph.Def) bool {
+		for _, f := range stylesheetHREFs {
+			if def.File == f {
+				return true
+			}
+		}
+		return false
+	})
+
+	// Not defs were found for given HTML file `filePath`.
+	if len(filteredDefs) == 0 {
+		return nil, nil
 	}
 
 	doc, err := html.Parse(strings.NewReader(data))
@@ -334,15 +348,14 @@ LlinkTags:
 				attrValues := strings.Split(attr.Val, attrValSep)
 				var (
 					// start and end are the byte offsets of one attribute value.
-					// Which are re-calculated on each iteration of the next loop.
+					// Which are re-calculated on each iteration of the next current loop-iteration.
 					start = uint32(attr.ValStart)
 					end   uint32
 				)
 				for _, val := range attrValues {
 					l := len([]byte(val))
 					end = uint32(start + uint32(l))
-					hrefs := normalizeStylesheetHREFs(stylesheetHREFs, filepath.Dir(filePath))
-					defPath := resolveSelectorDefPath(selectorDefs, *newSelector(selPrefix(attr.Key) + val), hrefs)
+					defPath := resolveSelectorDefPath(selectorDefs, *newSelector(selPrefix(attr.Key) + val), stylesheetHREFs)
 					if defPath == nil { // selector definition not found.
 						continue
 					}
@@ -429,14 +442,9 @@ func resolveSelectorDefPath(selectorsDef []*graph.Def, s selector, stylesheetPat
 	return nil
 }
 
-// normalizeStylesheetHREFs normalizes each element of given `stylesheetHREFs`
-// to be relative path of given `root`.
-func normalizeStylesheetHREFs(stylesheetHREFs []string, root string) []string {
-	var normalized []string
-	for _, s := range stylesheetHREFs {
-		normalized = append(normalized, filepath.ToSlash(filepath.Join(root, s)))
-	}
-	return normalized
+// normalizeStylesheetHREF normalizes given `stylesheetHREFs` to be relative path of given `root`.
+func normalizeStylesheetHREF(stylesheetHREF string, root string) string {
+	return filepath.ToSlash(filepath.Join(root, stylesheetHREF))
 }
 
 // stylesheetPathExists returns true if given filepath exists on `stylesheetPaths`.
@@ -458,4 +466,15 @@ func selPrefix(attr string) string {
 		return "."
 	}
 	return ""
+}
+
+// filterDefs filter given defs using given predicate as filtering function.
+func filterDefs(defs []*graph.Def, predicate func(def *graph.Def) bool) []*graph.Def {
+	var filteredDefs []*graph.Def
+	for _, def := range defs {
+		if ok := predicate(def); ok {
+			filteredDefs = append(filteredDefs, def)
+		}
+	}
+	return filteredDefs
 }
