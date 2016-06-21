@@ -207,16 +207,9 @@ func cssDefsAndRefs(s css.Selector, u *unit.SourceUnit, data string, filePath st
 		defStart = 1
 	}
 
-	// Obtain last selector from a selectors chain.
-	sel := lastSelector(s.Value)
-	if sel == nil {
-		return nil, nil, nil
-	}
-
-	selStr := string(*sel)
 	d, err := json.Marshal(css_def.DefData{
 		Keyword: "selector",
-		Kind:    selectorKind(selStr),
+		Kind:    selectorKind(s.Value),
 	})
 	if err != nil {
 		return nil, nil, err
@@ -225,9 +218,9 @@ func cssDefsAndRefs(s css.Selector, u *unit.SourceUnit, data string, filePath st
 		DefKey: graph.DefKey{
 			UnitType: "basic-css",
 			Unit:     u.Name,
-			Path:     selectorDefPath(filePath, *sel),
+			Path:     selectorDefPath(filePath, *newSelector(s.Value)),
 		},
-		Name:     selStr,
+		Name:     s.Value,
 		File:     filepath.ToSlash(filePath),
 		DefStart: uint32(defStart),
 		DefEnd:   uint32(defEnd),
@@ -355,8 +348,9 @@ LlinkTags:
 				for _, val := range attrValues {
 					l := len([]byte(val))
 					end = uint32(start + uint32(l))
-					def := selectorDef(defs, *newSelector(selPrefix(attr.Key) + val))
+					def := SelectorDef(defs, *newSelector(selPrefix(attr.Key) + val), n)
 					if def == nil { // selector definition not found.
+						start = end + uint32(len(attrValSep))
 						continue
 					}
 					refs = append(refs, &graph.Ref{
@@ -433,13 +427,69 @@ func selectorDefPath(filePath string, s selector) string {
 }
 
 // selectorDef searches for a definition which represents the given selector.
-func selectorDef(defs []*graph.Def, s selector) *graph.Def {
+func SelectorDef(defs []*graph.Def, s selector, selNode *html.Node) *graph.Def {
+	descCombSels := DescCombinatorSelectors(selNode)
 	for _, def := range defs {
 		if def.Name == s.String() {
 			return def
 		}
+		for _, sel := range descCombSels {
+			if def.Name == sel {
+				return def
+			}
+		}
 	}
 	return nil
+}
+
+// DescCombinatorSelectors walks upwards given node, then builds and returns all its possible descendant combinator selectors.
+func DescCombinatorSelectors(selNode *html.Node) []string {
+	type sel struct {
+		value string
+		node  *html.Node
+	}
+	var selectors []sel
+	var leafSelectors []string
+	var currentNode *html.Node = selNode
+	var attrValSep string = " "
+	for {
+		if currentNode.Type == html.ElementNode {
+			for _, attr := range currentNode.Attr {
+				if attr.Key != "id" && attr.Key != "class" {
+					continue
+				}
+				attrValues := strings.Split(attr.Val, attrValSep)
+				for _, val := range attrValues {
+					selStr := selPrefix(attr.Key) + val
+					if currentNode == selNode {
+						leafSelectors = append(leafSelectors, selStr)
+						continue
+					}
+					for _, s := range selectors {
+						if s.node != currentNode {
+							selectors = append(selectors, sel{
+								value: fmt.Sprintf("%s %s", selStr, s.value), node: currentNode,
+							})
+						}
+					}
+					for _, s := range leafSelectors {
+						selectors = append(selectors, sel{
+							value: fmt.Sprintf("%s %s", selStr, s), node: currentNode,
+						})
+					}
+				}
+			}
+		}
+		if currentNode.Parent == nil {
+			break
+		}
+		currentNode = currentNode.Parent
+	}
+	var result []string
+	for _, s := range selectors {
+		result = append(result, s.value)
+	}
+	return result
 }
 
 // normalizeStylesheetHREF normalizes given `stylesheetHREFs` to be relative path of given `root`.
