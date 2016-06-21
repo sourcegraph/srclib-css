@@ -97,6 +97,58 @@ func TestDescCombinatorSelectors(t *testing.T) {
 	}
 }
 
+func TestChildCombinators(t *testing.T) {
+	type testCase struct {
+		expected []string
+		node     html.Node
+	}
+	cases := []testCase{
+		{
+			expected: []string{
+				"#container > .container-inner",
+				"#container2 > .container-inner",
+				".section > .container-inner",
+
+				"#container-wrapper > #container > .container-inner",
+				"#container-wrapper > #container2 > .container-inner",
+				"#container-wrapper > .section > .container-inner",
+
+				".col-xs-6 > #container > .container-inner",
+				".col-xs-6 > #container2 > .container-inner",
+				".col-xs-6 > .section > .container-inner",
+			},
+			node: html.Node{
+				Type: html.ElementNode,
+				Attr: []html.Attribute{
+					{Key: "class", Val: "container-inner"},
+				},
+				Parent: &html.Node{
+					Type: html.ElementNode,
+					Attr: []html.Attribute{
+						{Key: "id", Val: "container container2"},
+						{Key: "class", Val: "section"},
+					},
+					Parent: &html.Node{
+						Type: html.ElementNode,
+						Attr: []html.Attribute{
+							{Key: "id", Val: "container-wrapper"},
+							{Key: "class", Val: "col-xs-6"},
+						},
+					},
+				},
+			},
+		},
+	}
+	for i, c := range cases {
+		got := ChildCombinatorSelectors(&c.node)
+		sort.Sort(bySelector(c.expected))
+		sort.Sort(bySelector(got))
+		if !reflect.DeepEqual(got, c.expected) {
+			t.Fatalf("case: %v, got: %v, expected: %v", i, got, c.expected)
+		}
+	}
+}
+
 type bySelector []string
 
 func (s bySelector) Len() int      { return len(s) }

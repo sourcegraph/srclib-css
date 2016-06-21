@@ -429,6 +429,7 @@ func selectorDefPath(filePath string, s selector) string {
 // selectorDef searches for a definition which represents the given selector.
 func SelectorDef(defs []*graph.Def, s selector, selNode *html.Node) *graph.Def {
 	descCombSels := DescCombinatorSelectors(selNode)
+	childCombSels := ChildCombinatorSelectors(selNode)
 	for _, def := range defs {
 		if def.Name == s.String() {
 			return def
@@ -438,6 +439,12 @@ func SelectorDef(defs []*graph.Def, s selector, selNode *html.Node) *graph.Def {
 				return def
 			}
 		}
+		for _, sel := range childCombSels {
+			if def.Name == sel {
+				return def
+			}
+		}
+
 	}
 	return nil
 }
@@ -476,6 +483,60 @@ func DescCombinatorSelectors(selNode *html.Node) []string {
 						selectors = append(selectors, sel{
 							value: fmt.Sprintf("%s %s", selStr, s), node: currentNode,
 						})
+					}
+				}
+			}
+		}
+		if currentNode.Parent == nil {
+			break
+		}
+		currentNode = currentNode.Parent
+	}
+	var result []string
+	for _, s := range selectors {
+		result = append(result, s.value)
+	}
+	return result
+}
+
+// ChildCombinatorSelectors walks upwards given node, then builds and returns all its possible child combinator selectors.
+func ChildCombinatorSelectors(selNode *html.Node) []string {
+	type sel struct {
+		value string
+		node  *html.Node
+	}
+	var selectors []sel
+	var leafSelectors []sel
+	var currentNode *html.Node = selNode
+	var attrValSep string = " "
+	for {
+		if currentNode.Type == html.ElementNode {
+			for _, attr := range currentNode.Attr {
+				if attr.Key != "id" && attr.Key != "class" {
+					continue
+				}
+				attrValues := strings.Split(attr.Val, attrValSep)
+				for _, val := range attrValues {
+					selStr := selPrefix(attr.Key) + val
+					if currentNode == selNode {
+						leafSelectors = append(leafSelectors, sel{
+							value: selStr, node: currentNode,
+						})
+						continue
+					}
+					for _, s := range selectors {
+						if s.node != currentNode && s.node.Parent == currentNode {
+							selectors = append(selectors, sel{
+								value: fmt.Sprintf("%s > %s", selStr, s.value), node: currentNode,
+							})
+						}
+					}
+					for _, s := range leafSelectors {
+						if s.node.Parent == currentNode {
+							selectors = append(selectors, sel{
+								value: fmt.Sprintf("%s > %s", selStr, s.value), node: currentNode,
+							})
+						}
 					}
 				}
 			}
