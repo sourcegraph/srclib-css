@@ -6891,6 +6891,15 @@
     {
       "DefUnitType": "basic-css",
       "DefUnit": "css-sample-0",
+      "DefPath": "main.css#container \u003e .container-inner",
+      "Unit": "css-sample-0",
+      "File": "main.html",
+      "Start": 854,
+      "End": 869
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
       "DefPath": "main.css#container",
       "Unit": "css-sample-0",
       "Def": true,
@@ -7078,15 +7087,6 @@
       "DefPath": "main.css.col-xs-3",
       "Unit": "css-sample-0",
       "File": "main.html",
-      "Start": 1825,
-      "End": 1833
-    },
-    {
-      "DefUnitType": "basic-css",
-      "DefUnit": "css-sample-0",
-      "DefPath": "main.css.col-xs-3",
-      "Unit": "css-sample-0",
-      "File": "main.html",
       "Start": 1966,
       "End": 1974
     },
@@ -7146,6 +7146,24 @@
       "File": "main.css",
       "Start": 141,
       "End": 164
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "main.css.footer \u003e .footer-inner",
+      "Unit": "css-sample-0",
+      "File": "main.html",
+      "Start": 1812,
+      "End": 1824
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "main.css.footer \u003e .footer-inner",
+      "Unit": "css-sample-0",
+      "File": "main.html",
+      "Start": 1825,
+      "End": 1833
     },
     {
       "DefUnitType": "basic-css",
