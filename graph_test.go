@@ -13,6 +13,7 @@ func TestDescCombinatorSelectors(t *testing.T) {
 	type testCase struct {
 		expected []string
 		node     html.Node
+		sel      selector
 	}
 	cases := []testCase{
 		{
@@ -62,7 +63,7 @@ func TestDescCombinatorSelectors(t *testing.T) {
 			node: html.Node{
 				Type: html.ElementNode,
 				Attr: []html.Attribute{
-					{Key: "class", Val: "container-inner"},
+					{Key: "class", Val: "container-inner col-xs-12"},
 				},
 				Parent: &html.Node{
 					Type: html.ElementNode,
@@ -85,10 +86,11 @@ func TestDescCombinatorSelectors(t *testing.T) {
 					},
 				},
 			},
+			sel: ".container-inner",
 		},
 	}
 	for i, c := range cases {
-		got := DescCombinatorSelectors(&c.node)
+		got := DescCombinatorSelectors(selNode{sel: c.sel, node: &c.node})
 		sort.Sort(bySelector(got))
 		sort.Sort(bySelector(c.expected))
 		if !reflect.DeepEqual(got, c.expected) {
@@ -101,6 +103,7 @@ func TestChildCombinators(t *testing.T) {
 	type testCase struct {
 		expected []string
 		node     html.Node
+		sel      selector
 	}
 	cases := []testCase{
 		{
@@ -120,6 +123,7 @@ func TestChildCombinators(t *testing.T) {
 			node: html.Node{
 				Type: html.ElementNode,
 				Attr: []html.Attribute{
+					{Key: "id", Val: "container-inner"},
 					{Key: "class", Val: "container-inner"},
 				},
 				Parent: &html.Node{
@@ -137,10 +141,11 @@ func TestChildCombinators(t *testing.T) {
 					},
 				},
 			},
+			sel: ".container-inner",
 		},
 	}
 	for i, c := range cases {
-		got := ChildCombinatorSelectors(&c.node)
+		got := ChildCombinatorSelectors(selNode{sel: c.sel, node: &c.node})
 		sort.Sort(bySelector(c.expected))
 		sort.Sort(bySelector(got))
 		if !reflect.DeepEqual(got, c.expected) {

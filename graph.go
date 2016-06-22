@@ -102,6 +102,12 @@ func newSelector(sel string) *selector {
 	return &s
 }
 
+// selNode represents a selector HTML node.
+type selNode struct {
+	sel  selector
+	node *html.Node
+}
+
 // descSelectorRegexp is a regexp pattern that matches individual selectors from a descendant selector, Eg. "h1.title" matches "h1" and "title".
 var descSelectorRegexp = regexp.MustCompile(".*([\\.\\#].+)")
 
@@ -348,7 +354,10 @@ LlinkTags:
 				for _, val := range attrValues {
 					l := len([]byte(val))
 					end = uint32(start + uint32(l))
-					def := SelectorDef(defs, *newSelector(selPrefix(attr.Key) + val), n)
+					def := SelectorDef(defs, selNode{
+						sel:  *newSelector(selPrefix(attr.Key) + val),
+						node: n,
+					})
 					if def == nil { // selector definition not found.
 						start = end + uint32(len(attrValSep))
 						continue
@@ -427,11 +436,11 @@ func selectorDefPath(filePath string, s selector) string {
 }
 
 // selectorDef searches for a definition which represents the given selector.
-func SelectorDef(defs []*graph.Def, s selector, selNode *html.Node) *graph.Def {
-	descCombSels := DescCombinatorSelectors(selNode)
-	childCombSels := ChildCombinatorSelectors(selNode)
+func SelectorDef(defs []*graph.Def, sel selNode) *graph.Def {
+	descCombSels := DescCombinatorSelectors(sel)
+	childCombSels := ChildCombinatorSelectors(sel)
 	for _, def := range defs {
-		if def.Name == s.String() {
+		if def.Name == sel.sel.String() {
 			return def
 		}
 		for _, sel := range descCombSels {
@@ -450,15 +459,12 @@ func SelectorDef(defs []*graph.Def, s selector, selNode *html.Node) *graph.Def {
 }
 
 // DescCombinatorSelectors walks upwards given node, then builds and returns all its possible descendant combinator selectors.
-func DescCombinatorSelectors(selNode *html.Node) []string {
-	type sel struct {
-		value string
-		node  *html.Node
-	}
-	var selectors []sel
-	var leafSelectors []string
-	var currentNode *html.Node = selNode
-	var attrValSep string = " "
+func DescCombinatorSelectors(sn selNode) []string {
+	var (
+		selectors   []selNode
+		currentNode *html.Node = sn.node
+		attrValSep  string     = " "
+	)
 	for {
 		if currentNode.Type == html.ElementNode {
 			for _, attr := range currentNode.Attr {
@@ -468,22 +474,21 @@ func DescCombinatorSelectors(selNode *html.Node) []string {
 				attrValues := strings.Split(attr.Val, attrValSep)
 				for _, val := range attrValues {
 					selStr := selPrefix(attr.Key) + val
-					if currentNode == selNode {
-						leafSelectors = append(leafSelectors, selStr)
+					if currentNode == sn.node {
 						continue
 					}
 					for _, s := range selectors {
 						if s.node != currentNode {
-							selectors = append(selectors, sel{
-								value: fmt.Sprintf("%s %s", selStr, s.value), node: currentNode,
+							selectors = append(selectors, selNode{
+								sel:  *newSelector(fmt.Sprintf("%s %s", selStr, s.sel.String())),
+								node: currentNode,
 							})
 						}
 					}
-					for _, s := range leafSelectors {
-						selectors = append(selectors, sel{
-							value: fmt.Sprintf("%s %s", selStr, s), node: currentNode,
-						})
-					}
+					selectors = append(selectors, selNode{
+						sel:  *newSelector(fmt.Sprintf("%s %s", selStr, sn.sel.String())),
+						node: currentNode,
+					})
 				}
 			}
 		}
@@ -494,21 +499,18 @@ func DescCombinatorSelectors(selNode *html.Node) []string {
 	}
 	var result []string
 	for _, s := range selectors {
-		result = append(result, s.value)
+		result = append(result, s.sel.String())
 	}
 	return result
 }
 
 // ChildCombinatorSelectors walks upwards given node, then builds and returns all its possible child combinator selectors.
-func ChildCombinatorSelectors(selNode *html.Node) []string {
-	type sel struct {
-		value string
-		node  *html.Node
-	}
-	var selectors []sel
-	var leafSelectors []sel
-	var currentNode *html.Node = selNode
-	var attrValSep string = " "
+func ChildCombinatorSelectors(sn selNode) []string {
+	var (
+		selectors   []selNode
+		currentNode *html.Node = sn.node
+		attrValSep  string     = " "
+	)
 	for {
 		if currentNode.Type == html.ElementNode {
 			for _, attr := range currentNode.Attr {
@@ -518,25 +520,22 @@ func ChildCombinatorSelectors(selNode *html.Node) []string {
 				attrValues := strings.Split(attr.Val, attrValSep)
 				for _, val := range attrValues {
 					selStr := selPrefix(attr.Key) + val
-					if currentNode == selNode {
-						leafSelectors = append(leafSelectors, sel{
-							value: selStr, node: currentNode,
-						})
+					if currentNode == sn.node {
 						continue
 					}
 					for _, s := range selectors {
 						if s.node != currentNode && s.node.Parent == currentNode {
-							selectors = append(selectors, sel{
-								value: fmt.Sprintf("%s > %s", selStr, s.value), node: currentNode,
+							selectors = append(selectors, selNode{
+								sel:  *newSelector(fmt.Sprintf("%s > %s", selStr, s.sel.String())),
+								node: currentNode,
 							})
 						}
 					}
-					for _, s := range leafSelectors {
-						if s.node.Parent == currentNode {
-							selectors = append(selectors, sel{
-								value: fmt.Sprintf("%s > %s", selStr, s.value), node: currentNode,
-							})
-						}
+					if sn.node.Parent == currentNode {
+						selectors = append(selectors, selNode{
+							sel:  *newSelector(fmt.Sprintf("%s > %s", selStr, sn.sel.String())),
+							node: currentNode,
+						})
 					}
 				}
 			}
@@ -548,7 +547,7 @@ func ChildCombinatorSelectors(selNode *html.Node) []string {
 	}
 	var result []string
 	for _, s := range selectors {
-		result = append(result, s.value)
+		result = append(result, s.sel.String())
 	}
 	return result
 }
