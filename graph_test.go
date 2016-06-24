@@ -154,6 +154,85 @@ func TestChildCombinators(t *testing.T) {
 	}
 }
 
+func TestAdjacentCombinatorSelectors(t *testing.T) {
+	type testCase struct {
+		expected []string
+		node     html.Node
+		sel      selector
+	}
+	cases := []testCase{
+		{
+			expected: []string{
+				"#toolbar-aside + .aside",
+				".section + .aside",
+				".col-xs-6 + .aside",
+				".center + .aside",
+			},
+			node: html.Node{
+				Type: html.ElementNode,
+				Attr: []html.Attribute{
+					{Key: "id", Val: "content-aside"},
+					{Key: "class", Val: "aside"},
+				},
+				PrevSibling: &html.Node{
+					Type: html.ElementNode,
+					Attr: []html.Attribute{
+						{Key: "id", Val: "toolbar-aside"},
+						{Key: "class", Val: "section col-xs-6 center"},
+					},
+				},
+			},
+			sel: ".aside",
+		},
+	}
+	for i, c := range cases {
+		got := AdjacentCombinatorSelectors(selNode{sel: c.sel, node: &c.node})
+		sort.Sort(bySelector(c.expected))
+		sort.Sort(bySelector(got))
+		if !reflect.DeepEqual(got, c.expected) {
+			t.Fatalf("case: %v, got: %v, expected: %v", i, got, c.expected)
+		}
+	}
+}
+
+func TestGeneralCombinatorSelectors(t *testing.T) {
+	type testCase struct {
+		expected []string
+		node     html.Node
+		sel      selector
+	}
+	cases := []testCase{
+		{
+			expected: []string{
+				"#aside-second-sibling ~ .aside",
+				".col-xs-6 ~ .aside",
+			},
+			node: html.Node{
+				Type: html.ElementNode,
+				Attr: []html.Attribute{
+					{Key: "class", Val: "aside"},
+				},
+				PrevSibling: &html.Node{
+					Type: html.ElementNode,
+					Attr: []html.Attribute{
+						{Key: "id", Val: "aside-second-sibling"},
+						{Key: "class", Val: "col-xs-6"},
+					},
+				},
+			},
+			sel: ".aside",
+		},
+	}
+	for i, c := range cases {
+		got := GeneralCombinatorSelectors(selNode{sel: c.sel, node: &c.node})
+		sort.Sort(bySelector(c.expected))
+		sort.Sort(bySelector(got))
+		if !reflect.DeepEqual(got, c.expected) {
+			t.Fatalf("case: %v, got: %v, expected: %v", i, got, c.expected)
+		}
+	}
+}
+
 type bySelector []string
 
 func (s bySelector) Len() int      { return len(s) }
