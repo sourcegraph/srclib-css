@@ -3,6 +3,70 @@
     {
       "UnitType": "basic-css",
       "Unit": "css-sample-0",
+      "Path": "alerts.css.alert .alert-link",
+      "Name": ".alert .alert-link",
+      "File": "alerts.css",
+      "DefStart": 155,
+      "DefEnd": 173,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "alerts.css.alert \u003e p + p",
+      "Name": ".alert \u003e p + p",
+      "File": "alerts.css",
+      "DefStart": 247,
+      "DefEnd": 261,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "alerts.css.alert \u003e p",
+      "Name": ".alert \u003e p",
+      "File": "alerts.css",
+      "DefStart": 199,
+      "DefEnd": 209,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "alerts.css.alert \u003e ul",
+      "Name": ".alert \u003e ul",
+      "File": "alerts.css",
+      "DefStart": 211,
+      "DefEnd": 222,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
       "Path": "alerts.css.alert h4",
       "Name": ".alert h4",
       "File": "alerts.css",
@@ -24,6 +88,22 @@
       "File": "alerts.css",
       "DefStart": 1,
       "DefEnd": 6,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "alerts.css.alert-danger .alert-link",
+      "Name": ".alert-danger .alert-link",
+      "File": "alerts.css",
+      "DefStart": 1181,
+      "DefEnd": 1206,
       "Data": {
         "Name": "",
         "Keyword": "selector",
@@ -67,6 +147,22 @@
     {
       "UnitType": "basic-css",
       "Unit": "css-sample-0",
+      "Path": "alerts.css.alert-dismissable .close",
+      "Name": ".alert-dismissable .close",
+      "File": "alerts.css",
+      "DefStart": 351,
+      "DefEnd": 376,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
       "Path": "alerts.css.alert-dismissable",
       "Name": ".alert-dismissable",
       "File": "alerts.css",
@@ -83,11 +179,43 @@
     {
       "UnitType": "basic-css",
       "Unit": "css-sample-0",
+      "Path": "alerts.css.alert-dismissible .close",
+      "Name": ".alert-dismissible .close",
+      "File": "alerts.css",
+      "DefStart": 378,
+      "DefEnd": 403,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
       "Path": "alerts.css.alert-dismissible",
       "Name": ".alert-dismissible",
       "File": "alerts.css",
       "DefStart": 305,
       "DefEnd": 323,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "alerts.css.alert-info .alert-link",
+      "Name": ".alert-info .alert-link",
+      "File": "alerts.css",
+      "DefStart": 804,
+      "DefEnd": 827,
       "Data": {
         "Name": "",
         "Keyword": "selector",
@@ -131,11 +259,11 @@
     {
       "UnitType": "basic-css",
       "Unit": "css-sample-0",
-      "Path": "alerts.css.alert-link",
-      "Name": ".alert-link",
+      "Path": "alerts.css.alert-success .alert-link",
+      "Name": ".alert-success .alert-link",
       "File": "alerts.css",
-      "DefStart": 155,
-      "DefEnd": 173,
+      "DefStart": 619,
+      "DefEnd": 645,
       "Data": {
         "Name": "",
         "Keyword": "selector",
@@ -179,6 +307,22 @@
     {
       "UnitType": "basic-css",
       "Unit": "css-sample-0",
+      "Path": "alerts.css.alert-warning .alert-link",
+      "Name": ".alert-warning .alert-link",
+      "File": "alerts.css",
+      "DefStart": 992,
+      "DefEnd": 1018,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
       "Path": "alerts.css.alert-warning hr",
       "Name": ".alert-warning hr",
       "File": "alerts.css",
@@ -211,27 +355,11 @@
     {
       "UnitType": "basic-css",
       "Unit": "css-sample-0",
-      "Path": "alerts.css.close",
-      "Name": ".close",
-      "File": "alerts.css",
-      "DefStart": 351,
-      "DefEnd": 376,
-      "Data": {
-        "Name": "",
-        "Keyword": "selector",
-        "Type": "",
-        "Kind": "class",
-        "Separator": ""
-      }
-    },
-    {
-      "UnitType": "basic-css",
-      "Unit": "css-sample-0",
-      "Path": "assets/panels.css.badge",
-      "Name": ".badge",
+      "Path": "assets/panels.css.list-group + .panel-footer",
+      "Name": ".list-group + .panel-footer",
       "File": "assets/panels.css",
-      "DefStart": 10294,
-      "DefEnd": 10332,
+      "DefStart": 1777,
+      "DefEnd": 1804,
       "Data": {
         "Name": "",
         "Keyword": "selector",
@@ -243,40 +371,8 @@
     {
       "UnitType": "basic-css",
       "Unit": "css-sample-0",
-      "Path": "assets/panels.css.dropdown-toggle",
-      "Name": ".dropdown-toggle",
-      "File": "assets/panels.css",
-      "DefStart": 396,
-      "DefEnd": 439,
-      "Data": {
-        "Name": "",
-        "Keyword": "selector",
-        "Type": "",
-        "Kind": "class",
-        "Separator": ""
-      }
-    },
-    {
-      "UnitType": "basic-css",
-      "Unit": "css-sample-0",
-      "Path": "assets/panels.css.list-group",
-      "Name": ".list-group",
-      "File": "assets/panels.css",
-      "DefStart": 858,
-      "DefEnd": 878,
-      "Data": {
-        "Name": "",
-        "Keyword": "selector",
-        "Type": "",
-        "Kind": "class",
-        "Separator": ""
-      }
-    },
-    {
-      "UnitType": "basic-css",
-      "Unit": "css-sample-0",
-      "Path": "assets/panels.css.list-group-item",
-      "Name": ".list-group-item",
+      "Path": "assets/panels.css.panel \u003e .list-group .list-group-item",
+      "Name": ".panel \u003e .list-group .list-group-item",
       "File": "assets/panels.css",
       "DefStart": 943,
       "DefEnd": 980,
@@ -291,8 +387,24 @@
     {
       "UnitType": "basic-css",
       "Unit": "css-sample-0",
-      "Path": "assets/panels.css.list-group-item:first-child",
-      "Name": ".list-group-item:first-child",
+      "Path": "assets/panels.css.panel \u003e .list-group",
+      "Name": ".panel \u003e .list-group",
+      "File": "assets/panels.css",
+      "DefStart": 858,
+      "DefEnd": 878,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel \u003e .list-group:first-child .list-group-item:first-child",
+      "Name": ".panel \u003e .list-group:first-child .list-group-item:first-child",
       "File": "assets/panels.css",
       "DefStart": 1085,
       "DefEnd": 1146,
@@ -307,11 +419,1675 @@
     {
       "UnitType": "basic-css",
       "Unit": "css-sample-0",
-      "Path": "assets/panels.css.list-group-item:last-child",
-      "Name": ".list-group-item:last-child",
+      "Path": "assets/panels.css.panel \u003e .list-group:last-child .list-group-item:last-child",
+      "Name": ".panel \u003e .list-group:last-child .list-group-item:last-child",
       "File": "assets/panels.css",
       "DefStart": 1312,
       "DefEnd": 1371,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel \u003e .panel-body + .table",
+      "Name": ".panel \u003e .panel-body + .table",
+      "File": "assets/panels.css",
+      "DefStart": 6376,
+      "DefEnd": 6405,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel \u003e .panel-body + .table-responsive",
+      "Name": ".panel \u003e .panel-body + .table-responsive",
+      "File": "assets/panels.css",
+      "DefStart": 6407,
+      "DefEnd": 6447,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel \u003e .panel-collapse \u003e .list-group .list-group-item",
+      "Name": ".panel \u003e .panel-collapse \u003e .list-group .list-group-item",
+      "File": "assets/panels.css",
+      "DefStart": 982,
+      "DefEnd": 1037,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel \u003e .panel-collapse \u003e .list-group",
+      "Name": ".panel \u003e .panel-collapse \u003e .list-group",
+      "File": "assets/panels.css",
+      "DefStart": 880,
+      "DefEnd": 918,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel \u003e .panel-collapse \u003e .list-group:first-child .list-group-item:first-child",
+      "Name": ".panel \u003e .panel-collapse \u003e .list-group:first-child .list-group-item:first-child",
+      "File": "assets/panels.css",
+      "DefStart": 1148,
+      "DefEnd": 1227,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel \u003e .panel-collapse \u003e .list-group:last-child .list-group-item:last-child",
+      "Name": ".panel \u003e .panel-collapse \u003e .list-group:last-child .list-group-item:last-child",
+      "File": "assets/panels.css",
+      "DefStart": 1373,
+      "DefEnd": 1450,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel \u003e .panel-collapse \u003e .table caption",
+      "Name": ".panel \u003e .panel-collapse \u003e .table caption",
+      "File": "assets/panels.css",
+      "DefStart": 2014,
+      "DefEnd": 2055,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel \u003e .panel-collapse \u003e .table",
+      "Name": ".panel \u003e .panel-collapse \u003e .table",
+      "File": "assets/panels.css",
+      "DefStart": 1886,
+      "DefEnd": 1919,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel \u003e .panel-heading + .panel-collapse \u003e .list-group .list-group-item:first-child",
+      "Name": ".panel \u003e .panel-heading + .panel-collapse \u003e .list-group .list-group-item:first-child",
+      "File": "assets/panels.css",
+      "DefStart": 1544,
+      "DefEnd": 1628,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel \u003e .table + .panel-body",
+      "Name": ".panel \u003e .table + .panel-body",
+      "File": "assets/panels.css",
+      "DefStart": 6449,
+      "DefEnd": 6478,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel \u003e .table \u003e tbody:first-child \u003e tr:first-child td",
+      "Name": ".panel \u003e .table \u003e tbody:first-child \u003e tr:first-child td",
+      "File": "assets/panels.css",
+      "DefStart": 6612,
+      "DefEnd": 6667,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel \u003e .table \u003e tbody:first-child \u003e tr:first-child th",
+      "Name": ".panel \u003e .table \u003e tbody:first-child \u003e tr:first-child th",
+      "File": "assets/panels.css",
+      "DefStart": 6555,
+      "DefEnd": 6610,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel \u003e .table caption",
+      "Name": ".panel \u003e .table caption",
+      "File": "assets/panels.css",
+      "DefStart": 1944,
+      "DefEnd": 1967,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel \u003e .table",
+      "Name": ".panel \u003e .table",
+      "File": "assets/panels.css",
+      "DefStart": 1832,
+      "DefEnd": 1847,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel \u003e .table-bordered \u003e tbody \u003e tr \u003e td:first-child",
+      "Name": ".panel \u003e .table-bordered \u003e tbody \u003e tr \u003e td:first-child",
+      "File": "assets/panels.css",
+      "DefStart": 7305,
+      "DefEnd": 7359,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel \u003e .table-bordered \u003e tbody \u003e tr \u003e td:last-child",
+      "Name": ".panel \u003e .table-bordered \u003e tbody \u003e tr \u003e td:last-child",
+      "File": "assets/panels.css",
+      "DefStart": 8110,
+      "DefEnd": 8163,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel \u003e .table-bordered \u003e tbody \u003e tr \u003e th:first-child",
+      "Name": ".panel \u003e .table-bordered \u003e tbody \u003e tr \u003e th:first-child",
+      "File": "assets/panels.css",
+      "DefStart": 6909,
+      "DefEnd": 6963,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel \u003e .table-bordered \u003e tbody \u003e tr \u003e th:last-child",
+      "Name": ".panel \u003e .table-bordered \u003e tbody \u003e tr \u003e th:last-child",
+      "File": "assets/panels.css",
+      "DefStart": 7720,
+      "DefEnd": 7773,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel \u003e .table-bordered \u003e tbody \u003e tr:first-child \u003e td",
+      "Name": ".panel \u003e .table-bordered \u003e tbody \u003e tr:first-child \u003e td",
+      "File": "assets/panels.css",
+      "DefStart": 8524,
+      "DefEnd": 8578,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel \u003e .table-bordered \u003e tbody \u003e tr:first-child \u003e th",
+      "Name": ".panel \u003e .table-bordered \u003e tbody \u003e tr:first-child \u003e th",
+      "File": "assets/panels.css",
+      "DefStart": 8788,
+      "DefEnd": 8842,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel \u003e .table-bordered \u003e tbody \u003e tr:last-child \u003e td",
+      "Name": ".panel \u003e .table-bordered \u003e tbody \u003e tr:last-child \u003e td",
+      "File": "assets/panels.css",
+      "DefStart": 8943,
+      "DefEnd": 8996,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel \u003e .table-bordered \u003e tbody \u003e tr:last-child \u003e th",
+      "Name": ".panel \u003e .table-bordered \u003e tbody \u003e tr:last-child \u003e th",
+      "File": "assets/panels.css",
+      "DefStart": 9203,
+      "DefEnd": 9256,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel \u003e .table-bordered \u003e tfoot \u003e tr \u003e td:first-child",
+      "Name": ".panel \u003e .table-bordered \u003e tfoot \u003e tr \u003e td:first-child",
+      "File": "assets/panels.css",
+      "DefStart": 7437,
+      "DefEnd": 7491,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel \u003e .table-bordered \u003e tfoot \u003e tr \u003e td:last-child",
+      "Name": ".panel \u003e .table-bordered \u003e tfoot \u003e tr \u003e td:last-child",
+      "File": "assets/panels.css",
+      "DefStart": 8240,
+      "DefEnd": 8293,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel \u003e .table-bordered \u003e tfoot \u003e tr \u003e th:first-child",
+      "Name": ".panel \u003e .table-bordered \u003e tfoot \u003e tr \u003e th:first-child",
+      "File": "assets/panels.css",
+      "DefStart": 7041,
+      "DefEnd": 7095,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel \u003e .table-bordered \u003e tfoot \u003e tr \u003e th:last-child",
+      "Name": ".panel \u003e .table-bordered \u003e tfoot \u003e tr \u003e th:last-child",
+      "File": "assets/panels.css",
+      "DefStart": 7850,
+      "DefEnd": 7903,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel \u003e .table-bordered \u003e tfoot \u003e tr:last-child \u003e td",
+      "Name": ".panel \u003e .table-bordered \u003e tfoot \u003e tr:last-child \u003e td",
+      "File": "assets/panels.css",
+      "DefStart": 9073,
+      "DefEnd": 9126,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel \u003e .table-bordered \u003e tfoot \u003e tr:last-child \u003e th",
+      "Name": ".panel \u003e .table-bordered \u003e tfoot \u003e tr:last-child \u003e th",
+      "File": "assets/panels.css",
+      "DefStart": 9333,
+      "DefEnd": 9386,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel \u003e .table-bordered \u003e thead \u003e tr \u003e td:first-child",
+      "Name": ".panel \u003e .table-bordered \u003e thead \u003e tr \u003e td:first-child",
+      "File": "assets/panels.css",
+      "DefStart": 7173,
+      "DefEnd": 7227,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel \u003e .table-bordered \u003e thead \u003e tr \u003e td:last-child",
+      "Name": ".panel \u003e .table-bordered \u003e thead \u003e tr \u003e td:last-child",
+      "File": "assets/panels.css",
+      "DefStart": 7980,
+      "DefEnd": 8033,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel \u003e .table-bordered \u003e thead \u003e tr \u003e th:first-child",
+      "Name": ".panel \u003e .table-bordered \u003e thead \u003e tr \u003e th:first-child",
+      "File": "assets/panels.css",
+      "DefStart": 6777,
+      "DefEnd": 6831,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel \u003e .table-bordered \u003e thead \u003e tr \u003e th:last-child",
+      "Name": ".panel \u003e .table-bordered \u003e thead \u003e tr \u003e th:last-child",
+      "File": "assets/panels.css",
+      "DefStart": 7590,
+      "DefEnd": 7643,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel \u003e .table-bordered \u003e thead \u003e tr:first-child \u003e td",
+      "Name": ".panel \u003e .table-bordered \u003e thead \u003e tr:first-child \u003e td",
+      "File": "assets/panels.css",
+      "DefStart": 8392,
+      "DefEnd": 8446,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel \u003e .table-bordered \u003e thead \u003e tr:first-child \u003e th",
+      "Name": ".panel \u003e .table-bordered \u003e thead \u003e tr:first-child \u003e th",
+      "File": "assets/panels.css",
+      "DefStart": 8656,
+      "DefEnd": 8710,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel \u003e .table-bordered",
+      "Name": ".panel \u003e .table-bordered",
+      "File": "assets/panels.css",
+      "DefStart": 6689,
+      "DefEnd": 6713,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel \u003e .table-responsive + .panel-body",
+      "Name": ".panel \u003e .table-responsive + .panel-body",
+      "File": "assets/panels.css",
+      "DefStart": 6480,
+      "DefEnd": 6520,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel \u003e .table-responsive \u003e .table caption",
+      "Name": ".panel \u003e .table-responsive \u003e .table caption",
+      "File": "assets/panels.css",
+      "DefStart": 1969,
+      "DefEnd": 2012,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel \u003e .table-responsive \u003e .table",
+      "Name": ".panel \u003e .table-responsive \u003e .table",
+      "File": "assets/panels.css",
+      "DefStart": 1849,
+      "DefEnd": 1884,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel \u003e .table-responsive \u003e .table-bordered \u003e tbody \u003e tr \u003e td:first-child",
+      "Name": ".panel \u003e .table-responsive \u003e .table-bordered \u003e tbody \u003e tr \u003e td:first-child",
+      "File": "assets/panels.css",
+      "DefStart": 7361,
+      "DefEnd": 7435,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel \u003e .table-responsive \u003e .table-bordered \u003e tbody \u003e tr \u003e td:last-child",
+      "Name": ".panel \u003e .table-responsive \u003e .table-bordered \u003e tbody \u003e tr \u003e td:last-child",
+      "File": "assets/panels.css",
+      "DefStart": 8165,
+      "DefEnd": 8238,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel \u003e .table-responsive \u003e .table-bordered \u003e tbody \u003e tr \u003e th:first-child",
+      "Name": ".panel \u003e .table-responsive \u003e .table-bordered \u003e tbody \u003e tr \u003e th:first-child",
+      "File": "assets/panels.css",
+      "DefStart": 6965,
+      "DefEnd": 7039,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel \u003e .table-responsive \u003e .table-bordered \u003e tbody \u003e tr \u003e th:last-child",
+      "Name": ".panel \u003e .table-responsive \u003e .table-bordered \u003e tbody \u003e tr \u003e th:last-child",
+      "File": "assets/panels.css",
+      "DefStart": 7775,
+      "DefEnd": 7848,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel \u003e .table-responsive \u003e .table-bordered \u003e tbody \u003e tr:first-child \u003e td",
+      "Name": ".panel \u003e .table-responsive \u003e .table-bordered \u003e tbody \u003e tr:first-child \u003e td",
+      "File": "assets/panels.css",
+      "DefStart": 8580,
+      "DefEnd": 8654,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel \u003e .table-responsive \u003e .table-bordered \u003e tbody \u003e tr:first-child \u003e th",
+      "Name": ".panel \u003e .table-responsive \u003e .table-bordered \u003e tbody \u003e tr:first-child \u003e th",
+      "File": "assets/panels.css",
+      "DefStart": 8844,
+      "DefEnd": 8918,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel \u003e .table-responsive \u003e .table-bordered \u003e tbody \u003e tr:last-child \u003e td",
+      "Name": ".panel \u003e .table-responsive \u003e .table-bordered \u003e tbody \u003e tr:last-child \u003e td",
+      "File": "assets/panels.css",
+      "DefStart": 8998,
+      "DefEnd": 9071,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel \u003e .table-responsive \u003e .table-bordered \u003e tbody \u003e tr:last-child \u003e th",
+      "Name": ".panel \u003e .table-responsive \u003e .table-bordered \u003e tbody \u003e tr:last-child \u003e th",
+      "File": "assets/panels.css",
+      "DefStart": 9258,
+      "DefEnd": 9331,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel \u003e .table-responsive \u003e .table-bordered \u003e tfoot \u003e tr \u003e td:first-child",
+      "Name": ".panel \u003e .table-responsive \u003e .table-bordered \u003e tfoot \u003e tr \u003e td:first-child",
+      "File": "assets/panels.css",
+      "DefStart": 7493,
+      "DefEnd": 7567,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel \u003e .table-responsive \u003e .table-bordered \u003e tfoot \u003e tr \u003e td:last-child",
+      "Name": ".panel \u003e .table-responsive \u003e .table-bordered \u003e tfoot \u003e tr \u003e td:last-child",
+      "File": "assets/panels.css",
+      "DefStart": 8295,
+      "DefEnd": 8368,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel \u003e .table-responsive \u003e .table-bordered \u003e tfoot \u003e tr \u003e th:first-child",
+      "Name": ".panel \u003e .table-responsive \u003e .table-bordered \u003e tfoot \u003e tr \u003e th:first-child",
+      "File": "assets/panels.css",
+      "DefStart": 7097,
+      "DefEnd": 7171,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel \u003e .table-responsive \u003e .table-bordered \u003e tfoot \u003e tr \u003e th:last-child",
+      "Name": ".panel \u003e .table-responsive \u003e .table-bordered \u003e tfoot \u003e tr \u003e th:last-child",
+      "File": "assets/panels.css",
+      "DefStart": 7905,
+      "DefEnd": 7978,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel \u003e .table-responsive \u003e .table-bordered \u003e tfoot \u003e tr:last-child \u003e td",
+      "Name": ".panel \u003e .table-responsive \u003e .table-bordered \u003e tfoot \u003e tr:last-child \u003e td",
+      "File": "assets/panels.css",
+      "DefStart": 9128,
+      "DefEnd": 9201,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel \u003e .table-responsive \u003e .table-bordered \u003e tfoot \u003e tr:last-child \u003e th",
+      "Name": ".panel \u003e .table-responsive \u003e .table-bordered \u003e tfoot \u003e tr:last-child \u003e th",
+      "File": "assets/panels.css",
+      "DefStart": 9388,
+      "DefEnd": 9461,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel \u003e .table-responsive \u003e .table-bordered \u003e thead \u003e tr \u003e td:first-child",
+      "Name": ".panel \u003e .table-responsive \u003e .table-bordered \u003e thead \u003e tr \u003e td:first-child",
+      "File": "assets/panels.css",
+      "DefStart": 7229,
+      "DefEnd": 7303,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel \u003e .table-responsive \u003e .table-bordered \u003e thead \u003e tr \u003e td:last-child",
+      "Name": ".panel \u003e .table-responsive \u003e .table-bordered \u003e thead \u003e tr \u003e td:last-child",
+      "File": "assets/panels.css",
+      "DefStart": 8035,
+      "DefEnd": 8108,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel \u003e .table-responsive \u003e .table-bordered \u003e thead \u003e tr \u003e th:first-child",
+      "Name": ".panel \u003e .table-responsive \u003e .table-bordered \u003e thead \u003e tr \u003e th:first-child",
+      "File": "assets/panels.css",
+      "DefStart": 6833,
+      "DefEnd": 6907,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel \u003e .table-responsive \u003e .table-bordered \u003e thead \u003e tr \u003e th:last-child",
+      "Name": ".panel \u003e .table-responsive \u003e .table-bordered \u003e thead \u003e tr \u003e th:last-child",
+      "File": "assets/panels.css",
+      "DefStart": 7645,
+      "DefEnd": 7718,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel \u003e .table-responsive \u003e .table-bordered \u003e thead \u003e tr:first-child \u003e td",
+      "Name": ".panel \u003e .table-responsive \u003e .table-bordered \u003e thead \u003e tr:first-child \u003e td",
+      "File": "assets/panels.css",
+      "DefStart": 8448,
+      "DefEnd": 8522,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel \u003e .table-responsive \u003e .table-bordered \u003e thead \u003e tr:first-child \u003e th",
+      "Name": ".panel \u003e .table-responsive \u003e .table-bordered \u003e thead \u003e tr:first-child \u003e th",
+      "File": "assets/panels.css",
+      "DefStart": 8712,
+      "DefEnd": 8786,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel \u003e .table-responsive \u003e .table-bordered",
+      "Name": ".panel \u003e .table-responsive \u003e .table-bordered",
+      "File": "assets/panels.css",
+      "DefStart": 6715,
+      "DefEnd": 6759,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel \u003e .table-responsive",
+      "Name": ".panel \u003e .table-responsive",
+      "File": "assets/panels.css",
+      "DefStart": 9486,
+      "DefEnd": 9512,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel \u003e .table-responsive:first-child \u003e .table:first-child \u003e tbody:first-child \u003e tr:first-child td:first-child",
+      "Name": ".panel \u003e .table-responsive:first-child \u003e .table:first-child \u003e tbody:first-child \u003e tr:first-child td:first-child",
+      "File": "assets/panels.css",
+      "DefStart": 2930,
+      "DefEnd": 3041,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel \u003e .table-responsive:first-child \u003e .table:first-child \u003e tbody:first-child \u003e tr:first-child td:last-child",
+      "Name": ".panel \u003e .table-responsive:first-child \u003e .table:first-child \u003e tbody:first-child \u003e tr:first-child td:last-child",
+      "File": "assets/panels.css",
+      "DefStart": 3737,
+      "DefEnd": 3847,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel \u003e .table-responsive:first-child \u003e .table:first-child \u003e tbody:first-child \u003e tr:first-child th:first-child",
+      "Name": ".panel \u003e .table-responsive:first-child \u003e .table:first-child \u003e tbody:first-child \u003e tr:first-child th:first-child",
+      "File": "assets/panels.css",
+      "DefStart": 3318,
+      "DefEnd": 3429,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel \u003e .table-responsive:first-child \u003e .table:first-child \u003e tbody:first-child \u003e tr:first-child th:last-child",
+      "Name": ".panel \u003e .table-responsive:first-child \u003e .table:first-child \u003e tbody:first-child \u003e tr:first-child th:last-child",
+      "File": "assets/panels.css",
+      "DefStart": 4121,
+      "DefEnd": 4231,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel \u003e .table-responsive:first-child \u003e .table:first-child \u003e tbody:first-child \u003e tr:first-child",
+      "Name": ".panel \u003e .table-responsive:first-child \u003e .table:first-child \u003e tbody:first-child \u003e tr:first-child",
+      "File": "assets/panels.css",
+      "DefStart": 2491,
+      "DefEnd": 2587,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel \u003e .table-responsive:first-child \u003e .table:first-child \u003e thead:first-child \u003e tr:first-child td:first-child",
+      "Name": ".panel \u003e .table-responsive:first-child \u003e .table:first-child \u003e thead:first-child \u003e tr:first-child td:first-child",
+      "File": "assets/panels.css",
+      "DefStart": 2736,
+      "DefEnd": 2847,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel \u003e .table-responsive:first-child \u003e .table:first-child \u003e thead:first-child \u003e tr:first-child td:last-child",
+      "Name": ".panel \u003e .table-responsive:first-child \u003e .table:first-child \u003e thead:first-child \u003e tr:first-child td:last-child",
+      "File": "assets/panels.css",
+      "DefStart": 3545,
+      "DefEnd": 3655,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel \u003e .table-responsive:first-child \u003e .table:first-child \u003e thead:first-child \u003e tr:first-child th:first-child",
+      "Name": ".panel \u003e .table-responsive:first-child \u003e .table:first-child \u003e thead:first-child \u003e tr:first-child th:first-child",
+      "File": "assets/panels.css",
+      "DefStart": 3124,
+      "DefEnd": 3235,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel \u003e .table-responsive:first-child \u003e .table:first-child \u003e thead:first-child \u003e tr:first-child th:last-child",
+      "Name": ".panel \u003e .table-responsive:first-child \u003e .table:first-child \u003e thead:first-child \u003e tr:first-child th:last-child",
+      "File": "assets/panels.css",
+      "DefStart": 3929,
+      "DefEnd": 4039,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel \u003e .table-responsive:first-child \u003e .table:first-child \u003e thead:first-child \u003e tr:first-child",
+      "Name": ".panel \u003e .table-responsive:first-child \u003e .table:first-child \u003e thead:first-child \u003e tr:first-child",
+      "File": "assets/panels.css",
+      "DefStart": 2327,
+      "DefEnd": 2423,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel \u003e .table-responsive:first-child \u003e .table:first-child",
+      "Name": ".panel \u003e .table-responsive:first-child \u003e .table:first-child",
+      "File": "assets/panels.css",
+      "DefStart": 2134,
+      "DefEnd": 2193,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel \u003e .table-responsive:last-child \u003e .table:last-child \u003e tbody:last-child \u003e tr:last-child td:first-child",
+      "Name": ".panel \u003e .table-responsive:last-child \u003e .table:last-child \u003e tbody:last-child \u003e tr:last-child td:first-child",
+      "File": "assets/panels.css",
+      "DefStart": 4891,
+      "DefEnd": 4998,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel \u003e .table-responsive:last-child \u003e .table:last-child \u003e tbody:last-child \u003e tr:last-child td:last-child",
+      "Name": ".panel \u003e .table-responsive:last-child \u003e .table:last-child \u003e tbody:last-child \u003e tr:last-child td:last-child",
+      "File": "assets/panels.css",
+      "DefStart": 5675,
+      "DefEnd": 5781,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel \u003e .table-responsive:last-child \u003e .table:last-child \u003e tbody:last-child \u003e tr:last-child th:first-child",
+      "Name": ".panel \u003e .table-responsive:last-child \u003e .table:last-child \u003e tbody:last-child \u003e tr:last-child th:first-child",
+      "File": "assets/panels.css",
+      "DefStart": 5265,
+      "DefEnd": 5372,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel \u003e .table-responsive:last-child \u003e .table:last-child \u003e tbody:last-child \u003e tr:last-child th:last-child",
+      "Name": ".panel \u003e .table-responsive:last-child \u003e .table:last-child \u003e tbody:last-child \u003e tr:last-child th:last-child",
+      "File": "assets/panels.css",
+      "DefStart": 6045,
+      "DefEnd": 6151,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel \u003e .table-responsive:last-child \u003e .table:last-child \u003e tbody:last-child \u003e tr:last-child",
+      "Name": ".panel \u003e .table-responsive:last-child \u003e .table:last-child \u003e tbody:last-child \u003e tr:last-child",
+      "File": "assets/panels.css",
+      "DefStart": 4490,
+      "DefEnd": 4582,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel \u003e .table-responsive:last-child \u003e .table:last-child \u003e tfoot:last-child \u003e tr:last-child td:first-child",
+      "Name": ".panel \u003e .table-responsive:last-child \u003e .table:last-child \u003e tfoot:last-child \u003e tr:last-child td:first-child",
+      "File": "assets/panels.css",
+      "DefStart": 5078,
+      "DefEnd": 5185,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel \u003e .table-responsive:last-child \u003e .table:last-child \u003e tfoot:last-child \u003e tr:last-child td:last-child",
+      "Name": ".panel \u003e .table-responsive:last-child \u003e .table:last-child \u003e tfoot:last-child \u003e tr:last-child td:last-child",
+      "File": "assets/panels.css",
+      "DefStart": 5860,
+      "DefEnd": 5966,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel \u003e .table-responsive:last-child \u003e .table:last-child \u003e tfoot:last-child \u003e tr:last-child th:first-child",
+      "Name": ".panel \u003e .table-responsive:last-child \u003e .table:last-child \u003e tfoot:last-child \u003e tr:last-child th:first-child",
+      "File": "assets/panels.css",
+      "DefStart": 5452,
+      "DefEnd": 5559,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel \u003e .table-responsive:last-child \u003e .table:last-child \u003e tfoot:last-child \u003e tr:last-child th:last-child",
+      "Name": ".panel \u003e .table-responsive:last-child \u003e .table:last-child \u003e tfoot:last-child \u003e tr:last-child th:last-child",
+      "File": "assets/panels.css",
+      "DefStart": 6230,
+      "DefEnd": 6336,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel \u003e .table-responsive:last-child \u003e .table:last-child \u003e tfoot:last-child \u003e tr:last-child",
+      "Name": ".panel \u003e .table-responsive:last-child \u003e .table:last-child \u003e tfoot:last-child \u003e tr:last-child",
+      "File": "assets/panels.css",
+      "DefStart": 4647,
+      "DefEnd": 4739,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel \u003e .table-responsive:last-child \u003e .table:last-child",
+      "Name": ".panel \u003e .table-responsive:last-child \u003e .table:last-child",
+      "File": "assets/panels.css",
+      "DefStart": 4296,
+      "DefEnd": 4353,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel \u003e .table:first-child \u003e tbody:first-child \u003e tr:first-child td:first-child",
+      "Name": ".panel \u003e .table:first-child \u003e tbody:first-child \u003e tr:first-child td:first-child",
+      "File": "assets/panels.css",
+      "DefStart": 2849,
+      "DefEnd": 2928,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel \u003e .table:first-child \u003e tbody:first-child \u003e tr:first-child td:last-child",
+      "Name": ".panel \u003e .table:first-child \u003e tbody:first-child \u003e tr:first-child td:last-child",
+      "File": "assets/panels.css",
+      "DefStart": 3657,
+      "DefEnd": 3735,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel \u003e .table:first-child \u003e tbody:first-child \u003e tr:first-child th:first-child",
+      "Name": ".panel \u003e .table:first-child \u003e tbody:first-child \u003e tr:first-child th:first-child",
+      "File": "assets/panels.css",
+      "DefStart": 3237,
+      "DefEnd": 3316,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel \u003e .table:first-child \u003e tbody:first-child \u003e tr:first-child th:last-child",
+      "Name": ".panel \u003e .table:first-child \u003e tbody:first-child \u003e tr:first-child th:last-child",
+      "File": "assets/panels.css",
+      "DefStart": 4041,
+      "DefEnd": 4119,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel \u003e .table:first-child \u003e tbody:first-child \u003e tr:first-child",
+      "Name": ".panel \u003e .table:first-child \u003e tbody:first-child \u003e tr:first-child",
+      "File": "assets/panels.css",
+      "DefStart": 2425,
+      "DefEnd": 2489,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel \u003e .table:first-child \u003e thead:first-child \u003e tr:first-child td:first-child",
+      "Name": ".panel \u003e .table:first-child \u003e thead:first-child \u003e tr:first-child td:first-child",
+      "File": "assets/panels.css",
+      "DefStart": 2655,
+      "DefEnd": 2734,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel \u003e .table:first-child \u003e thead:first-child \u003e tr:first-child td:last-child",
+      "Name": ".panel \u003e .table:first-child \u003e thead:first-child \u003e tr:first-child td:last-child",
+      "File": "assets/panels.css",
+      "DefStart": 3465,
+      "DefEnd": 3543,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel \u003e .table:first-child \u003e thead:first-child \u003e tr:first-child th:first-child",
+      "Name": ".panel \u003e .table:first-child \u003e thead:first-child \u003e tr:first-child th:first-child",
+      "File": "assets/panels.css",
+      "DefStart": 3043,
+      "DefEnd": 3122,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel \u003e .table:first-child \u003e thead:first-child \u003e tr:first-child th:last-child",
+      "Name": ".panel \u003e .table:first-child \u003e thead:first-child \u003e tr:first-child th:last-child",
+      "File": "assets/panels.css",
+      "DefStart": 3849,
+      "DefEnd": 3927,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel \u003e .table:first-child \u003e thead:first-child \u003e tr:first-child",
+      "Name": ".panel \u003e .table:first-child \u003e thead:first-child \u003e tr:first-child",
+      "File": "assets/panels.css",
+      "DefStart": 2261,
+      "DefEnd": 2325,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel \u003e .table:first-child",
+      "Name": ".panel \u003e .table:first-child",
+      "File": "assets/panels.css",
+      "DefStart": 2105,
+      "DefEnd": 2132,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel \u003e .table:last-child \u003e tbody:last-child \u003e tr:last-child td:first-child",
+      "Name": ".panel \u003e .table:last-child \u003e tbody:last-child \u003e tr:last-child td:first-child",
+      "File": "assets/panels.css",
+      "DefStart": 4813,
+      "DefEnd": 4889,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel \u003e .table:last-child \u003e tbody:last-child \u003e tr:last-child td:last-child",
+      "Name": ".panel \u003e .table:last-child \u003e tbody:last-child \u003e tr:last-child td:last-child",
+      "File": "assets/panels.css",
+      "DefStart": 5598,
+      "DefEnd": 5673,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel \u003e .table:last-child \u003e tbody:last-child \u003e tr:last-child th:first-child",
+      "Name": ".panel \u003e .table:last-child \u003e tbody:last-child \u003e tr:last-child th:first-child",
+      "File": "assets/panels.css",
+      "DefStart": 5187,
+      "DefEnd": 5263,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel \u003e .table:last-child \u003e tbody:last-child \u003e tr:last-child th:last-child",
+      "Name": ".panel \u003e .table:last-child \u003e tbody:last-child \u003e tr:last-child th:last-child",
+      "File": "assets/panels.css",
+      "DefStart": 5968,
+      "DefEnd": 6043,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel \u003e .table:last-child \u003e tbody:last-child \u003e tr:last-child",
+      "Name": ".panel \u003e .table:last-child \u003e tbody:last-child \u003e tr:last-child",
+      "File": "assets/panels.css",
+      "DefStart": 4427,
+      "DefEnd": 4488,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel \u003e .table:last-child \u003e tfoot:last-child \u003e tr:last-child td:first-child",
+      "Name": ".panel \u003e .table:last-child \u003e tfoot:last-child \u003e tr:last-child td:first-child",
+      "File": "assets/panels.css",
+      "DefStart": 5000,
+      "DefEnd": 5076,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel \u003e .table:last-child \u003e tfoot:last-child \u003e tr:last-child td:last-child",
+      "Name": ".panel \u003e .table:last-child \u003e tfoot:last-child \u003e tr:last-child td:last-child",
+      "File": "assets/panels.css",
+      "DefStart": 5783,
+      "DefEnd": 5858,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel \u003e .table:last-child \u003e tfoot:last-child \u003e tr:last-child th:first-child",
+      "Name": ".panel \u003e .table:last-child \u003e tfoot:last-child \u003e tr:last-child th:first-child",
+      "File": "assets/panels.css",
+      "DefStart": 5374,
+      "DefEnd": 5450,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel \u003e .table:last-child \u003e tfoot:last-child \u003e tr:last-child th:last-child",
+      "Name": ".panel \u003e .table:last-child \u003e tfoot:last-child \u003e tr:last-child th:last-child",
+      "File": "assets/panels.css",
+      "DefStart": 6153,
+      "DefEnd": 6228,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel \u003e .table:last-child \u003e tfoot:last-child \u003e tr:last-child",
+      "Name": ".panel \u003e .table:last-child \u003e tfoot:last-child \u003e tr:last-child",
+      "File": "assets/panels.css",
+      "DefStart": 4584,
+      "DefEnd": 4645,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel \u003e .table:last-child",
+      "Name": ".panel \u003e .table:last-child",
+      "File": "assets/panels.css",
+      "DefStart": 4268,
+      "DefEnd": 4294,
       "Data": {
         "Name": "",
         "Keyword": "selector",
@@ -355,11 +2131,139 @@
     {
       "UnitType": "basic-css",
       "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel-danger \u003e .panel-footer + .panel-collapse \u003e .panel-body",
+      "Name": ".panel-danger \u003e .panel-footer + .panel-collapse \u003e .panel-body",
+      "File": "assets/panels.css",
+      "DefStart": 12543,
+      "DefEnd": 12604,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel-danger \u003e .panel-heading + .panel-collapse \u003e .panel-body",
+      "Name": ".panel-danger \u003e .panel-heading + .panel-collapse \u003e .panel-body",
+      "File": "assets/panels.css",
+      "DefStart": 12358,
+      "DefEnd": 12420,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel-danger \u003e .panel-heading .badge",
+      "Name": ".panel-danger \u003e .panel-heading .badge",
+      "File": "assets/panels.css",
+      "DefStart": 12454,
+      "DefEnd": 12491,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel-danger \u003e .panel-heading",
+      "Name": ".panel-danger \u003e .panel-heading",
+      "File": "assets/panels.css",
+      "DefStart": 12251,
+      "DefEnd": 12281,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
       "Path": "assets/panels.css.panel-danger",
       "Name": ".panel-danger",
       "File": "assets/panels.css",
       "DefStart": 12208,
       "DefEnd": 12221,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel-default \u003e .panel-footer + .panel-collapse \u003e .panel-body",
+      "Name": ".panel-default \u003e .panel-footer + .panel-collapse \u003e .panel-body",
+      "File": "assets/panels.css",
+      "DefStart": 10381,
+      "DefEnd": 10443,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel-default \u003e .panel-heading + .panel-collapse \u003e .panel-body",
+      "Name": ".panel-default \u003e .panel-heading + .panel-collapse \u003e .panel-body",
+      "File": "assets/panels.css",
+      "DefStart": 10200,
+      "DefEnd": 10263,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel-default \u003e .panel-heading .badge",
+      "Name": ".panel-default \u003e .panel-heading .badge",
+      "File": "assets/panels.css",
+      "DefStart": 10294,
+      "DefEnd": 10332,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel-default \u003e .panel-heading",
+      "Name": ".panel-default \u003e .panel-heading",
+      "File": "assets/panels.css",
+      "DefStart": 10098,
+      "DefEnd": 10129,
       "Data": {
         "Name": "",
         "Keyword": "selector",
@@ -403,11 +2307,155 @@
     {
       "UnitType": "basic-css",
       "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel-group .panel + .panel",
+      "Name": ".panel-group .panel + .panel",
+      "File": "assets/panels.css",
+      "DefStart": 9656,
+      "DefEnd": 9684,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel-group .panel",
+      "Name": ".panel-group .panel",
+      "File": "assets/panels.css",
+      "DefStart": 9590,
+      "DefEnd": 9609,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel-group .panel-footer + .panel-collapse .panel-body",
+      "Name": ".panel-group .panel-footer + .panel-collapse .panel-body",
+      "File": "assets/panels.css",
+      "DefStart": 9963,
+      "DefEnd": 10019,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel-group .panel-footer",
+      "Name": ".panel-group .panel-footer",
+      "File": "assets/panels.css",
+      "DefStart": 9915,
+      "DefEnd": 9941,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel-group .panel-heading + .panel-collapse \u003e .list-group",
+      "Name": ".panel-group .panel-heading + .panel-collapse \u003e .list-group",
+      "File": "assets/panels.css",
+      "DefStart": 9821,
+      "DefEnd": 9880,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel-group .panel-heading + .panel-collapse \u003e .panel-body",
+      "Name": ".panel-group .panel-heading + .panel-collapse \u003e .panel-body",
+      "File": "assets/panels.css",
+      "DefStart": 9760,
+      "DefEnd": 9819,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel-group .panel-heading",
+      "Name": ".panel-group .panel-heading",
+      "File": "assets/panels.css",
+      "DefStart": 9708,
+      "DefEnd": 9735,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
       "Path": "assets/panels.css.panel-group",
       "Name": ".panel-group",
       "File": "assets/panels.css",
       "DefStart": 9550,
       "DefEnd": 9562,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel-heading + .list-group .list-group-item:first-child",
+      "Name": ".panel-heading + .list-group .list-group-item:first-child",
+      "File": "assets/panels.css",
+      "DefStart": 1692,
+      "DefEnd": 1749,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel-heading \u003e .dropdown .dropdown-toggle",
+      "Name": ".panel-heading \u003e .dropdown .dropdown-toggle",
+      "File": "assets/panels.css",
+      "DefStart": 396,
+      "DefEnd": 439,
       "Data": {
         "Name": "",
         "Keyword": "selector",
@@ -435,11 +2483,139 @@
     {
       "UnitType": "basic-css",
       "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel-info \u003e .panel-footer + .panel-collapse \u003e .panel-body",
+      "Name": ".panel-info \u003e .panel-footer + .panel-collapse \u003e .panel-body",
+      "File": "assets/panels.css",
+      "DefStart": 11674,
+      "DefEnd": 11733,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel-info \u003e .panel-heading + .panel-collapse \u003e .panel-body",
+      "Name": ".panel-info \u003e .panel-heading + .panel-collapse \u003e .panel-body",
+      "File": "assets/panels.css",
+      "DefStart": 11493,
+      "DefEnd": 11553,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel-info \u003e .panel-heading .badge",
+      "Name": ".panel-info \u003e .panel-heading .badge",
+      "File": "assets/panels.css",
+      "DefStart": 11587,
+      "DefEnd": 11622,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel-info \u003e .panel-heading",
+      "Name": ".panel-info \u003e .panel-heading",
+      "File": "assets/panels.css",
+      "DefStart": 11388,
+      "DefEnd": 11416,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
       "Path": "assets/panels.css.panel-info",
       "Name": ".panel-info",
       "File": "assets/panels.css",
       "DefStart": 11347,
       "DefEnd": 11358,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel-primary \u003e .panel-footer + .panel-collapse \u003e .panel-body",
+      "Name": ".panel-primary \u003e .panel-footer + .panel-collapse \u003e .panel-body",
+      "File": "assets/panels.css",
+      "DefStart": 10810,
+      "DefEnd": 10872,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel-primary \u003e .panel-heading + .panel-collapse \u003e .panel-body",
+      "Name": ".panel-primary \u003e .panel-heading + .panel-collapse \u003e .panel-body",
+      "File": "assets/panels.css",
+      "DefStart": 10626,
+      "DefEnd": 10689,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel-primary \u003e .panel-heading .badge",
+      "Name": ".panel-primary \u003e .panel-heading .badge",
+      "File": "assets/panels.css",
+      "DefStart": 10723,
+      "DefEnd": 10761,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel-primary \u003e .panel-heading",
+      "Name": ".panel-primary \u003e .panel-heading",
+      "File": "assets/panels.css",
+      "DefStart": 10521,
+      "DefEnd": 10552,
       "Data": {
         "Name": "",
         "Keyword": "selector",
@@ -467,11 +2643,155 @@
     {
       "UnitType": "basic-css",
       "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel-success \u003e .panel-footer + .panel-collapse \u003e .panel-body",
+      "Name": ".panel-success \u003e .panel-footer + .panel-collapse \u003e .panel-body",
+      "File": "assets/panels.css",
+      "DefStart": 11248,
+      "DefEnd": 11310,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel-success \u003e .panel-heading + .panel-collapse \u003e .panel-body",
+      "Name": ".panel-success \u003e .panel-heading + .panel-collapse \u003e .panel-body",
+      "File": "assets/panels.css",
+      "DefStart": 11061,
+      "DefEnd": 11124,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel-success \u003e .panel-heading .badge",
+      "Name": ".panel-success \u003e .panel-heading .badge",
+      "File": "assets/panels.css",
+      "DefStart": 11158,
+      "DefEnd": 11196,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel-success \u003e .panel-heading",
+      "Name": ".panel-success \u003e .panel-heading",
+      "File": "assets/panels.css",
+      "DefStart": 10953,
+      "DefEnd": 10984,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
       "Path": "assets/panels.css.panel-success",
       "Name": ".panel-success",
       "File": "assets/panels.css",
       "DefStart": 10909,
       "DefEnd": 10923,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel-title \u003e .small \u003e a",
+      "Name": ".panel-title \u003e .small \u003e a",
+      "File": "assets/panels.css",
+      "DefStart": 642,
+      "DefEnd": 667,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel-title \u003e .small",
+      "Name": ".panel-title \u003e .small",
+      "File": "assets/panels.css",
+      "DefStart": 593,
+      "DefEnd": 614,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel-title \u003e a",
+      "Name": ".panel-title \u003e a",
+      "File": "assets/panels.css",
+      "DefStart": 553,
+      "DefEnd": 569,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel-title \u003e small \u003e a",
+      "Name": ".panel-title \u003e small \u003e a",
+      "File": "assets/panels.css",
+      "DefStart": 616,
+      "DefEnd": 640,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel-title \u003e small",
+      "Name": ".panel-title \u003e small",
+      "File": "assets/panels.css",
+      "DefStart": 571,
+      "DefEnd": 591,
       "Data": {
         "Name": "",
         "Keyword": "selector",
@@ -499,6 +2819,70 @@
     {
       "UnitType": "basic-css",
       "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel-warning \u003e .panel-footer + .panel-collapse \u003e .panel-body",
+      "Name": ".panel-warning \u003e .panel-footer + .panel-collapse \u003e .panel-body",
+      "File": "assets/panels.css",
+      "DefStart": 12109,
+      "DefEnd": 12171,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel-warning \u003e .panel-heading + .panel-collapse \u003e .panel-body",
+      "Name": ".panel-warning \u003e .panel-heading + .panel-collapse \u003e .panel-body",
+      "File": "assets/panels.css",
+      "DefStart": 11922,
+      "DefEnd": 11985,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel-warning \u003e .panel-heading .badge",
+      "Name": ".panel-warning \u003e .panel-heading .badge",
+      "File": "assets/panels.css",
+      "DefStart": 12019,
+      "DefEnd": 12057,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "assets/panels.css.panel-warning \u003e .panel-heading",
+      "Name": ".panel-warning \u003e .panel-heading",
+      "File": "assets/panels.css",
+      "DefStart": 11814,
+      "DefEnd": 11845,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
       "Path": "assets/panels.css.panel-warning",
       "Name": ".panel-warning",
       "File": "assets/panels.css",
@@ -515,112 +2899,16 @@
     {
       "UnitType": "basic-css",
       "Unit": "css-sample-0",
-      "Path": "assets/panels.css.small",
-      "Name": ".small",
-      "File": "assets/panels.css",
-      "DefStart": 593,
-      "DefEnd": 614,
+      "Path": "main.css#container \u003e .container-inner",
+      "Name": "#container \u003e .container-inner",
+      "File": "main.css",
+      "DefStart": 83,
+      "DefEnd": 112,
       "Data": {
         "Name": "",
         "Keyword": "selector",
         "Type": "",
-        "Kind": "class",
-        "Separator": ""
-      }
-    },
-    {
-      "UnitType": "basic-css",
-      "Unit": "css-sample-0",
-      "Path": "assets/panels.css.table caption",
-      "Name": ".table caption",
-      "File": "assets/panels.css",
-      "DefStart": 1944,
-      "DefEnd": 1967,
-      "Data": {
-        "Name": "",
-        "Keyword": "selector",
-        "Type": "",
-        "Kind": "class",
-        "Separator": ""
-      }
-    },
-    {
-      "UnitType": "basic-css",
-      "Unit": "css-sample-0",
-      "Path": "assets/panels.css.table",
-      "Name": ".table",
-      "File": "assets/panels.css",
-      "DefStart": 1832,
-      "DefEnd": 1847,
-      "Data": {
-        "Name": "",
-        "Keyword": "selector",
-        "Type": "",
-        "Kind": "class",
-        "Separator": ""
-      }
-    },
-    {
-      "UnitType": "basic-css",
-      "Unit": "css-sample-0",
-      "Path": "assets/panels.css.table-bordered",
-      "Name": ".table-bordered",
-      "File": "assets/panels.css",
-      "DefStart": 6689,
-      "DefEnd": 6713,
-      "Data": {
-        "Name": "",
-        "Keyword": "selector",
-        "Type": "",
-        "Kind": "class",
-        "Separator": ""
-      }
-    },
-    {
-      "UnitType": "basic-css",
-      "Unit": "css-sample-0",
-      "Path": "assets/panels.css.table-responsive",
-      "Name": ".table-responsive",
-      "File": "assets/panels.css",
-      "DefStart": 6407,
-      "DefEnd": 6447,
-      "Data": {
-        "Name": "",
-        "Keyword": "selector",
-        "Type": "",
-        "Kind": "class",
-        "Separator": ""
-      }
-    },
-    {
-      "UnitType": "basic-css",
-      "Unit": "css-sample-0",
-      "Path": "assets/panels.css.table:first-child",
-      "Name": ".table:first-child",
-      "File": "assets/panels.css",
-      "DefStart": 2105,
-      "DefEnd": 2132,
-      "Data": {
-        "Name": "",
-        "Keyword": "selector",
-        "Type": "",
-        "Kind": "class",
-        "Separator": ""
-      }
-    },
-    {
-      "UnitType": "basic-css",
-      "Unit": "css-sample-0",
-      "Path": "assets/panels.css.table:last-child",
-      "Name": ".table:last-child",
-      "File": "assets/panels.css",
-      "DefStart": 4268,
-      "DefEnd": 4294,
-      "Data": {
-        "Name": "",
-        "Keyword": "selector",
-        "Type": "",
-        "Kind": "class",
+        "Kind": "id",
         "Separator": ""
       }
     },
@@ -643,27 +2931,11 @@
     {
       "UnitType": "basic-css",
       "Unit": "css-sample-0",
-      "Path": "main.css.active:focus",
-      "Name": ".active:focus",
-      "File": "main.css",
-      "DefStart": 672,
-      "DefEnd": 689,
-      "Data": {
-        "Name": "",
-        "Keyword": "selector",
-        "Type": "",
-        "Kind": "class",
-        "Separator": ""
-      }
-    },
-    {
-      "UnitType": "basic-css",
-      "Unit": "css-sample-0",
       "Path": "main.css.btn",
       "Name": ".btn",
       "File": "main.css",
-      "DefStart": 141,
-      "DefEnd": 145,
+      "DefStart": 352,
+      "DefEnd": 356,
       "Data": {
         "Name": "",
         "Keyword": "selector",
@@ -678,8 +2950,24 @@
       "Path": "main.css.btn-default",
       "Name": ".btn-default",
       "File": "main.css",
-      "DefStart": 839,
-      "DefEnd": 851,
+      "DefStart": 1050,
+      "DefEnd": 1062,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "main.css.btn-group-sm \u003e .btn",
+      "Name": ".btn-group-sm \u003e .btn",
+      "File": "main.css",
+      "DefStart": 1140,
+      "DefEnd": 1160,
       "Data": {
         "Name": "",
         "Keyword": "selector",
@@ -694,8 +2982,72 @@
       "Path": "main.css.btn-sm",
       "Name": ".btn-sm",
       "File": "main.css",
-      "DefStart": 920,
-      "DefEnd": 927,
+      "DefStart": 1131,
+      "DefEnd": 1138,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "main.css.btn.active.focus",
+      "Name": ".btn.active.focus",
+      "File": "main.css",
+      "DefStart": 933,
+      "DefEnd": 950,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "main.css.btn.active:focus",
+      "Name": ".btn.active:focus",
+      "File": "main.css",
+      "DefStart": 883,
+      "DefEnd": 900,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "main.css.btn.focus",
+      "Name": ".btn.focus",
+      "File": "main.css",
+      "DefStart": 902,
+      "DefEnd": 912,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "main.css.btn:active.focus",
+      "Name": ".btn:active.focus",
+      "File": "main.css",
+      "DefStart": 914,
+      "DefEnd": 931,
       "Data": {
         "Name": "",
         "Keyword": "selector",
@@ -710,8 +3062,8 @@
       "Path": "main.css.btn:active:focus",
       "Name": ".btn:active:focus",
       "File": "main.css",
-      "DefStart": 653,
-      "DefEnd": 670,
+      "DefStart": 864,
+      "DefEnd": 881,
       "Data": {
         "Name": "",
         "Keyword": "selector",
@@ -726,8 +3078,8 @@
       "Path": "main.css.btn:focus",
       "Name": ".btn:focus",
       "File": "main.css",
-      "DefStart": 641,
-      "DefEnd": 651,
+      "DefStart": 852,
+      "DefEnd": 862,
       "Data": {
         "Name": "",
         "Keyword": "selector",
@@ -739,11 +3091,11 @@
     {
       "UnitType": "basic-css",
       "Unit": "css-sample-0",
-      "Path": "main.css.container-inner",
-      "Name": ".container-inner",
+      "Path": "main.css.col-xs-12",
+      "Name": ".col-xs-12",
       "File": "main.css",
-      "DefStart": 83,
-      "DefEnd": 112,
+      "DefStart": 1248,
+      "DefEnd": 1258,
       "Data": {
         "Name": "",
         "Keyword": "selector",
@@ -755,11 +3107,91 @@
     {
       "UnitType": "basic-css",
       "Unit": "css-sample-0",
-      "Path": "main.css.focus",
-      "Name": ".focus",
+      "Path": "main.css.col-xs-3",
+      "Name": ".col-xs-3",
       "File": "main.css",
-      "DefStart": 691,
-      "DefEnd": 701,
+      "DefStart": 1308,
+      "DefEnd": 1317,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "main.css.col-xs-6",
+      "Name": ".col-xs-6",
+      "File": "main.css",
+      "DefStart": 1279,
+      "DefEnd": 1288,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "main.css.footer .footer-inner .footer-content",
+      "Name": ".footer .footer-inner .footer-content",
+      "File": "main.css",
+      "DefStart": 189,
+      "DefEnd": 226,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "main.css.footer \u003e .footer-inner",
+      "Name": ".footer \u003e .footer-inner",
+      "File": "main.css",
+      "DefStart": 141,
+      "DefEnd": 164,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "main.css.footer-inner + .footer-menu",
+      "Name": ".footer-inner + .footer-menu",
+      "File": "main.css",
+      "DefStart": 251,
+      "DefEnd": 279,
+      "Data": {
+        "Name": "",
+        "Keyword": "selector",
+        "Type": "",
+        "Kind": "class",
+        "Separator": ""
+      }
+    },
+    {
+      "UnitType": "basic-css",
+      "Unit": "css-sample-0",
+      "Path": "main.css.footer-menu ~ .footer-link",
+      "Name": ".footer-menu ~ .footer-link",
+      "File": "main.css",
+      "DefStart": 300,
+      "DefEnd": 327,
       "Data": {
         "Name": "",
         "Keyword": "selector",
@@ -787,8 +3219,8 @@
     {
       "UnitType": "basic-css",
       "Unit": "css-sample-0",
-      "Path": "querystringed.css.paragraph",
-      "Name": ".paragraph",
+      "Path": "querystringed.cssp.paragraph",
+      "Name": "p.paragraph",
       "File": "querystringed.css",
       "DefStart": 1,
       "DefEnd": 11,
@@ -796,7 +3228,7 @@
         "Name": "",
         "Keyword": "selector",
         "Type": "",
-        "Kind": "class",
+        "Kind": "",
         "Separator": ""
       }
     },
@@ -821,12 +3253,62 @@
     {
       "DefUnitType": "basic-css",
       "DefUnit": "css-sample-0",
+      "DefPath": "alerts.css.alert .alert-link",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "alerts.css",
+      "Start": 155,
+      "End": 173
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "alerts.css.alert \u003e p + p",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "alerts.css",
+      "Start": 247,
+      "End": 261
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "alerts.css.alert \u003e p",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "alerts.css",
+      "Start": 199,
+      "End": 209
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "alerts.css.alert \u003e ul",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "alerts.css",
+      "Start": 211,
+      "End": 222
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
       "DefPath": "alerts.css.alert h4",
       "Unit": "css-sample-0",
       "Def": true,
       "File": "alerts.css",
       "Start": 106,
       "End": 115
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "alerts.css.alert-danger .alert-link",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "alerts.css",
+      "Start": 1181,
+      "End": 1206
     },
     {
       "DefUnitType": "basic-css",
@@ -851,6 +3333,16 @@
     {
       "DefUnitType": "basic-css",
       "DefUnit": "css-sample-0",
+      "DefPath": "alerts.css.alert-dismissable .close",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "alerts.css",
+      "Start": 351,
+      "End": 376
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
       "DefPath": "alerts.css.alert-dismissable",
       "Unit": "css-sample-0",
       "Def": true,
@@ -861,12 +3353,41 @@
     {
       "DefUnitType": "basic-css",
       "DefUnit": "css-sample-0",
+      "DefPath": "alerts.css.alert-dismissible .close",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "alerts.css",
+      "Start": 378,
+      "End": 403
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
       "DefPath": "alerts.css.alert-dismissible",
       "Unit": "css-sample-0",
       "Def": true,
       "File": "alerts.css",
       "Start": 305,
       "End": 323
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "alerts.css.alert-info .alert-link",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "alerts.css",
+      "Start": 804,
+      "End": 827
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "alerts.css.alert-info .alert-link",
+      "Unit": "css-sample-0",
+      "File": "main.html",
+      "Start": 945,
+      "End": 955
     },
     {
       "DefUnitType": "basic-css",
@@ -894,8 +3415,8 @@
       "DefPath": "alerts.css.alert-info",
       "Unit": "css-sample-0",
       "File": "main.html",
-      "Start": 1099,
-      "End": 1109
+      "Start": 1230,
+      "End": 1240
     },
     {
       "DefUnitType": "basic-css",
@@ -903,18 +3424,18 @@
       "DefPath": "alerts.css.alert-info",
       "Unit": "css-sample-0",
       "File": "main.html",
-      "Start": 902,
-      "End": 912
+      "Start": 900,
+      "End": 910
     },
     {
       "DefUnitType": "basic-css",
       "DefUnit": "css-sample-0",
-      "DefPath": "alerts.css.alert-link",
+      "DefPath": "alerts.css.alert-success .alert-link",
       "Unit": "css-sample-0",
       "Def": true,
       "File": "alerts.css",
-      "Start": 155,
-      "End": 173
+      "Start": 619,
+      "End": 645
     },
     {
       "DefUnitType": "basic-css",
@@ -935,6 +3456,16 @@
       "File": "alerts.css",
       "Start": 477,
       "End": 491
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "alerts.css.alert-warning .alert-link",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "alerts.css",
+      "Start": 992,
+      "End": 1018
     },
     {
       "DefUnitType": "basic-css",
@@ -969,57 +3500,17 @@
     {
       "DefUnitType": "basic-css",
       "DefUnit": "css-sample-0",
-      "DefPath": "alerts.css.close",
-      "Unit": "css-sample-0",
-      "Def": true,
-      "File": "alerts.css",
-      "Start": 351,
-      "End": 376
-    },
-    {
-      "DefUnitType": "basic-css",
-      "DefUnit": "css-sample-0",
-      "DefPath": "assets/panels.css.badge",
+      "DefPath": "assets/panels.css.list-group + .panel-footer",
       "Unit": "css-sample-0",
       "Def": true,
       "File": "assets/panels.css",
-      "Start": 10294,
-      "End": 10332
+      "Start": 1777,
+      "End": 1804
     },
     {
       "DefUnitType": "basic-css",
       "DefUnit": "css-sample-0",
-      "DefPath": "assets/panels.css.dropdown-toggle",
-      "Unit": "css-sample-0",
-      "Def": true,
-      "File": "assets/panels.css",
-      "Start": 396,
-      "End": 439
-    },
-    {
-      "DefUnitType": "basic-css",
-      "DefUnit": "css-sample-0",
-      "DefPath": "assets/panels.css.list-group-item:first-child",
-      "Unit": "css-sample-0",
-      "Def": true,
-      "File": "assets/panels.css",
-      "Start": 1085,
-      "End": 1146
-    },
-    {
-      "DefUnitType": "basic-css",
-      "DefUnit": "css-sample-0",
-      "DefPath": "assets/panels.css.list-group-item:last-child",
-      "Unit": "css-sample-0",
-      "Def": true,
-      "File": "assets/panels.css",
-      "Start": 1312,
-      "End": 1371
-    },
-    {
-      "DefUnitType": "basic-css",
-      "DefUnit": "css-sample-0",
-      "DefPath": "assets/panels.css.list-group-item",
+      "DefPath": "assets/panels.css.panel \u003e .list-group .list-group-item",
       "Unit": "css-sample-0",
       "Def": true,
       "File": "assets/panels.css",
@@ -1029,12 +3520,1072 @@
     {
       "DefUnitType": "basic-css",
       "DefUnit": "css-sample-0",
-      "DefPath": "assets/panels.css.list-group",
+      "DefPath": "assets/panels.css.panel \u003e .list-group:first-child .list-group-item:first-child",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 1085,
+      "End": 1146
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel \u003e .list-group:last-child .list-group-item:last-child",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 1312,
+      "End": 1371
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel \u003e .list-group",
       "Unit": "css-sample-0",
       "Def": true,
       "File": "assets/panels.css",
       "Start": 858,
       "End": 878
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel \u003e .panel-body + .table-responsive",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 6407,
+      "End": 6447
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel \u003e .panel-body + .table",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 6376,
+      "End": 6405
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel \u003e .panel-collapse \u003e .list-group .list-group-item",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 982,
+      "End": 1037
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel \u003e .panel-collapse \u003e .list-group:first-child .list-group-item:first-child",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 1148,
+      "End": 1227
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel \u003e .panel-collapse \u003e .list-group:last-child .list-group-item:last-child",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 1373,
+      "End": 1450
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel \u003e .panel-collapse \u003e .list-group",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 880,
+      "End": 918
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel \u003e .panel-collapse \u003e .table caption",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 2014,
+      "End": 2055
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel \u003e .panel-collapse \u003e .table",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 1886,
+      "End": 1919
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel \u003e .panel-heading + .panel-collapse \u003e .list-group .list-group-item:first-child",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 1544,
+      "End": 1628
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel \u003e .table + .panel-body",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 6449,
+      "End": 6478
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel \u003e .table \u003e tbody:first-child \u003e tr:first-child td",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 6612,
+      "End": 6667
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel \u003e .table \u003e tbody:first-child \u003e tr:first-child th",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 6555,
+      "End": 6610
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel \u003e .table caption",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 1944,
+      "End": 1967
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel \u003e .table-bordered \u003e tbody \u003e tr \u003e td:first-child",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 7305,
+      "End": 7359
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel \u003e .table-bordered \u003e tbody \u003e tr \u003e td:last-child",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 8110,
+      "End": 8163
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel \u003e .table-bordered \u003e tbody \u003e tr \u003e th:first-child",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 6909,
+      "End": 6963
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel \u003e .table-bordered \u003e tbody \u003e tr \u003e th:last-child",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 7720,
+      "End": 7773
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel \u003e .table-bordered \u003e tbody \u003e tr:first-child \u003e td",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 8524,
+      "End": 8578
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel \u003e .table-bordered \u003e tbody \u003e tr:first-child \u003e th",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 8788,
+      "End": 8842
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel \u003e .table-bordered \u003e tbody \u003e tr:last-child \u003e td",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 8943,
+      "End": 8996
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel \u003e .table-bordered \u003e tbody \u003e tr:last-child \u003e th",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 9203,
+      "End": 9256
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel \u003e .table-bordered \u003e tfoot \u003e tr \u003e td:first-child",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 7437,
+      "End": 7491
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel \u003e .table-bordered \u003e tfoot \u003e tr \u003e td:last-child",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 8240,
+      "End": 8293
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel \u003e .table-bordered \u003e tfoot \u003e tr \u003e th:first-child",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 7041,
+      "End": 7095
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel \u003e .table-bordered \u003e tfoot \u003e tr \u003e th:last-child",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 7850,
+      "End": 7903
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel \u003e .table-bordered \u003e tfoot \u003e tr:last-child \u003e td",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 9073,
+      "End": 9126
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel \u003e .table-bordered \u003e tfoot \u003e tr:last-child \u003e th",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 9333,
+      "End": 9386
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel \u003e .table-bordered \u003e thead \u003e tr \u003e td:first-child",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 7173,
+      "End": 7227
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel \u003e .table-bordered \u003e thead \u003e tr \u003e td:last-child",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 7980,
+      "End": 8033
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel \u003e .table-bordered \u003e thead \u003e tr \u003e th:first-child",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 6777,
+      "End": 6831
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel \u003e .table-bordered \u003e thead \u003e tr \u003e th:last-child",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 7590,
+      "End": 7643
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel \u003e .table-bordered \u003e thead \u003e tr:first-child \u003e td",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 8392,
+      "End": 8446
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel \u003e .table-bordered \u003e thead \u003e tr:first-child \u003e th",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 8656,
+      "End": 8710
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel \u003e .table-bordered",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 6689,
+      "End": 6713
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel \u003e .table-responsive + .panel-body",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 6480,
+      "End": 6520
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel \u003e .table-responsive \u003e .table caption",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 1969,
+      "End": 2012
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel \u003e .table-responsive \u003e .table-bordered \u003e tbody \u003e tr \u003e td:first-child",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 7361,
+      "End": 7435
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel \u003e .table-responsive \u003e .table-bordered \u003e tbody \u003e tr \u003e td:last-child",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 8165,
+      "End": 8238
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel \u003e .table-responsive \u003e .table-bordered \u003e tbody \u003e tr \u003e th:first-child",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 6965,
+      "End": 7039
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel \u003e .table-responsive \u003e .table-bordered \u003e tbody \u003e tr \u003e th:last-child",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 7775,
+      "End": 7848
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel \u003e .table-responsive \u003e .table-bordered \u003e tbody \u003e tr:first-child \u003e td",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 8580,
+      "End": 8654
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel \u003e .table-responsive \u003e .table-bordered \u003e tbody \u003e tr:first-child \u003e th",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 8844,
+      "End": 8918
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel \u003e .table-responsive \u003e .table-bordered \u003e tbody \u003e tr:last-child \u003e td",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 8998,
+      "End": 9071
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel \u003e .table-responsive \u003e .table-bordered \u003e tbody \u003e tr:last-child \u003e th",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 9258,
+      "End": 9331
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel \u003e .table-responsive \u003e .table-bordered \u003e tfoot \u003e tr \u003e td:first-child",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 7493,
+      "End": 7567
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel \u003e .table-responsive \u003e .table-bordered \u003e tfoot \u003e tr \u003e td:last-child",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 8295,
+      "End": 8368
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel \u003e .table-responsive \u003e .table-bordered \u003e tfoot \u003e tr \u003e th:first-child",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 7097,
+      "End": 7171
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel \u003e .table-responsive \u003e .table-bordered \u003e tfoot \u003e tr \u003e th:last-child",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 7905,
+      "End": 7978
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel \u003e .table-responsive \u003e .table-bordered \u003e tfoot \u003e tr:last-child \u003e td",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 9128,
+      "End": 9201
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel \u003e .table-responsive \u003e .table-bordered \u003e tfoot \u003e tr:last-child \u003e th",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 9388,
+      "End": 9461
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel \u003e .table-responsive \u003e .table-bordered \u003e thead \u003e tr \u003e td:first-child",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 7229,
+      "End": 7303
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel \u003e .table-responsive \u003e .table-bordered \u003e thead \u003e tr \u003e td:last-child",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 8035,
+      "End": 8108
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel \u003e .table-responsive \u003e .table-bordered \u003e thead \u003e tr \u003e th:first-child",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 6833,
+      "End": 6907
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel \u003e .table-responsive \u003e .table-bordered \u003e thead \u003e tr \u003e th:last-child",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 7645,
+      "End": 7718
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel \u003e .table-responsive \u003e .table-bordered \u003e thead \u003e tr:first-child \u003e td",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 8448,
+      "End": 8522
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel \u003e .table-responsive \u003e .table-bordered \u003e thead \u003e tr:first-child \u003e th",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 8712,
+      "End": 8786
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel \u003e .table-responsive \u003e .table-bordered",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 6715,
+      "End": 6759
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel \u003e .table-responsive \u003e .table",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 1849,
+      "End": 1884
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel \u003e .table-responsive:first-child \u003e .table:first-child \u003e tbody:first-child \u003e tr:first-child td:first-child",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 2930,
+      "End": 3041
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel \u003e .table-responsive:first-child \u003e .table:first-child \u003e tbody:first-child \u003e tr:first-child td:last-child",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 3737,
+      "End": 3847
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel \u003e .table-responsive:first-child \u003e .table:first-child \u003e tbody:first-child \u003e tr:first-child th:first-child",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 3318,
+      "End": 3429
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel \u003e .table-responsive:first-child \u003e .table:first-child \u003e tbody:first-child \u003e tr:first-child th:last-child",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 4121,
+      "End": 4231
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel \u003e .table-responsive:first-child \u003e .table:first-child \u003e tbody:first-child \u003e tr:first-child",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 2491,
+      "End": 2587
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel \u003e .table-responsive:first-child \u003e .table:first-child \u003e thead:first-child \u003e tr:first-child td:first-child",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 2736,
+      "End": 2847
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel \u003e .table-responsive:first-child \u003e .table:first-child \u003e thead:first-child \u003e tr:first-child td:last-child",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 3545,
+      "End": 3655
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel \u003e .table-responsive:first-child \u003e .table:first-child \u003e thead:first-child \u003e tr:first-child th:first-child",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 3124,
+      "End": 3235
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel \u003e .table-responsive:first-child \u003e .table:first-child \u003e thead:first-child \u003e tr:first-child th:last-child",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 3929,
+      "End": 4039
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel \u003e .table-responsive:first-child \u003e .table:first-child \u003e thead:first-child \u003e tr:first-child",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 2327,
+      "End": 2423
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel \u003e .table-responsive:first-child \u003e .table:first-child",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 2134,
+      "End": 2193
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel \u003e .table-responsive:last-child \u003e .table:last-child \u003e tbody:last-child \u003e tr:last-child td:first-child",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 4891,
+      "End": 4998
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel \u003e .table-responsive:last-child \u003e .table:last-child \u003e tbody:last-child \u003e tr:last-child td:last-child",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 5675,
+      "End": 5781
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel \u003e .table-responsive:last-child \u003e .table:last-child \u003e tbody:last-child \u003e tr:last-child th:first-child",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 5265,
+      "End": 5372
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel \u003e .table-responsive:last-child \u003e .table:last-child \u003e tbody:last-child \u003e tr:last-child th:last-child",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 6045,
+      "End": 6151
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel \u003e .table-responsive:last-child \u003e .table:last-child \u003e tbody:last-child \u003e tr:last-child",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 4490,
+      "End": 4582
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel \u003e .table-responsive:last-child \u003e .table:last-child \u003e tfoot:last-child \u003e tr:last-child td:first-child",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 5078,
+      "End": 5185
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel \u003e .table-responsive:last-child \u003e .table:last-child \u003e tfoot:last-child \u003e tr:last-child td:last-child",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 5860,
+      "End": 5966
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel \u003e .table-responsive:last-child \u003e .table:last-child \u003e tfoot:last-child \u003e tr:last-child th:first-child",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 5452,
+      "End": 5559
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel \u003e .table-responsive:last-child \u003e .table:last-child \u003e tfoot:last-child \u003e tr:last-child th:last-child",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 6230,
+      "End": 6336
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel \u003e .table-responsive:last-child \u003e .table:last-child \u003e tfoot:last-child \u003e tr:last-child",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 4647,
+      "End": 4739
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel \u003e .table-responsive:last-child \u003e .table:last-child",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 4296,
+      "End": 4353
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel \u003e .table-responsive",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 9486,
+      "End": 9512
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel \u003e .table:first-child \u003e tbody:first-child \u003e tr:first-child td:first-child",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 2849,
+      "End": 2928
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel \u003e .table:first-child \u003e tbody:first-child \u003e tr:first-child td:last-child",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 3657,
+      "End": 3735
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel \u003e .table:first-child \u003e tbody:first-child \u003e tr:first-child th:first-child",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 3237,
+      "End": 3316
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel \u003e .table:first-child \u003e tbody:first-child \u003e tr:first-child th:last-child",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 4041,
+      "End": 4119
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel \u003e .table:first-child \u003e tbody:first-child \u003e tr:first-child",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 2425,
+      "End": 2489
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel \u003e .table:first-child \u003e thead:first-child \u003e tr:first-child td:first-child",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 2655,
+      "End": 2734
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel \u003e .table:first-child \u003e thead:first-child \u003e tr:first-child td:last-child",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 3465,
+      "End": 3543
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel \u003e .table:first-child \u003e thead:first-child \u003e tr:first-child th:first-child",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 3043,
+      "End": 3122
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel \u003e .table:first-child \u003e thead:first-child \u003e tr:first-child th:last-child",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 3849,
+      "End": 3927
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel \u003e .table:first-child \u003e thead:first-child \u003e tr:first-child",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 2261,
+      "End": 2325
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel \u003e .table:first-child",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 2105,
+      "End": 2132
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel \u003e .table:last-child \u003e tbody:last-child \u003e tr:last-child td:first-child",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 4813,
+      "End": 4889
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel \u003e .table:last-child \u003e tbody:last-child \u003e tr:last-child td:last-child",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 5598,
+      "End": 5673
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel \u003e .table:last-child \u003e tbody:last-child \u003e tr:last-child th:first-child",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 5187,
+      "End": 5263
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel \u003e .table:last-child \u003e tbody:last-child \u003e tr:last-child th:last-child",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 5968,
+      "End": 6043
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel \u003e .table:last-child \u003e tbody:last-child \u003e tr:last-child",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 4427,
+      "End": 4488
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel \u003e .table:last-child \u003e tfoot:last-child \u003e tr:last-child td:first-child",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 5000,
+      "End": 5076
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel \u003e .table:last-child \u003e tfoot:last-child \u003e tr:last-child td:last-child",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 5783,
+      "End": 5858
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel \u003e .table:last-child \u003e tfoot:last-child \u003e tr:last-child th:first-child",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 5374,
+      "End": 5450
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel \u003e .table:last-child \u003e tfoot:last-child \u003e tr:last-child th:last-child",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 6153,
+      "End": 6228
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel \u003e .table:last-child \u003e tfoot:last-child \u003e tr:last-child",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 4584,
+      "End": 4645
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel \u003e .table:last-child",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 4268,
+      "End": 4294
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel \u003e .table",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 1832,
+      "End": 1847
     },
     {
       "DefUnitType": "basic-css",
@@ -1052,8 +4603,8 @@
       "DefPath": "assets/panels.css.panel-body",
       "Unit": "css-sample-0",
       "File": "main.html",
-      "Start": 1463,
-      "End": 1473
+      "Start": 1594,
+      "End": 1604
     },
     {
       "DefUnitType": "basic-css",
@@ -1067,12 +4618,92 @@
     {
       "DefUnitType": "basic-css",
       "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel-danger \u003e .panel-footer + .panel-collapse \u003e .panel-body",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 12543,
+      "End": 12604
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel-danger \u003e .panel-heading + .panel-collapse \u003e .panel-body",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 12358,
+      "End": 12420
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel-danger \u003e .panel-heading .badge",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 12454,
+      "End": 12491
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel-danger \u003e .panel-heading",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 12251,
+      "End": 12281
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
       "DefPath": "assets/panels.css.panel-danger",
       "Unit": "css-sample-0",
       "Def": true,
       "File": "assets/panels.css",
       "Start": 12208,
       "End": 12221
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel-default \u003e .panel-footer + .panel-collapse \u003e .panel-body",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 10381,
+      "End": 10443
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel-default \u003e .panel-heading + .panel-collapse \u003e .panel-body",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 10200,
+      "End": 10263
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel-default \u003e .panel-heading .badge",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 10294,
+      "End": 10332
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel-default \u003e .panel-heading",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 10098,
+      "End": 10129
     },
     {
       "DefUnitType": "basic-css",
@@ -1090,8 +4721,8 @@
       "DefPath": "assets/panels.css.panel-default",
       "Unit": "css-sample-0",
       "File": "main.html",
-      "Start": 1421,
-      "End": 1434
+      "Start": 1552,
+      "End": 1565
     },
     {
       "DefUnitType": "basic-css",
@@ -1115,12 +4746,102 @@
     {
       "DefUnitType": "basic-css",
       "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel-group .panel + .panel",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 9656,
+      "End": 9684
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel-group .panel-footer + .panel-collapse .panel-body",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 9963,
+      "End": 10019
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel-group .panel-footer",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 9915,
+      "End": 9941
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel-group .panel-heading + .panel-collapse \u003e .list-group",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 9821,
+      "End": 9880
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel-group .panel-heading + .panel-collapse \u003e .panel-body",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 9760,
+      "End": 9819
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel-group .panel-heading",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 9708,
+      "End": 9735
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel-group .panel",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 9590,
+      "End": 9609
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
       "DefPath": "assets/panels.css.panel-group",
       "Unit": "css-sample-0",
       "Def": true,
       "File": "assets/panels.css",
       "Start": 9550,
       "End": 9562
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel-heading + .list-group .list-group-item:first-child",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 1692,
+      "End": 1749
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel-heading \u003e .dropdown .dropdown-toggle",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 396,
+      "End": 439
     },
     {
       "DefUnitType": "basic-css",
@@ -1135,12 +4856,92 @@
     {
       "DefUnitType": "basic-css",
       "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel-info \u003e .panel-footer + .panel-collapse \u003e .panel-body",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 11674,
+      "End": 11733
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel-info \u003e .panel-heading + .panel-collapse \u003e .panel-body",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 11493,
+      "End": 11553
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel-info \u003e .panel-heading .badge",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 11587,
+      "End": 11622
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel-info \u003e .panel-heading",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 11388,
+      "End": 11416
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
       "DefPath": "assets/panels.css.panel-info",
       "Unit": "css-sample-0",
       "Def": true,
       "File": "assets/panels.css",
       "Start": 11347,
       "End": 11358
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel-primary \u003e .panel-footer + .panel-collapse \u003e .panel-body",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 10810,
+      "End": 10872
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel-primary \u003e .panel-heading + .panel-collapse \u003e .panel-body",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 10626,
+      "End": 10689
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel-primary \u003e .panel-heading .badge",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 10723,
+      "End": 10761
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel-primary \u003e .panel-heading",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 10521,
+      "End": 10552
     },
     {
       "DefUnitType": "basic-css",
@@ -1155,6 +4956,46 @@
     {
       "DefUnitType": "basic-css",
       "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel-success \u003e .panel-footer + .panel-collapse \u003e .panel-body",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 11248,
+      "End": 11310
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel-success \u003e .panel-heading + .panel-collapse \u003e .panel-body",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 11061,
+      "End": 11124
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel-success \u003e .panel-heading .badge",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 11158,
+      "End": 11196
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel-success \u003e .panel-heading",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 10953,
+      "End": 10984
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
       "DefPath": "assets/panels.css.panel-success",
       "Unit": "css-sample-0",
       "Def": true,
@@ -1165,12 +5006,102 @@
     {
       "DefUnitType": "basic-css",
       "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel-title \u003e .small \u003e a",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 642,
+      "End": 667
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel-title \u003e .small",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 593,
+      "End": 614
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel-title \u003e a",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 553,
+      "End": 569
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel-title \u003e small \u003e a",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 616,
+      "End": 640
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel-title \u003e small",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 571,
+      "End": 591
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
       "DefPath": "assets/panels.css.panel-title",
       "Unit": "css-sample-0",
       "Def": true,
       "File": "assets/panels.css",
       "Start": 462,
       "End": 474
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel-warning \u003e .panel-footer + .panel-collapse \u003e .panel-body",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 12109,
+      "End": 12171
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel-warning \u003e .panel-heading + .panel-collapse \u003e .panel-body",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 11922,
+      "End": 11985
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel-warning \u003e .panel-heading .badge",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 12019,
+      "End": 12057
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "assets/panels.css.panel-warning \u003e .panel-heading",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "assets/panels.css",
+      "Start": 11814,
+      "End": 11845
     },
     {
       "DefUnitType": "basic-css",
@@ -1198,8 +5129,8 @@
       "DefPath": "assets/panels.css.panel",
       "Unit": "css-sample-0",
       "File": "main.html",
-      "Start": 1415,
-      "End": 1420
+      "Start": 1546,
+      "End": 1551
     },
     {
       "DefUnitType": "basic-css",
@@ -1209,76 +5140,6 @@
       "File": "subdir/assets/main.html",
       "Start": 508,
       "End": 513
-    },
-    {
-      "DefUnitType": "basic-css",
-      "DefUnit": "css-sample-0",
-      "DefPath": "assets/panels.css.small",
-      "Unit": "css-sample-0",
-      "Def": true,
-      "File": "assets/panels.css",
-      "Start": 593,
-      "End": 614
-    },
-    {
-      "DefUnitType": "basic-css",
-      "DefUnit": "css-sample-0",
-      "DefPath": "assets/panels.css.table caption",
-      "Unit": "css-sample-0",
-      "Def": true,
-      "File": "assets/panels.css",
-      "Start": 1944,
-      "End": 1967
-    },
-    {
-      "DefUnitType": "basic-css",
-      "DefUnit": "css-sample-0",
-      "DefPath": "assets/panels.css.table-bordered",
-      "Unit": "css-sample-0",
-      "Def": true,
-      "File": "assets/panels.css",
-      "Start": 6689,
-      "End": 6713
-    },
-    {
-      "DefUnitType": "basic-css",
-      "DefUnit": "css-sample-0",
-      "DefPath": "assets/panels.css.table-responsive",
-      "Unit": "css-sample-0",
-      "Def": true,
-      "File": "assets/panels.css",
-      "Start": 6407,
-      "End": 6447
-    },
-    {
-      "DefUnitType": "basic-css",
-      "DefUnit": "css-sample-0",
-      "DefPath": "assets/panels.css.table:first-child",
-      "Unit": "css-sample-0",
-      "Def": true,
-      "File": "assets/panels.css",
-      "Start": 2105,
-      "End": 2132
-    },
-    {
-      "DefUnitType": "basic-css",
-      "DefUnit": "css-sample-0",
-      "DefPath": "assets/panels.css.table:last-child",
-      "Unit": "css-sample-0",
-      "Def": true,
-      "File": "assets/panels.css",
-      "Start": 4268,
-      "End": 4294
-    },
-    {
-      "DefUnitType": "basic-css",
-      "DefUnit": "css-sample-0",
-      "DefPath": "assets/panels.css.table",
-      "Unit": "css-sample-0",
-      "Def": true,
-      "File": "assets/panels.css",
-      "Start": 1832,
-      "End": 1847
     },
     {
       "DefUnitType": "URL",
@@ -1448,8 +5309,8 @@
       "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/background-color",
       "Unit": "css-sample-0",
       "File": "main.css",
-      "Start": 871,
-      "End": 887
+      "Start": 1082,
+      "End": 1098
     },
     {
       "DefUnitType": "URL",
@@ -1457,8 +5318,8 @@
       "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/background-image",
       "Unit": "css-sample-0",
       "File": "main.css",
-      "Start": 559,
-      "End": 575
+      "Start": 770,
+      "End": 786
     },
     {
       "DefUnitType": "URL",
@@ -1808,8 +5669,8 @@
       "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-color",
       "Unit": "css-sample-0",
       "File": "main.css",
-      "Start": 897,
-      "End": 909
+      "Start": 1108,
+      "End": 1120
     },
     {
       "DefUnitType": "URL",
@@ -1862,8 +5723,8 @@
       "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius",
       "Unit": "css-sample-0",
       "File": "main.css",
-      "Start": 1014,
-      "End": 1027
+      "Start": 1225,
+      "End": 1238
     },
     {
       "DefUnitType": "URL",
@@ -1871,8 +5732,8 @@
       "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius",
       "Unit": "css-sample-0",
       "File": "main.css",
-      "Start": 618,
-      "End": 631
+      "Start": 829,
+      "End": 842
     },
     {
       "DefUnitType": "URL",
@@ -2204,8 +6065,8 @@
       "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/border",
       "Unit": "css-sample-0",
       "File": "main.css",
-      "Start": 585,
-      "End": 591
+      "Start": 796,
+      "End": 802
     },
     {
       "DefUnitType": "URL",
@@ -2456,8 +6317,17 @@
       "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/color",
       "Unit": "css-sample-0",
       "File": "main.css",
-      "Start": 856,
-      "End": 861
+      "Start": 1067,
+      "End": 1072
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/color",
+      "Unit": "css-sample-0",
+      "File": "main.css",
+      "Start": 284,
+      "End": 289
     },
     {
       "DefUnitType": "URL",
@@ -2465,8 +6335,8 @@
       "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/cursor",
       "Unit": "css-sample-0",
       "File": "main.css",
-      "Start": 424,
-      "End": 430
+      "Start": 635,
+      "End": 641
     },
     {
       "DefUnitType": "URL",
@@ -2474,8 +6344,8 @@
       "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/display",
       "Unit": "css-sample-0",
       "File": "main.css",
-      "Start": 150,
-      "End": 157
+      "Start": 361,
+      "End": 368
     },
     {
       "DefUnitType": "URL",
@@ -2492,8 +6362,8 @@
       "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/font-size",
       "Unit": "css-sample-0",
       "File": "main.css",
-      "Start": 216,
-      "End": 225
+      "Start": 1186,
+      "End": 1195
     },
     {
       "DefUnitType": "URL",
@@ -2501,8 +6371,35 @@
       "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/font-size",
       "Unit": "css-sample-0",
       "File": "main.css",
-      "Start": 975,
-      "End": 984
+      "Start": 169,
+      "End": 178
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/font-size",
+      "Unit": "css-sample-0",
+      "File": "main.css",
+      "Start": 231,
+      "End": 240
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/font-size",
+      "Unit": "css-sample-0",
+      "File": "main.css",
+      "Start": 332,
+      "End": 341
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/font-size",
+      "Unit": "css-sample-0",
+      "File": "main.css",
+      "Start": 427,
+      "End": 436
     },
     {
       "DefUnitType": "URL",
@@ -2519,8 +6416,8 @@
       "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight",
       "Unit": "css-sample-0",
       "File": "main.css",
-      "Start": 235,
-      "End": 246
+      "Start": 446,
+      "End": 457
     },
     {
       "DefUnitType": "URL",
@@ -2528,8 +6425,8 @@
       "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/line-height",
       "Unit": "css-sample-0",
       "File": "main.css",
-      "Start": 258,
-      "End": 269
+      "Start": 1205,
+      "End": 1216
     },
     {
       "DefUnitType": "URL",
@@ -2537,8 +6434,8 @@
       "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/line-height",
       "Unit": "css-sample-0",
       "File": "main.css",
-      "Start": 994,
-      "End": 1005
+      "Start": 469,
+      "End": 480
     },
     {
       "DefUnitType": "URL",
@@ -2627,8 +6524,8 @@
       "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/margin-bottom",
       "Unit": "css-sample-0",
       "File": "main.css",
-      "Start": 196,
-      "End": 209
+      "Start": 407,
+      "End": 420
     },
     {
       "DefUnitType": "URL",
@@ -2690,8 +6587,8 @@
       "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/outline-offset",
       "Unit": "css-sample-0",
       "File": "main.css",
-      "Start": 814,
-      "End": 828
+      "Start": 1025,
+      "End": 1039
     },
     {
       "DefUnitType": "URL",
@@ -2699,8 +6596,8 @@
       "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/outline",
       "Unit": "css-sample-0",
       "File": "main.css",
-      "Start": 744,
-      "End": 751
+      "Start": 955,
+      "End": 962
     },
     {
       "DefUnitType": "URL",
@@ -2708,8 +6605,8 @@
       "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/outline",
       "Unit": "css-sample-0",
       "File": "main.css",
-      "Start": 768,
-      "End": 775
+      "Start": 979,
+      "End": 986
     },
     {
       "DefUnitType": "URL",
@@ -2834,8 +6731,8 @@
       "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/padding",
       "Unit": "css-sample-0",
       "File": "main.css",
-      "Start": 175,
-      "End": 182
+      "Start": 1165,
+      "End": 1172
     },
     {
       "DefUnitType": "URL",
@@ -2843,8 +6740,8 @@
       "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/padding",
       "Unit": "css-sample-0",
       "File": "main.css",
-      "Start": 954,
-      "End": 961
+      "Start": 386,
+      "End": 393
     },
     {
       "DefUnitType": "URL",
@@ -2870,8 +6767,8 @@
       "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/text-align",
       "Unit": "css-sample-0",
       "File": "main.css",
-      "Start": 285,
-      "End": 295
+      "Start": 496,
+      "End": 506
     },
     {
       "DefUnitType": "URL",
@@ -2888,8 +6785,8 @@
       "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/touch-action",
       "Unit": "css-sample-0",
       "File": "main.css",
-      "Start": 356,
-      "End": 372
+      "Start": 567,
+      "End": 583
     },
     {
       "DefUnitType": "URL",
@@ -2897,8 +6794,8 @@
       "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/touch-action",
       "Unit": "css-sample-0",
       "File": "main.css",
-      "Start": 394,
-      "End": 406
+      "Start": 605,
+      "End": 617
     },
     {
       "DefUnitType": "URL",
@@ -2906,8 +6803,8 @@
       "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/user-select",
       "Unit": "css-sample-0",
       "File": "main.css",
-      "Start": 443,
-      "End": 462
+      "Start": 654,
+      "End": 673
     },
     {
       "DefUnitType": "URL",
@@ -2915,8 +6812,8 @@
       "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/user-select",
       "Unit": "css-sample-0",
       "File": "main.css",
-      "Start": 475,
-      "End": 491
+      "Start": 686,
+      "End": 702
     },
     {
       "DefUnitType": "URL",
@@ -2924,8 +6821,8 @@
       "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/user-select",
       "Unit": "css-sample-0",
       "File": "main.css",
-      "Start": 505,
-      "End": 520
+      "Start": 716,
+      "End": 731
     },
     {
       "DefUnitType": "URL",
@@ -2933,8 +6830,8 @@
       "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/user-select",
       "Unit": "css-sample-0",
       "File": "main.css",
-      "Start": 538,
-      "End": 549
+      "Start": 749,
+      "End": 760
     },
     {
       "DefUnitType": "URL",
@@ -2942,8 +6839,8 @@
       "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/vertical-align",
       "Unit": "css-sample-0",
       "File": "main.css",
-      "Start": 330,
-      "End": 344
+      "Start": 541,
+      "End": 555
     },
     {
       "DefUnitType": "URL",
@@ -2951,8 +6848,54 @@
       "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/white-space",
       "Unit": "css-sample-0",
       "File": "main.css",
-      "Start": 307,
-      "End": 318
+      "Start": 518,
+      "End": 529
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/width",
+      "Unit": "css-sample-0",
+      "File": "main.css",
+      "Start": 1263,
+      "End": 1268
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/width",
+      "Unit": "css-sample-0",
+      "File": "main.css",
+      "Start": 1293,
+      "End": 1298
+    },
+    {
+      "DefUnitType": "URL",
+      "DefUnit": "MDN",
+      "DefPath": "https://developer.mozilla.org/en-US/docs/Web/CSS/width",
+      "Unit": "css-sample-0",
+      "File": "main.css",
+      "Start": 1322,
+      "End": 1327
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "main.css#container \u003e .container-inner",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "main.css",
+      "Start": 83,
+      "End": 112
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "main.css#container \u003e .container-inner",
+      "Unit": "css-sample-0",
+      "File": "main.html",
+      "Start": 854,
+      "End": 869
     },
     {
       "DefUnitType": "basic-css",
@@ -2976,22 +6919,12 @@
     {
       "DefUnitType": "basic-css",
       "DefUnit": "css-sample-0",
-      "DefPath": "main.css.active:focus",
-      "Unit": "css-sample-0",
-      "Def": true,
-      "File": "main.css",
-      "Start": 672,
-      "End": 689
-    },
-    {
-      "DefUnitType": "basic-css",
-      "DefUnit": "css-sample-0",
       "DefPath": "main.css.btn-default",
       "Unit": "css-sample-0",
       "Def": true,
       "File": "main.css",
-      "Start": 839,
-      "End": 851
+      "Start": 1050,
+      "End": 1062
     },
     {
       "DefUnitType": "basic-css",
@@ -2999,8 +6932,8 @@
       "DefPath": "main.css.btn-default",
       "Unit": "css-sample-0",
       "File": "main.html",
-      "Start": 1147,
-      "End": 1158
+      "Start": 1278,
+      "End": 1289
     },
     {
       "DefUnitType": "basic-css",
@@ -3008,8 +6941,18 @@
       "DefPath": "main.css.btn-default",
       "Unit": "css-sample-0",
       "File": "main.html",
-      "Start": 1239,
-      "End": 1250
+      "Start": 1370,
+      "End": 1381
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "main.css.btn-group-sm \u003e .btn",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "main.css",
+      "Start": 1140,
+      "End": 1160
     },
     {
       "DefUnitType": "basic-css",
@@ -3018,8 +6961,8 @@
       "Unit": "css-sample-0",
       "Def": true,
       "File": "main.css",
-      "Start": 920,
-      "End": 927
+      "Start": 1131,
+      "End": 1138
     },
     {
       "DefUnitType": "basic-css",
@@ -3027,8 +6970,48 @@
       "DefPath": "main.css.btn-sm",
       "Unit": "css-sample-0",
       "File": "main.html",
-      "Start": 1251,
-      "End": 1257
+      "Start": 1382,
+      "End": 1388
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "main.css.btn.active.focus",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "main.css",
+      "Start": 933,
+      "End": 950
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "main.css.btn.active:focus",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "main.css",
+      "Start": 883,
+      "End": 900
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "main.css.btn.focus",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "main.css",
+      "Start": 902,
+      "End": 912
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "main.css.btn:active.focus",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "main.css",
+      "Start": 914,
+      "End": 931
     },
     {
       "DefUnitType": "basic-css",
@@ -3037,8 +7020,8 @@
       "Unit": "css-sample-0",
       "Def": true,
       "File": "main.css",
-      "Start": 653,
-      "End": 670
+      "Start": 864,
+      "End": 881
     },
     {
       "DefUnitType": "basic-css",
@@ -3047,74 +7030,151 @@
       "Unit": "css-sample-0",
       "Def": true,
       "File": "main.css",
-      "Start": 641,
-      "End": 651
+      "Start": 852,
+      "End": 862
     },
     {
       "DefUnitType": "basic-css",
       "DefUnit": "css-sample-0",
       "DefPath": "main.css.btn",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "main.css",
+      "Start": 352,
+      "End": 356
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "main.css.btn",
+      "Unit": "css-sample-0",
+      "File": "main.html",
+      "Start": 1274,
+      "End": 1277
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "main.css.btn",
+      "Unit": "css-sample-0",
+      "File": "main.html",
+      "Start": 1366,
+      "End": 1369
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "main.css.col-xs-12",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "main.css",
+      "Start": 1248,
+      "End": 1258
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "main.css.col-xs-3",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "main.css",
+      "Start": 1308,
+      "End": 1317
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "main.css.col-xs-3",
+      "Unit": "css-sample-0",
+      "File": "main.html",
+      "Start": 1825,
+      "End": 1833
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "main.css.col-xs-3",
+      "Unit": "css-sample-0",
+      "File": "main.html",
+      "Start": 1966,
+      "End": 1974
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "main.css.col-xs-3",
+      "Unit": "css-sample-0",
+      "File": "main.html",
+      "Start": 2213,
+      "End": 2221
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "main.css.col-xs-6",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "main.css",
+      "Start": 1279,
+      "End": 1288
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "main.css.footer .footer-inner .footer-content",
+      "Unit": "css-sample-0",
+      "Def": true,
+      "File": "main.css",
+      "Start": 189,
+      "End": 226
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "main.css.footer .footer-inner .footer-content",
+      "Unit": "css-sample-0",
+      "File": "main.html",
+      "Start": 1864,
+      "End": 1878
+    },
+    {
+      "DefUnitType": "basic-css",
+      "DefUnit": "css-sample-0",
+      "DefPath": "main.css.footer \u003e .footer-inner",
       "Unit": "css-sample-0",
       "Def": true,
       "File": "main.css",
       "Start": 141,
-      "End": 145
+      "End": 164
     },
     {
       "DefUnitType": "basic-css",
       "DefUnit": "css-sample-0",
-      "DefPath": "main.css.btn",
+      "DefPath": "main.css.footer \u003e .footer-inner",
       "Unit": "css-sample-0",
       "File": "main.html",
-      "Start": 1143,
-      "End": 1146
+      "Start": 1812,
+      "End": 1824
     },
     {
       "DefUnitType": "basic-css",
       "DefUnit": "css-sample-0",
-      "DefPath": "main.css.btn",
-      "Unit": "css-sample-0",
-      "File": "main.html",
-      "Start": 1235,
-      "End": 1238
-    },
-    {
-      "DefUnitType": "basic-css",
-      "DefUnit": "css-sample-0",
-      "DefPath": "main.css.container-inner",
+      "DefPath": "main.css.footer-inner + .footer-menu",
       "Unit": "css-sample-0",
       "Def": true,
       "File": "main.css",
-      "Start": 83,
-      "End": 112
+      "Start": 251,
+      "End": 279
     },
     {
       "DefUnitType": "basic-css",
       "DefUnit": "css-sample-0",
-      "DefPath": "main.css.container-inner",
-      "Unit": "css-sample-0",
-      "File": "main.html",
-      "Start": 1587,
-      "End": 1602
-    },
-    {
-      "DefUnitType": "basic-css",
-      "DefUnit": "css-sample-0",
-      "DefPath": "main.css.container-inner",
-      "Unit": "css-sample-0",
-      "File": "main.html",
-      "Start": 854,
-      "End": 869
-    },
-    {
-      "DefUnitType": "basic-css",
-      "DefUnit": "css-sample-0",
-      "DefPath": "main.css.focus",
+      "DefPath": "main.css.footer-menu ~ .footer-link",
       "Unit": "css-sample-0",
       "Def": true,
       "File": "main.css",
-      "Start": 691,
-      "End": 701
+      "Start": 300,
+      "End": 327
     },
     {
       "DefUnitType": "basic-css",
@@ -3129,7 +7189,7 @@
     {
       "DefUnitType": "basic-css",
       "DefUnit": "css-sample-0",
-      "DefPath": "querystringed.css.paragraph",
+      "DefPath": "querystringed.cssp.paragraph",
       "Unit": "css-sample-0",
       "Def": true,
       "File": "querystringed.css",

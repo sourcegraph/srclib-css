@@ -102,6 +102,12 @@ func newSelector(sel string) *selector {
 	return &s
 }
 
+// selNode represents a selector HTML node.
+type selNode struct {
+	sel  selector
+	node *html.Node
+}
+
 // descSelectorRegexp is a regexp pattern that matches individual selectors from a descendant selector, Eg. "h1.title" matches "h1" and "title".
 var descSelectorRegexp = regexp.MustCompile(".*([\\.\\#].+)")
 
@@ -207,16 +213,9 @@ func cssDefsAndRefs(s css.Selector, u *unit.SourceUnit, data string, filePath st
 		defStart = 1
 	}
 
-	// Obtain last selector from a selectors chain.
-	sel := lastSelector(s.Value)
-	if sel == nil {
-		return nil, nil, nil
-	}
-
-	selStr := string(*sel)
 	d, err := json.Marshal(css_def.DefData{
 		Keyword: "selector",
-		Kind:    selectorKind(selStr),
+		Kind:    selectorKind(s.Value),
 	})
 	if err != nil {
 		return nil, nil, err
@@ -225,9 +224,9 @@ func cssDefsAndRefs(s css.Selector, u *unit.SourceUnit, data string, filePath st
 		DefKey: graph.DefKey{
 			UnitType: "basic-css",
 			Unit:     u.Name,
-			Path:     selectorDefPath(filePath, *sel),
+			Path:     selectorDefPath(filePath, *newSelector(s.Value)),
 		},
-		Name:     selStr,
+		Name:     s.Value,
 		File:     filepath.ToSlash(filePath),
 		DefStart: uint32(defStart),
 		DefEnd:   uint32(defEnd),
@@ -309,53 +308,64 @@ LlinkTags:
 					}
 				}
 				if isStylesheetLink {
-					stylesheetHREFs = append(stylesheetHREFs, href)
+					stylesheetHREFs = append(stylesheetHREFs, normalizeStylesheetHREF(href, filepath.Dir(filePath)))
 				}
 			}
 		}
 	}
 
-	tagsZ := html.NewTokenizer(strings.NewReader(data))
-LtagsZ:
-	for {
-		tt := tagsZ.Next()
-		switch tt {
-		case html.ErrorToken:
-			if tagsZ.Err() != io.EOF {
-				return nil, tagsZ.Err()
+	defs := filterDefs(selectorDefs, func(def *graph.Def) bool {
+		for _, f := range stylesheetHREFs {
+			if def.File == f {
+				return true
 			}
-			break LtagsZ
-		case html.StartTagToken, html.SelfClosingTagToken:
-			t := tagsZ.Token()
-			attrValSep := " "
-			for _, attr := range t.Attr {
-				prefix := ""
-				if attr.Key == "id" {
-					prefix = "#"
-				} else if attr.Key == "class" {
-					prefix = "."
-				} else {
+		}
+		return false
+	})
+
+	// Not defs were found for given HTML file `filePath`.
+	if len(defs) == 0 {
+		return nil, nil
+	}
+
+	doc, err := html.Parse(strings.NewReader(data))
+	if err != nil {
+		return nil, err
+	}
+
+	var (
+		walk       func(*html.Node)
+		attrValSep string = " "
+	)
+	walk = func(n *html.Node) {
+		if n.Type == html.ElementNode {
+			for _, attr := range n.Attr {
+				if attr.Key != "id" && attr.Key != "class" {
 					continue
 				}
+				// `attr.Val` might contain multiple CSS selectors. Eg. `class="btn btn-sm"`
 				attrValues := strings.Split(attr.Val, attrValSep)
 				var (
 					// start and end are the byte offsets of one attribute value.
-					// Which are re-calculated on each iteration of the next loop.
+					// Which are re-calculated on each iteration of the next current loop-iteration.
 					start = uint32(attr.ValStart)
 					end   uint32
 				)
 				for _, val := range attrValues {
 					l := len([]byte(val))
 					end = uint32(start + uint32(l))
-					hrefs := normalizeStylesheetHREFs(stylesheetHREFs, filepath.Dir(filePath))
-					defPath := resolveSelectorDefPath(selectorDefs, selector(prefix+val), hrefs)
-					if defPath == nil { // selector definition not found.
+					def := SelectorDef(defs, selNode{
+						sel:  *newSelector(selPrefix(attr.Key) + val),
+						node: n,
+					})
+					if def == nil { // selector definition not found.
+						start = end + uint32(len(attrValSep))
 						continue
 					}
 					refs = append(refs, &graph.Ref{
 						DefUnitType: "basic-css",
 						DefUnit:     u.Name,
-						DefPath:     *defPath,
+						DefPath:     def.DefKey.Path,
 						Unit:        u.Name,
 						File:        filepath.ToSlash(filePath),
 						Start:       start,
@@ -365,7 +375,11 @@ LtagsZ:
 				}
 			}
 		}
+		for c := n.FirstChild; c != nil; c = c.NextSibling {
+			walk(c)
+		}
 	}
+	walk(doc)
 	return refs, nil
 }
 
@@ -421,32 +435,58 @@ func selectorDefPath(filePath string, s selector) string {
 	return fmt.Sprintf("%s%s", filepath.ToSlash(filePath), string(s))
 }
 
-// resolveSelectorDefPath returns the definition path of given selector.
-func resolveSelectorDefPath(selectorsDef []*graph.Def, s selector, stylesheetPaths []string) *string {
-	for _, def := range selectorsDef {
-		if def.Name == s.String() && stylesheetPathExists(stylesheetPaths, def.File) {
-			return &def.DefKey.Path
+// selectorDef searches for a definition which represents the given selector.
+func SelectorDef(defs []*graph.Def, sel selNode) *graph.Def {
+	for _, def := range defs {
+		if def.Name == sel.sel.String() {
+			return def
+		}
+	}
+	var (
+		combSelectors []string
+		combFns       []CombinatorFn = []CombinatorFn{
+			DescCombinatorSelectors,
+			ChildCombinatorSelectors,
+			AdjacentCombinatorSelectors,
+			GeneralCombinatorSelectors,
+		}
+	)
+	for _, combFn := range combFns {
+		combSelectors = append(combSelectors, combFn(sel)...)
+	}
+	for _, def := range defs {
+		for _, cs := range combSelectors {
+			if def.Name == cs {
+				return def
+			}
 		}
 	}
 	return nil
 }
 
-// normalizeStylesheetHREFs normalizes each element of given `stylesheetHREFs`
-// to be relative path of given `root`.
-func normalizeStylesheetHREFs(stylesheetHREFs []string, root string) []string {
-	var normalized []string
-	for _, s := range stylesheetHREFs {
-		normalized = append(normalized, filepath.ToSlash(filepath.Join(root, s)))
-	}
-	return normalized
+// normalizeStylesheetHREF normalizes given `stylesheetHREFs` to be relative path of given `root`.
+func normalizeStylesheetHREF(stylesheetHREF string, root string) string {
+	return filepath.ToSlash(filepath.Join(root, stylesheetHREF))
 }
 
-// stylesheetPathExists returns true if given filepath exists on `stylesheetPaths`.
-func stylesheetPathExists(stylesheetsPath []string, fp string) bool {
-	for _, s := range stylesheetsPath {
-		if s == fp {
-			return true
+// selPrefix checks given HTML attribute and returns either `#` or `.`.
+func selPrefix(attr string) string {
+	switch attr {
+	case "id":
+		return "#"
+	case "class":
+		return "."
+	}
+	return ""
+}
+
+// filterDefs filter given defs using given predicate as filtering function.
+func filterDefs(defs []*graph.Def, predicate func(def *graph.Def) bool) []*graph.Def {
+	var filteredDefs []*graph.Def
+	for _, def := range defs {
+		if ok := predicate(def); ok {
+			filteredDefs = append(filteredDefs, def)
 		}
 	}
-	return false
+	return filteredDefs
 }

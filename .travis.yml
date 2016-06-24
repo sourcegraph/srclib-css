@@ -17,6 +17,7 @@ install:
   - mkdir -p $HOME/.srclib/sourcegraph.com/sourcegraph
   - ln -s $HOME/gopath/src/sourcegraph.com/sourcegraph/srclib-css $HOME/.srclib/sourcegraph.com/sourcegraph/srclib-css
   - make
+  - govendor test
 
 script:
   - srclib test
